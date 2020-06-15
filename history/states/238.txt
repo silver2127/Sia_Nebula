@@ -1,0 +1,26 @@
+state={
+	id=238
+	name="STATE_238"
+	state_category = large_town
+	history={
+		owner = MUR
+		victory_points = { 5681 8 }
+		buildings = {
+			infrastructure = 1
+			#dockyard = 0
+			4953 = {
+				naval_base = 4
+			}
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = MUR
+	}
+	provinces={
+		4920 4953 4962 4989 5003 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+}

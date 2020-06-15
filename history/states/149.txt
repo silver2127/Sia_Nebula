@@ -1,0 +1,30 @@
+
+state={
+	id=149
+	name="STATE_149"
+	resources={
+		rubber=8.000
+		grain=24
+	}
+
+	history={
+		owner = HFB
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HFB
+
+	}
+
+	provinces={
+		769 2849 3436 3802 4995 5036 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

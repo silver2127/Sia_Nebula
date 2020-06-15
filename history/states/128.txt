@@ -1,0 +1,38 @@
+
+state={
+	id=128
+	name="STATE_128"
+	resources={
+		steel=12.000
+		chromium=8.000
+	}
+
+	history={
+		owner = HPA
+		victory_points = {
+			5243 12 
+		}
+		buildings = {
+			infrastructure = 6
+			dockyard = 2
+			5243 = {
+				naval_base = 3
+
+			}
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HPA
+
+	}
+
+	provinces={
+		2193 3186 3558 5189 5205 5243 
+	}
+	manpower=432000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,34 @@
+
+state={
+	id=11
+	name="STATE_11"
+
+	history={
+		owner = SES
+		victory_points = {
+			6163 16 
+		}
+		buildings = {
+			infrastructure = 7
+			dockyard = 2
+			6163 = {
+				naval_base = 3
+
+			}
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = SES
+
+	}
+
+	provinces={
+		606 1075 1087 2038 2062 6139 6163 6203 
+	}
+	manpower=5460420
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

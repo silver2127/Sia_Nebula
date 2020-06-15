@@ -1,0 +1,139 @@
+ideologies = {
+	enlightenism = {
+		types = {
+			enlighten_leader = {
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_ENLIGHTENMENT_1"
+			"FACTION_NAME_ENLIGHTENMENT_2"
+			"FACTION_NAME_ENLIGHTENMENT_3"
+			"FACTION_NAME_ENLIGHTENMENT_4"
+			"FACTION_NAME_ENLIGHTENMENT_5"
+			"FACTION_NAME_ENLIGHTENMENT_6"
+		}
+		color = { 185 245 255 }
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			#can_puppet = yes
+			can_guarantee_other_ideologies = yes
+			can_lower_tension = yes
+		}
+		modifiers = {
+			research_speed_factor = 0.05
+		}
+		faction_modifiers = {
+		}
+		ai_neutral = yes
+	}
+	technocracy = {
+		types = {
+			technocratic_leader = {
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_TECHNOCRATIC_1"
+			"FACTION_NAME_TECHNOCRATIC_2"
+			"FACTION_NAME_TECHNOCRATIC_3"
+			"FACTION_NAME_TECHNOCRATIC_4"
+			"FACTION_NAME_TECHNOCRATIC_5"
+			"FACTION_NAME_TECHNOCRATIC_6"
+		}
+		color = { 0 100 200 }
+		#ai_technocracy = yes
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		modifiers = {
+			research_speed_factor = 0.10
+		}
+		faction_modifiers = {
+		}
+		ai_communist = yes
+	}
+	theocracy = {
+		types = {
+			theocratic_leader = {
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+		color = { 140 12 91 }
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		modifiers = {
+			conscription_factor = 0.1
+			research_speed_factor = -0.075
+			surrender_limit = 0.1
+		}
+		faction_modifiers = {
+			conscription_factor = 0.05
+		}
+		ai_fascist = yes
+	}
+	authoritarianism = {
+		types = {
+			authoritarian_leader = {
+			}
+			monarchist_leader = {
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		color = { 115 100 100 }
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		modifiers = {
+			resistance_damage_to_garrison = -0.1
+		}
+		faction_modifiers = {
+		}
+		ai_fascist = yes
+	}
+	unityism = {
+		types = {
+			communist_leader = {
+			}
+			socialist_leader = {
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		color = { 75 15 15 }
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		modifiers = {
+			consumer_goods_factor = -0.05
+		}
+		faction_modifiers = {
+		}
+		ai_communist = yes
+	}
+}

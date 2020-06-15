@@ -1,0 +1,20 @@
+##neweurope
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_SWP_SETUP"
+		texturefile = "gfx/event_pictures/swp_setup.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SWP_SETUP_NEWS"
+		texturefile = "gfx/event_pictures/swp_setup_news.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SWP"
+		texturefile = "gfx/event_pictures/swp.dds"
+	}
+	
+}
+	

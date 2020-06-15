@@ -1,0 +1,26 @@
+
+state={
+	id=257
+	name="STATE_257"
+
+	history={
+		owner = TKZ
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = TKZ
+
+	}
+
+	provinces={
+		899 1631 1716 2473 2836 2997 3341 3478 4039 4073 4092 4415 4511 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

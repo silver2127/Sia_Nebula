@@ -1,0 +1,34 @@
+
+state={
+	id=104
+	name="STATE_104"
+	resources={
+		grain=16
+	}
+	history={
+		owner = HHE
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HHE
+		#add_core_of = CPI
+		#HHE = {
+		#	set_province_controller = 4868
+		#	set_province_controller = 2043
+		#	set_province_controller = 237
+		#	set_province_controller = 4996
+		#}
+	}
+
+	provinces={
+		44 237 1240 1816 2043 4868 4908 4946 4996 
+	}
+	manpower=187500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,151 @@
+ideas = {
+	country = {
+		the_theocratic_master = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				subjects_autonomy_gain = -0.01
+				political_power_factor = 0.25
+				consumer_goods_factor = 0.05
+			}
+		}
+		blood_over_metal = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = idea_mex_revolutionary_army
+
+			modifier = {
+				research_speed_factor = -0.05
+				conscription_factor = 0.03
+				army_armor_attack_factor = -0.25
+				army_armor_defence_factor = -0.25
+			}
+		}
+		metal_over_blood = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = idea_generic_license_production
+
+			modifier = {
+				conscription_factor = -0.03
+				industrial_capacity_factory = 0.15
+			}
+		}
+		harmonian_population = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
+		deed_reform = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				research_speed_factor = 0.03
+				enlightenism_drift = 0.05
+			}
+		}
+		deed_reform_finish = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				research_speed_factor = 0.05
+				enlightenism_drift = 0.02
+			}
+		}
+		harmony_guard_h = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = idea_chi_army_corruption3
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				army_core_defence_factor = 0.1
+			}
+		}
+		harmony_guard_l = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = idea_chi_army_corruption
+
+			modifier = {
+				consumer_goods_factor = 0.01
+				army_core_defence_factor = 0.04
+			}
+		}
+		nobility_held_industry = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = FRA_factory_strikes
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+#####New Zealand
+animation = {
+	name = "LLA_tank_light_bobsemple_idle_animation"
+	file = "LLA_tank_light_bobsemple_idle.anim"
+}
+
+animation = {
+	name = "LLA_tank_light_bobsemple_moving_animation"
+	file = "LLA_tank_light_bobsemple_moving.anim"
+}
+animation = {
+	name = "LLA_tank_light_bobsemple_attack_animation"
+	file = "LLA_tank_light_bobsemple_attack.anim"
+}
+animation = {
+	name = "LLA_tank_medium_schofield_idle_animation"
+	file = "LLA_tank_medium_schofield_idle.anim"
+}
+
+animation = {
+	name = "LLA_tank_medium_schofield_moving_animation"
+	file = "LLA_tank_medium_schofield_moving.anim"
+}
+animation = {
+	name = "LLA_tank_medium_schofield_attack_animation"
+	file = "LLA_tank_medium_schofield_attack.anim"
+}
+animation = {
+	name = "LLA_tank_superheavy_bigbob_idle_animation"
+	file = "LLA_tank_superheavy_bigbob_idle.anim"
+}
+
+animation = {
+	name = "LLA_tank_superheavy_bigbob_moving_animation"
+	file = "LLA_tank_superheavy_bigbob_moving.anim"
+}
+animation = {
+	name = "LLA_tank_superheavy_bigbob_attack_animation"
+	file = "LLA_tank_superheavy_bigbob_attack.anim"
+}

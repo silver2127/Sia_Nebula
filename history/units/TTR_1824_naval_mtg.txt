@@ -1,0 +1,274 @@
+﻿units= {
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Strike Force"
+		naval_base = 5822
+		### Srike ###
+		task_force = {
+			name = "Heavy Division, Strike Force"
+			location = 1091
+			### Battleship Division 1 ###
+			ship = { name = "TNDU Meitnerium" definition = battleship start_experience_factor = 0.10 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TTR version_name = "Alpha Class" } } }
+			ship = { name = "TNDU Darmstadium" definition = battleship start_experience_factor = 0.10 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TTR version_name = "Alpha Class" } } }
+			ship = { name = "TNDU Roentgenium" definition = battleship start_experience_factor = 0.10 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TTR version_name = "Alpha Class" } } }
+			ship = { name = "TNDU Nihonium" definition = battleship start_experience_factor = 0.10 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TTR version_name = "Bravo Class" } } }
+			ship = { name = "TNDU Moscovium" definition = battleship start_experience_factor = 0.10 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TTR version_name = "Bravo Class" } } }
+			ship = { name = "TNDU Livermorium" definition = battleship start_experience_factor = 0.10 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TTR version_name = "Bravo Class" } } }
+			ship = { name = "TNDU Tennessine" definition = battleship start_experience_factor = 0.10 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TTR version_name = "Charlie Class" } } }
+			ship = { name = "TNDU Oganesson" definition = battleship start_experience_factor = 0.10 equipment = { ship_hull_heavy_1 = { amount = 1 owner = TTR version_name = "Charlie Class" } } }
+		}
+		task_force = {
+			name = "Carrier Division, Strike Force"
+			location = 5822
+			### Carrier Division 1 ###
+			ship = { name = "TNDU Boron" definition = carrier start_experience_factor = 0.10 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = TTR version_name = "Boron Class" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "TTR" amount = 15 }
+					cv_nav_bomber_equipment_1 =  { owner = "TTR" amount = 25 }
+				}
+			}
+			ship = { name = "TNDU Optic" definition = carrier start_experience_factor = 0.10 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = TTR version_name = "Boron Class" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "TTR" amount = 15 }
+					cv_nav_bomber_equipment_1 =  { owner = "TTR" amount = 25 }
+				}
+			}
+			ship = { name = "TNDU Silicon" pride_of_the_fleet = yes definition = carrier start_experience_factor = 0.10 equipment = { ship_hull_carrier_1 = { amount = 1 owner = TTR version_name = "Siicon Class" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "TTR" amount = 20 }
+					cv_nav_bomber_equipment_1 =  { owner = "TTR" amount = 40 }
+				}
+			}
+		}
+		### Scout ###
+		task_force = {
+			name = "Portal Group 1"
+			location = 1091
+			### Crusier/Destroyier Division 1 ###
+			ship = { name = "TNDU Scandium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Titanium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Bucky" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Honk" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Quack" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+		}
+		task_force = {
+			name = "Portal Group 2"
+			location = 5822
+			### Crusier/Destroyier Division 2 ###
+			ship = { name = "TNDU Vanadium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Chromium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Helium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Neon" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Argon" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+		}
+		task_force = {
+			name = "Portal Group 3"
+			location = 5328
+			### Crusier/Destroyier Division 3 ###
+			ship = { name = "TNDU Manganese" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Iron" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Krypton" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Xenon" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Radon" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+		}
+		task_force = {
+			name = "Portal Group 4"
+			location = 5818
+			### Crusier/Destroyier Division 4 ###
+			ship = { name = "TNDU Cobalt" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Nickel" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Hydrogen" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Carbon" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Nitrogen" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+		}
+		task_force = {
+			name = "Portal Group 5"
+			location = 5922
+			### Crusier/Destroyier Division 5 ###
+			ship = { name = "TNDU Copper" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Zinc" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Oxygen" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Flourine" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Phosphorus" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+		}
+	}
+	fleet = {
+		name = "Strike Force"
+		naval_base = 1091
+		### Light Units ###
+		task_force = {
+			name = "Light Escort Group 1"
+			location = 2054
+			### Light Division 1 ###
+			ship = { name = "TNDU Yttrium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Zirconium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Niobium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Lithium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Sodium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Potassium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Rubidium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Caesium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+		}
+		task_force = {
+			name = "Light Escort Group 2"
+			location = 1091
+			### Light Division 2 ###
+			ship = { name = "TNDU Molybdenum" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Technetium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Ruthenium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = TTR version_name = "Ohlm Class" } } }
+			ship = { name = "TNDU Francium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Beryllium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Magnesium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Calcium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Strontium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+		}
+		task_force = {
+			name = "Light Escort Group 3"
+			location = 5720
+			### Light Division 3 ###
+			ship = { name = "TNDU Rhodium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Palladium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Silver" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Barium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Radium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Aluminium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Illite Class" } } }
+			ship = { name = "TNDU Gallium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+			ship = { name = "TNDU Indium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+		}
+		task_force = {
+			name = "Light Escort Group 4"
+			location = 5922
+			### Light Division 4 ###
+			ship = { name = "TNDU Cadmium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Hafnium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Tantalum" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Tin" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+			ship = { name = "TNDU Thallium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+			ship = { name = "TNDU Lead" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+			ship = { name = "TNDU Bismuth" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+			ship = { name = "TNDU Polonium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+		}
+		task_force = {
+			name = "Light Escort Group 5"
+			location = 6231
+			### Light Division 5 ###
+			ship = { name = "TNDU Tugsten" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Rhenium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Osmium" definition = light_cruiser start_experience_factor = 0.10 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = TTR version_name = "Brook Class" } } }
+			ship = { name = "TNDU Flerovium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+			ship = { name = "TNDU Sulfur" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+			ship = { name = "TNDU Chlorine" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+			ship = { name = "TNDU Selenium" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+			ship = { name = "TNDU Bronine" definition = destroyer start_experience_factor = 0.10 equipment = { ship_hull_light_1 = { amount = 1 owner = TTR version_name = "Kaolinite Class" } } }
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_1
+			creator = "TTR"
+			version_name = "Silicon Class"
+		}
+		requested_factories = 3
+		progress = 0.75
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "TTR"
+			version_name = "Charlie Class"
+		}
+		requested_factories = 1
+		progress = 0.65
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "TTR"
+			version_name = "Charlie Class"
+		}
+		requested_factories = 1
+		progress = 0.65
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "TTR"
+			version_name = "Bravo Class"
+		}
+		requested_factories = 2
+		progress = 0.5
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "TTR"
+			version_name = "Iron Class"
+		}
+		requested_factories = 2
+		progress = 0.4
+		amount = 3
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "TTR"
+			version_name = "Iron Class"
+		}
+		requested_factories = 2
+		progress = 0.4
+		amount = 3
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "TTR"
+			version_name = "Brook Class"
+		}
+		requested_factories = 3
+		progress = 0.2
+		amount = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "TTR"
+			version_name = "Brook Class"
+		}
+		requested_factories = 2
+		progress = 0.8
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "TTR"
+			version_name = "Illite Class"
+		}
+		requested_factories = 1
+		progress = 0.8
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "TTR"
+			version_name = "Illite Class"
+		}
+		requested_factories = 1
+		progress = 0.8
+		amount = 10
+	}
+}
+
+#####################

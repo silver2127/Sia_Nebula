@@ -1,0 +1,101 @@
+﻿add_namespace = HHE_subject
+
+country_event = {
+	id = HHE_subject.0
+	title = HHE_subject.0.t
+	desc = HHE_subject.0.d
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+
+	option = {
+		name = HHE_subject.0.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = -1
+				has_political_power < 150
+			}
+		}
+		FROM = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		add_political_power = -10
+		hidden_effect = {
+			country_event = { id = HHE_subject.1 days = 1 }
+		}
+	}
+	option = {
+		name = HHE_subject.0.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = -1
+				has_political_power > 160
+			}
+		}
+		hidden_effect = {
+			country_event = { id = HHE_subject.2 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = HHE_subject.1
+	title = HHE_subject.1.t
+	desc = HHE_subject.1.d
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+
+	option = { 
+		name = HHE_subject.1.a
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = 5
+	}
+}
+
+country_event = {
+	id = HHE_subject.2
+	title = HHE_subject.2.t
+	desc = HHE_subject.2.d
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+
+	option = { 
+		name = HHE_subject.2.a
+		ai_chance = {
+			base = 1
+		}
+		add_political_power = -5
+	}
+}

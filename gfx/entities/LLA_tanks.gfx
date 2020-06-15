@@ -1,0 +1,29 @@
+objectTypes = {
+	pdxmesh = {
+		name = "LLA_tank_light_bobsemple_mesh"
+		file = "gfx/models/units/tanks/LLA_tank_light_bobsemple.mesh"
+
+		animation = { id = "attack"			type = "LLA_tank_light_bobsemple_attack_animation" }
+		animation = { id = "idle"			type = "LLA_tank_light_bobsemple_idle_animation" }
+		animation = { id = "move"			type = "LLA_tank_light_bobsemple_moving_animation" }
+		scale = 0.7
+	}
+	pdxmesh = {
+		name = "LLA_tank_super_heavy_bigbob_mesh"
+		file = "gfx/models/units/tanks/LLA_tank_superheavy_bigbob.mesh"
+
+		animation = { id = "attack"			type = "LLA_tank_superheavy_bigbob_attack_animation" }
+		animation = { id = "idle"			type = "LLA_tank_superheavy_bigbob_idle_animation" }
+		animation = { id = "move"			type = "LLA_tank_superheavy_bigbob_moving_animation" }
+		scale = 0.7
+	}
+	pdxmesh = {
+		name = "LLA_tank_medium_schofield_mesh"
+		file = "gfx/models/units/tanks/LLA_tank_medium_schofield.mesh"
+
+		animation = { id = "attack"			type = "LLA_tank_medium_schofield_attack_animation" }
+		animation = { id = "idle"			type = "LLA_tank_medium_schofield_idle_animation" }
+		animation = { id = "move"			type = "LLA_tank_medium_schofield_moving_animation" }
+		scale = 0.8
+	}
+}

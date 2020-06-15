@@ -1,0 +1,203 @@
+form_empire_of_homarny_category = {
+	form_empire_of_homarny = {
+		icon = generic_form_nation
+		allowed = {
+			OR = {
+			original_tag = HHE
+			original_tag = BTF
+			original_tag = LPA
+			original_tag = HPA
+			original_tag = HFB
+			original_tag = NWA
+			original_tag = GSP
+			original_tag = HCZ
+			original_tag = AWA
+			}
+		}
+		available = {
+			is_subject = no
+			# Holy Harmanian Empire
+			98  = { is_controlled_by = ROOT }
+			99  = { is_controlled_by = ROOT }
+			100 = { is_controlled_by = ROOT }
+			101 = { is_controlled_by = ROOT }
+			102 = { is_controlled_by = ROOT }
+			103 = { is_controlled_by = ROOT }
+			104 = { is_controlled_by = ROOT }
+			105 = { is_controlled_by = ROOT }
+			106 = { is_controlled_by = ROOT }
+			107 = { is_controlled_by = ROOT }
+			108 = { is_controlled_by = ROOT }
+			109 = { is_controlled_by = ROOT }
+			# Harmonia Peninsula
+			97  = { is_controlled_by = ROOT }
+			122 = { is_controlled_by = ROOT }
+			123 = { is_controlled_by = ROOT }
+			124 = { is_controlled_by = ROOT }
+			125 = { is_controlled_by = ROOT }
+			126 = { is_controlled_by = ROOT }
+			127 = { is_controlled_by = ROOT }
+			128 = { is_controlled_by = ROOT }
+			# Lower Peninsula
+			129 = { is_controlled_by = ROOT }
+			130 = { is_controlled_by = ROOT }
+			131 = { is_controlled_by = ROOT }
+			132 = { is_controlled_by = ROOT }
+			133 = { is_controlled_by = ROOT }
+			134 = { is_controlled_by = ROOT }
+			135 = { is_controlled_by = ROOT }
+			136 = { is_controlled_by = ROOT }
+			137 = { is_controlled_by = ROOT }
+			138 = { is_controlled_by = ROOT }
+			# Blested Tiers Federation
+			139 = { is_controlled_by = ROOT }
+			140 = { is_controlled_by = ROOT }
+			141 = { is_controlled_by = ROOT }
+			142 = { is_controlled_by = ROOT }
+			143 = { is_controlled_by = ROOT }
+			144 = { is_controlled_by = ROOT }
+			145 = { is_controlled_by = ROOT }
+			146 = { is_controlled_by = ROOT }
+			147 = { is_controlled_by = ROOT }
+		}
+		visible = {
+			OR = {
+			original_tag = HHE
+			original_tag = BTF
+			original_tag = LPA
+			original_tag = HPA
+			original_tag = HFB
+			original_tag = NWA
+			original_tag = GSP
+			original_tag = HCZ
+			original_tag = AWA
+			}
+			NOT = { has_global_flag = form_homarny_empire_flag }
+		}
+		complete_effect = {
+			set_cosmetic_tag = EOH_UNIFIED
+			set_capital = 505
+			hidden_effect = { 505 = { set_state_name = "City of Harmony" } }
+			hidden_effect = { 108 = { set_state_name = "Holy See" } }
+			hidden_effect = { 100 = { set_state_name = "River's Eyes" } }
+			hidden_effect = { 98 = { set_state_name = "Fiery Cathedral" } }
+			set_province_name = { id = 3380 name = "Holy See" }
+			set_province_name = { id = 5100 name = "River's Eyes" }
+			set_province_name = { id = 2614 name = "Fiery Cathedral" }
+			set_province_name = { id = 1188 name = "Harmony City" }
+			# Holy Harmanian Empire
+			hidden_effect = {
+				98  = { add_core_of = ROOT }
+				99  = { add_core_of = ROOT }
+				100 = { add_core_of = ROOT }
+				101 = { add_core_of = ROOT }
+				102 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				104 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				107 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+			}
+			# Harmonia Peninsula
+			hidden_effect = {
+				97  = { add_core_of = ROOT }
+				122 = { add_core_of = ROOT }
+				123 = { add_core_of = ROOT }
+				124 = { add_core_of = ROOT }
+				125 = { add_core_of = ROOT }
+				126 = { add_core_of = ROOT }
+				127 = { add_core_of = ROOT }
+				128 = { add_core_of = ROOT }
+			}
+			# Lower Peninsula
+			hidden_effect = {
+				129 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+				133 = { add_core_of = ROOT }
+				134 = { add_core_of = ROOT }
+				135 = { add_core_of = ROOT }
+				136 = { add_core_of = ROOT }
+				137 = { add_core_of = ROOT }
+				138 = { add_core_of = ROOT }
+			}
+			# Blested Tiers Federation
+			hidden_effect = {
+				139 = { add_core_of = ROOT }
+				140 = { add_core_of = ROOT }
+				141 = { add_core_of = ROOT }
+				142 = { add_core_of = ROOT }
+				143 = { add_core_of = ROOT }
+				144 = { add_core_of = ROOT }
+				145 = { add_core_of = ROOT }
+				146 = { add_core_of = ROOT }
+				147 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				set_global_flag = form_homarny_empire_flag
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+
+
+
+#	byz_triumph_for_western_lands = {
+#
+#		icon = generic_form_nation
+#
+#		allowed = {
+#			OR = {
+#			original_tag = HHE
+#			original_tag = HPA
+#			original_tag = BTF
+#			original_tag = LPA
+#			}
+#		}
+#
+#		available = {
+#			is_subject = no
+#			# Italy
+#			tooltip = form_eu_italy_required_states_tt
+#			1 = { is_controlled_by = ROOT }
+#		}
+#
+#		visible = {
+#			OR = {
+#			original_tag = HHE
+#			original_tag = HPA
+#			original_tag = BTF
+#			original_tag = LPA
+#			}
+#			has_global_flag = form_homarny_empire_flag
+#			NOT = { has_global_flag = triumph_for_western_lands }
+#		}
+#
+#		complete_effect = {
+#			# Italy
+#			custom_effect_tooltip = form_eu_italy_coring_states_tt
+#			hidden_effect = {
+#				1 = { add_core_of = ROOT }
+#				set_global_flag = triumph_for_western_lands
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 200
+#			modifier = {
+#				factor = 1
+#				is_historical_focus_on = yes
+#			}
+#		}
+#	}

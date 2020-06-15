@@ -1,0 +1,31 @@
+state={
+	id=179
+	name="STATE_179"
+	state_category = town
+	resources={
+		oil=16
+	}
+	history={
+		owner = MTA
+		victory_points = { 1811 4 }
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			1811 = {
+				naval_base = 1
+			}
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = MTA
+		add_core_of = VKA
+		add_core_of = VIT
+	}
+	provinces={
+		1811 2107 7452 
+	}
+	manpower=26500
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,30 @@
+state={
+	id=44
+	name="STATE_44"
+	state_category = metropolis
+	resources={
+		aluminium=24
+		tungsten=16
+	}
+	history={
+		owner = TTR
+		victory_points = { 5818 18 }
+		buildings = {
+			infrastructure = 7
+			dockyard = 4
+			5818 = {
+				naval_base = 6
+			}
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 3
+			anti_air_building = 2
+		}
+		add_core_of = TTR
+	}
+	provinces={
+		1859 2399 3882 5818 5853 5860 
+	}
+	manpower=2256000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,29 @@
+state={
+	id=135
+	name="STATE_135"
+	state_category = city
+	resources={
+		oil=24
+	}
+	history={
+		owner = LPA
+		#victory_points = { 5719 5 }
+		buildings = {
+			infrastructure = 5
+			dockyard = 1
+			5719 = {
+				naval_base = 5
+			}
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 3
+			anti_air_building = 0
+		}
+		add_core_of = LPA
+	}
+	provinces={
+		38 2761 3874 5684 5697 5719 5726 
+	}
+	manpower=150777
+	buildings_max_level_factor=1.000
+}

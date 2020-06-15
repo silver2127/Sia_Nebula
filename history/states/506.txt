@@ -1,0 +1,23 @@
+
+state={
+	id=506
+	name="STATE_506"
+	history={
+		owner = HHE
+		victory_points = { 2176 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = HHE
+	}
+	provinces={
+		2176 2699 4728 4807 
+	}
+	manpower=144666
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

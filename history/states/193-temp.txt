@@ -1,0 +1,26 @@
+state={
+	id=193
+	name="STATE_193"
+	state_category = megalopolis_lla
+	resources={
+		steel=32
+	}
+	history={
+		owner = LLA
+		victory_points = { 193 16 }
+		buildings = {
+			infrastructure = 7
+			dockyard = 5
+			industrial_complex = 11
+			arms_factory = 2
+			air_base = 6
+			anti_air_building = 0
+		}
+		add_core_of = LLA
+	}
+	provinces={
+		1949 2153 2617 7732 7739 7742 7743 7747 
+	}
+	manpower=225000
+	buildings_max_level_factor=1.000
+}

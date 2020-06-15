@@ -1,0 +1,185 @@
+﻿l_english:
+ ATT_Armor2:0 "Infantry Tanks Doctrine"
+ ATT_Armor2_desc:0 "What is the point of having fast vehicles if the infantry can't follow them? Instead, we should focus on improving the armor of our light tank to improve their usefullness when used alongside infantry"
+ ATT_tooltip_Armor2:0 "Gives a §Y+50% armor§! £strenght_texticon  bonus to our §YLight Tanks§!, at the price of §Y-50% Maximum Speed§! and §Y-40% breakthrough§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Armor3:0 "Slopped Armor"
+ ATT_Armor3_desc:0 "By slopping the armour of our vehicles, we can increase their effectiveness against enemy shells without needing to increase their thickness."
+ ATT_tooltip_Armor3:0 "Gives a §Y+15% armor§! £strenght_texticon  bonus to our §YTanks§! However, this only affect models researched §RAFTER§! this technology. \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Armor5:0 "Molded Armor"
+ ATT_Armor5_desc:0 "Welding armor plate is the standard way to produce tanks, however, the welds are vulnerable and might fail despite the armor resisting the shell. To avoid this issue, moding the armor in a single piece would increase the overall resistance of our tank's armor"
+ ATT_tooltip_Armor5:0 "Gives a §Y+5% armor, +5% reliabilty, -10% experience lost and +10% casualty trickleback§!  bonus to our §YTanks§! However, this only affect models researched §RAFTER§! this technology. \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Armor4:0 "Increased Light Armor"
+ ATT_Armor4_desc:0 "Since the enemy infantry is starting to be equiped in portable anti-tank rifles, we need to increase the armor thickness of our light vehicles for them to resist to these weapons"
+ ATT_tooltip_Armor4:0 "Gives a §Y+10% armor§! £strenght_texticon and a §Y10% Hardness factor§!  bonus to our §YLight Tanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Armor6:0 "Light Tank Mass Productions"
+ ATT_Armor6_desc:0 "We have reached the best designs in light tank possible. While we have reached an hard limit in their design, we will instead focus on making their production easier"
+ ATT_tooltip_Armor6:0 "Gives a §Y-20% production cost§! £production_cost  bonus to our §YLight and Amphibious Tanks§!\n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Armor8:0 "Focus on weak points"
+ ATT_Armor8_desc:0 "By focusing on weak points of our vehicles, such as the hull machine guns or the driver's sight, we can increase the survival rate of our tank crews"
+ ATT_tooltip_Armor8:0 "Gives a -20% experience lost and +20% casualty trickleback§!  bonus to our §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Armor1:0 "Laminated Steel"
+ ATT_Armor1_desc:0 "By applying a special treatment to our heavy tanks armor, we can improve their physicial properties, making them more resistant"
+ ATT_tooltip_Armor1:0 "Gives a §Y+10% armor bonus§! £strenght_texticon  bonus to our §Heavy and Super-Heavy Tanks§!\n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Armor7:0 "Advanced Armor Design"
+ ATT_Armor7_desc:0 "After years of design, our armor design are becomming more and more efficient, with innovations such as spike-nose hulls and soup-bowl turrets"
+ ATT_tooltip_Armor7:0 "Gives a §Y+30% armor bonus§! £strenght_texticon  bonus to our §Heavy and Super-Heavy Tanks§!\n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_APShell4:0 "Advanced Armor Piercing Shells"
+ ATT_APShell4_desc:0 "We have made some tremedous breakthrough in the development of HEAT shells, allowing them to penetrate up to 400mm of armor, regarless of distance. Seems like heavy tanks are now obsolete."
+ ATT_tooltip_APShell4:0 "Gives a §Y+200% penetration§! bonus to our §YTanks§!\n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!\n§RFuck Heavy Tanks§!"
+ 
+ 
+ ATT_Hull1:0 "Standardised Light Tank Hulls"
+ ATT_Hull1_desc:0 "By standardising the parts between our different light tank hulls types, we can reduce the time needed to produce light tanks"
+ ATT_tooltip_Hull1:0 "Gives a §Y-10% production cost§! £production_cost  bonus to our §YLight and Amphibious Tanks§!\n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Hull2:0 "Standardised Medium Tank Hulls"
+ ATT_Hull2_desc:0 "By standardising the parts between our different medium tank hulls types, we can reduce the time needed to produce medium tanks"
+ ATT_tooltip_Hull2:0 "Gives a §Y-10% production cost§! £production_cost  bonus to our §YMedium and Modern Tanks§!\n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Hull3:0 "Standardised Heavy Tank Hulls"
+ ATT_Hull3_desc:0 "By standardising the parts between our different heavy tank hulls types, we can reduce the time needed to produce heavy tanks"
+ ATT_tooltip_Hull3:0 "Gives a §Y-10% production cost§! £production_cost  bonus to our §YHeavy and Super-Heavy Tanks§!\n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ 
+ ATT_Repair1:0 "Battlefied Repair Toolkit"
+ ATT_Repair1_desc:0 "We had a genius idea: By providing repair toolkits to our tank crews, they might be able to repair them, thus, increasing the general effectiveness of our tank units."
+ ATT_tooltip_repair1:0 "Gives a §Y+10% reliability§! £repairing  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Repair2:0 "On-site Welding Kits"
+ ATT_Repair2_desc:0 "To allow for even more repairs, our tank crews will be provided with Welding kits, which will undoubtely provethemselves highly usefull in all kind of situations"
+ ATT_tooltip_repair2:0 "Gives a §Y+10% reliability§! £repairing  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Repair3:0 "Multiple Spare Parts"
+ ATT_Repair3_desc:0 "In order to achieve even more reliability, we are now shipping a lot of spare parts in advance, allowing fast replacement of non-repairable parts"
+ ATT_tooltip_repair3:0 "Gives a §Y+15% reliability§! £repairing  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Suspensions1:0 "Basic Suspensions"
+ ATT_Suspensions1_desc:0 "With this new model of suspension our tanks go slightly faster."
+ ATT_tooltip_Suspensions1:0 "Gives a §Y+10% maximum speed§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Suspensions2:0 "Improved Suspensions"
+ ATT_Suspensions2_desc:0 "With this new model of suspension our tanks are so stable that you can drink beer without spilling it inside them. Also, they go faster."
+ ATT_tooltip_Suspensions2:0 "Gives a §Y+10% maximum speed§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Suspensions3:0 "Advanced Suspensions"
+ ATT_Suspensions3_desc:0 "With this new model of suspension our tanks are faster than a Ferrari. Well, maybe a bit slightly slower, but honestly, I wasn't able to tell the difference."
+ ATT_tooltip_Suspensions3:0 "Gives a §Y+10% maximum speed§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Suspensions4:0 "Modern Suspensions"
+ ATT_Suspensions4_desc:0 "With this new model of suspension, our tank have reached faster-than-light speed. I swear it on my little borther's head."
+ ATT_tooltip_Suspensions4:0 "Gives a §Y+10% maximum speed§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon1_1:0 "Basic Reliable Engine"
+ ATT_EngineIcon1_1_desc:0 "Reliability is extremely important. What's the point of making a tank if it self-combust when you look at it? I'm looking at you Germany"
+ ATT_tooltip_EngineIcon1_1:0 "Gives a §Y+10% reliability§! £repairing  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon1_2:0 "Improved Reliable Engine"
+ ATT_EngineIcon1_2_desc:0 "I like it when my tank doesn't explode, I like it when my engine don't burn, tatatatatata tata non-self-exploging-engines!"
+ ATT_tooltip_EngineIcon1_2:0 "Gives a §Y+10% reliability§! £repairing  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon1_3:0 "Advanced Reliable Engine"
+ ATT_EngineIcon1_3_desc:0 "Once upon a time, I needed to change my engine, because it broke down. Then, I woke up, and realised it was an horrible nightmare. Fortunately, it can't happen in reality"
+ ATT_tooltip_EngineIcon1_3:0 "Gives a §Y+10% reliability§! £repairing  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon1_4:0 "Modern Reliable Engine"
+ ATT_EngineIcon1_4_desc:0 "Equipment failure is nothing but a mathematical error. A mathematical error I'm about to correct"
+ ATT_tooltip_EngineIcon1_4:0 "Gives a §Y+10% reliability§! £repairing  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon2_1:0 "Basic Assault Engine"
+ ATT_EngineIcon2_1_desc:0 "Look at those morons with their \"reliable\" engines. Pathetic. Our balls are made of titanium, and with these new engines, no one will resist our offensives"
+ ATT_tooltip_EngineIcon2_1:0 "Gives a §Y+5% breakthrough§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon2_2:0 "Improved Assault Engine"
+ ATT_EngineIcon2_2_desc:0 "Our engines are so fast that we have lost contact with our tank divisions. Amazing, isn't it? Besides, supplies are for weaklings"
+ ATT_tooltip_EngineIcon2_2:0 "Gives a §Y+5% breakthrough§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon2_3:0 "Advanced Assault Engine"
+ ATT_EngineIcon2_3_desc:0 "We have removed the brake from our tanks. This way, they cannot physically stop, making them the ideal weapon for offensives"
+ ATT_tooltip_EngineIcon2_3:0 "Gives a §Y+5% breakthrough§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon2_4:0 "Modern Assault Engine"
+ ATT_EngineIcon2_4_desc:0 "Fooorrwaard, by Jiiiiiinnnnngggggooooo!"
+ ATT_tooltip_EngineIcon2_4:0 "Gives a §Y+5% breakthrough§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon3_1:0 "Basic Efficient Engine"
+ ATT_EngineIcon3_1_desc:0 "In France, we don't have any oil, but we have some good ideas. Here is one: consumme less oil"
+ ATT_tooltip_EngineIcon3_1:0 "Gives a §Y-10% oil consumption§! £fuel_texticon  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon3_2:0 "Improved Efficient Engine"
+ ATT_EngineIcon3_2_desc:0 "The USA are flexing on me with their oil. Jokes on them, our tank are fueled by searing hate"
+ ATT_tooltip_EngineIcon3_2:0 "Gives a §Y-10% oil consumption§! £fuel_texticon  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon3_3:0 "Advanced Efficient Engine"
+ ATT_EngineIcon3_3_desc:0 "Since we won't get oil anytime soon, we have started human sacrifice to the Great Old Ones. There is no doubt that this will work"
+ ATT_tooltip_EngineIcon3_3:0 "Gives a §Y-10% oil consumption§! £fuel_texticon  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_EngineIcon3_4:0 "Modern Efficient Engine"
+ ATT_EngineIcon3_4_desc:0 "We don't know how or why, but our tanks do not require fuel to function. Weird; but impressive"
+ ATT_tooltip_EngineIcon3_4:0 "Gives a §Y-10% oil consumption§! £fuel_texticon  bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Sight1:0 "Basic Tank Sight"
+ ATT_Sight1_desc:0 ""
+ ATT_tooltip_Sight1:0 "Gives a §Y+10% Hard Attack§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Aim:0 "Improved Tank Sight"
+ ATT_Aim_desc:0 ""
+ ATT_tooltip_Aim:0 "Gives a §Y+10% Hard Attack§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Sight2:0 "Advanced Tank Sight"
+ ATT_Sight2_desc:0 ""
+ ATT_tooltip_Sight2:0 "Gives a §Y+10% Hard Attack§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Sight3:0 "Modern Tank Sight"
+ ATT_Sight3_desc:0 ""
+ ATT_tooltip_Sight3:0 "Gives a §Y+10% Hard Attack§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_AAShell1:0 "Fluor tracers"
+ ATT_AAShell1_desc:0 "By equiping our AA guns with anti air tracers, our pilot will be able to see their bullet's trajectories, allowing them to aim more effectively at the enemy planes"
+ ATT_tooltip_AAShell1:0 "Gives a §Y+40% AA attack§! bonus to all §YSPAA-Tanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_AAShell2:0 "Explosive Belts"
+ ATT_AAShell2_desc:0 "Explosive shells are much more effective against both enemy aircrafts and enemy infantry than regular shells"
+ ATT_tooltip_AAShell2:0 "Gives a §Y+20% AA attack, +40% Soft Attack§! bonus to all §YSPAA-Tanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_AAShell3:0 "Armor Piercing Belts"
+ ATT_AAShell3_desc:0 "Armor Piercing Shells are not only able to reach higher distance, they also are more effective when used against enemy armor"
+ ATT_tooltip_AAShell3:0 "Gives a §Y+40% AA attack, +40% Piercing§! bonus to all §YSPAA-Tanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_APShell1:0 "Ballistic Caps"
+ ATT_APShell1_desc:0 "Adding ballistic caps to our armor-piercing shells decrease the speed loss occured in large distance, improving the effective penetrations of our shells"
+ ATT_tooltip_APShell1:0 "Gives a §Y+10% Piercing§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_APShell2:0 "Tungsten Cores"
+ ATT_APShell2_desc:0 "Tungsten is much more dense than steel, making it very effective at penetrating armor when used in tank shells"
+ ATT_tooltip_APShell2:0 "Gives a §Y+15% Piercing§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+
+ ATT_APShell3:0 "Discarding Sabot Shells"
+ ATT_APShell3_desc:0 "Rather than having a tungsten core surrounded by steel, we'll now use only tungsten to make a single piercing sub-projectile, while the rest of the shell will discard upon launching"
+ ATT_tooltip_APShell3:0 "Gives a §Y+15% Piercing§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_HEShell1:0 "Extended range, full bore"
+ ATT_HEShell1_desc:0 ""
+ ATT_tooltip_HEShell1:0 "Gives a §Y+10% Soft Attack§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_HEShell1:0 "Proximity Fuses"
+ ATT_HEShell1_desc:0 "Adding ballistic caps to our armor-piercing shells decrease the speed loss occured in large distance, improving the effective penetrations of our shells"
+ ATT_tooltip_HEShell1:0 "Gives a §Y+10% Soft Attack§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_HEShell3:0 "High-explosive squash head Shells"
+ ATT_HEShell3_desc:0 ""
+ ATT_tooltip_HEShell1:0 "Gives a §Y+10% Soft Attack§! bonus to all §YTanks§! \n§RNOTE: Due to game limitations, this is done through a hidden National Spirit giving the buff to the equipment, meaning that the buff will not appear on the equipment stats§!"
+ 
+ ATT_Camo:0 "Three Tone Camouflage"
+ ATT_Camo_desc:0 "Three Tone Camouflage"
+ ATT_CamoDesert:0 "Desert Camouflage"
+ ATT_CamoDesert_desc:0 ""
+ ATT_CamoWinter:0 "Winter Camouflage"
+ ATT_CamoWinter_desc:0 ""

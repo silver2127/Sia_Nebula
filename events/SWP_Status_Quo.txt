@@ -1,0 +1,199 @@
+﻿##SkelSa's White peace. WHITEPEACE WILL RESTORE PRE-WAR STATUS
+##From in localization is always small!
+
+##Adding the namespace
+add_namespace = whitepeace
+
+
+##Event is triggered through slot
+country_event = {
+
+    id = whitepeace.1                          
+    title = whitepeace.1.t                 
+    desc = whitepeace.1.d                    
+	picture = GFX_report_event_soviet_tanks_snow
+	immediate = { log = "[GetDateText]: [Root.GetName]: whitepeace.1 -> Whitepeace event chain starts" }
+
+	is_triggered_only = yes 
+		
+	
+	option = {		#Send invitation to losing country 								
+		name = whitepeace.1.a
+
+
+		every_country = {
+			
+			limit = {				
+				has_war_with = ROOT
+			}		
+			country_event = { days = 1 id = whitepeace.2}		
+		}
+		
+		set_global_flag = peace_in_process
+
+	}
+		
+	#Fight will go on!
+	option = { 	
+	name = whitepeace.1.b
+	
+	set_country_flag = peace_declined
+	
+	}		
+	
+}	
+	
+	
+	
+##tag = LOSER/AI COUNTRY	
+country_event = {
+
+    id = whitepeace.2  
+	
+    title = whitepeace.2.t                  
+    desc = whitepeace.2.d                    
+	picture = GFX_report_event_soviet_tanks_snow 
+	immediate = { log = "[GetDateText]: [Root.GetName]: whitepeace.2 -> Whitepeace event chain is ongoing; Country B can decide." }
+
+	is_triggered_only = yes
+
+	#Yes
+	option = { 								
+	name = whitepeace.2.a 
+	ai_chance = {factor = 100}
+
+		FROM = { country_event = { days = 1 id = whitepeace.3} }
+		
+		##In case of guarantee
+		#every_enemy_country = {
+		#
+		#	limit = {
+		#		has_guaranteed = ROOT ##ROOT IS THE AI COUNTRY WHICH WAS GUARANTEED!
+		#	
+		#	}
+		#	
+		#	country_event = { days = 1 id = whitepeace.3}		
+		#	
+		#}
+
+	}	
+		
+	#No
+	option = { 								
+	name = whitepeace.2.b 
+	ai_chance = {factor = 0}
+				
+		ROOT = {	
+			country_event = {  days = 1 id = whitepeace.4 }
+			
+		}
+		
+		FROM = {	
+			set_country_flag = peace_declined
+			clr_country_flag = peace_in_progress
+		}
+
+			
+	}
+
+}
+
+##Exceptionally contains the rest for now!
+
+##PLAYER: AI HAS AGREED
+country_event = {
+
+    id = whitepeace.3                         
+    title = whitepeace.3.t                  
+    desc = whitepeace.3.d                   
+	picture = GFX_report_event_soviet_tanks_snow     						
+	immediate = { log = "[GetDateText]: [Root.GetName]: whitepeace.3 -> Whitepeace event chain is finished; Peace was accepted!" }
+	
+	is_triggered_only = yes 
+
+
+	#Yes
+	option = { 
+	name = whitepeace.3.a 
+
+		##WHITEPEACE
+		
+		ROOT = { reverse_add_opinion_modifier = { target = FROM modifier = swp_signed_peace_treaty } }	
+		ROOT = { white_peace = FROM }
+
+		
+		##War Support and Stability REMOVED TEMPORARY; WILL ADD NEW SYSTEM
+		#FROM = {
+		#
+		#	add_war_support = -0.02
+		#	add_stability = -0.01
+		#
+		#	if = {
+		#		limit = {
+		#			has_global_flag = swp_easier_decisions_settings
+		#		}
+		#		
+		#		add_war_support = -0.03
+		#		add_stability = -0.02			
+		#	}
+		#
+		#}
+		
+		
+		#ROOT = {
+		#
+		#	add_war_support = -0.02
+		#	add_stability = -0.01
+		#
+		#	if = {
+		#		limit = {
+		#			has_global_flag = swp_easier_decisions_settings
+		#		}
+		#		
+		#		add_war_support = -0.03
+		#		add_stability = -0.02			
+		#	}
+		#
+		#}
+		
+		
+		clr_global_flag = peace_in_process 
+		
+		##Adding one country flag for the player after 30 days (Truce_End)!
+		if = {
+			limit = {
+				is_ai = no
+			}
+			
+			country_event = { days = 30 id = dw_flags.11 }
+		}
+
+	
+	}	
+}
+
+	
+##Winner gets response, here it's NO
+country_event = {
+
+    id = whitepeace.4                        
+    title = whitepeace.4.t                 
+    desc = whitepeace.4.d                     
+	picture = GFX_report_event_soviet_tanks_snow     						
+	immediate = { log = "[GetDateText]: [Root.GetName]: whitepeace.4 -> Whitepeace event chain is finished; Peace was refused!" }
+	
+	is_triggered_only = yes  
+
+	
+	#NO
+	option = {
+	name = whitepeace.4.a 
+	
+		clr_global_flag = peace_in_process 
+		FROM = { clr_country_flag = peace_declined }
+
+
+	}
+
+			
+}

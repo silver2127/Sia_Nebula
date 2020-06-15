@@ -1,0 +1,33 @@
+
+state={
+	id=372
+	name="STATE_372"
+	state_category = city
+	resources={
+		steel=24
+		oil=12
+	}
+	history={
+		owner = GRA
+		victory_points = { 3476 16 }
+		buildings = {
+			infrastructure = 5
+			dockyard = 1
+			3476 = {
+				naval_base = 5
+			}
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 4
+			anti_air_building = 0
+		}
+		add_core_of = GRA
+		add_core_of = NTK
+		add_core_of = BNA
+	}
+	provinces={
+		30 2651 2904 3476 3671 7429 7440 7500 
+	}
+	manpower=897500
+	buildings_max_level_factor=1.000
+}

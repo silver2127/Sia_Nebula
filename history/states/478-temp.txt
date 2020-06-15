@@ -1,0 +1,28 @@
+state={
+	id=478
+	name="STATE_478"
+	state_category = town
+	history={
+		owner = VKA
+		victory_points = { 3206 5 }
+		buildings = {
+			infrastructure = 3
+			#dockyard = 0
+			3206 = {
+				naval_base = 2
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = VKA
+		add_core_of = LNA
+		add_core_of = VIT
+	}
+	provinces={
+		1068 3206 3329 3861 7032 7047 7079 7106 
+	}
+	manpower=105750
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,30 @@
+state={
+	id=47
+	name="STATE_47"
+	state_category = metropolis
+	resources={
+		steel=36
+		aluminium=12
+	}
+	history={
+		owner = TTR
+		victory_points = { 3505 16 }
+		buildings = {
+			infrastructure = 6
+			dockyard = 0
+			3505 = {
+				naval_base = 2
+			}
+			industrial_complex = 5
+			arms_factory = 3
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = TTR
+	}
+	provinces={
+		1038 3137 3505 3605 5582 5593 5595 5626 5632 5690 5691 
+	}
+	manpower=3456000
+	buildings_max_level_factor=1.000
+}

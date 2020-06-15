@@ -1,0 +1,29 @@
+
+state={
+	id=71
+	name="STATE_71"
+	resources={
+		grain=40
+	}
+	history={
+		owner = TCI
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 0
+			synthetic_refinery = 2
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TCI
+
+	}
+
+	provinces={
+		660 742 820 1266 5955 5980 5993 6022 6028 6061 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

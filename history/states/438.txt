@@ -1,0 +1,28 @@
+
+state={
+	id=438
+	name="STATE_438"
+
+	history={
+		owner = KOE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = KOE
+		add_core_of = NCU
+
+	}
+
+	provinces={
+		1907 2143 3117 3431 6134 6135 6176 6213 6214 
+	}
+	manpower=9000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

@@ -1,0 +1,32 @@
+state={
+	id=483
+	name="STATE_483"
+	state_category = large_town
+	resources={
+		steel=12
+		oil=12
+	}
+	history={
+		owner = VIT
+		victory_points = { 7463 4 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			7463 = {
+				naval_base = 1
+			}
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = VIT
+		add_core_of = MTA
+		add_core_of = VKA
+	}
+	provinces={
+		3935 4156 7441 7445 7460 7463 7477 
+	}
+	manpower=320900
+	buildings_max_level_factor=1.000
+}

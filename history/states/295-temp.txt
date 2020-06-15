@@ -1,0 +1,29 @@
+
+state={
+	id=295
+	name="STATE_295"
+	state_category = large_city
+	resources={
+		aluminium=32
+		tungsten=48
+		chromium=32
+		steel=48
+	}
+	history={
+		owner = TCM
+		victory_points = { 3816 8 }
+		buildings = {
+			infrastructure = 8
+			dockyard = 2
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 3
+			anti_air_building = 0
+		}
+		add_core_of = TCM
+	}
+	provinces={
+		1471 2204 2687 2782 2899 3074 3242 3816 4120 6533 6534 6550 
+	}
+	manpower=2985000
+	buildings_max_level_factor=1.000

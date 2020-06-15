@@ -1,0 +1,193 @@
+﻿##This file is for an AI to ask for peace by themselves
+
+####CURRENTLY DEACTIVATED!####
+
+add_namespace = swp_winning_dynamic
+
+
+
+###################DYNAMIC TRIGGERING##########################################
+
+##NO FACTION
+country_event = {
+
+    id = swp_winning_dynamic.1                          
+    title =  swp_winning.1.t
+    desc = swp_winning.1.d              
+	picture = GFX_report_event_soviet_tanks_snow   						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning_dynamic.1" }
+	
+	trigger = {
+	
+		is_ai = yes
+		is_in_faction = no
+		surrender_progress > 0.30
+		
+		
+		##manpower and economy laws
+		has_country_flag = swp_laws
+		
+		#player is winning; AI has an enemy, which is the player and has the flag for him 
+		any_enemy_country = {
+			is_ai = no
+			has_country_flag = dw_player_war
+			
+		}
+
+			
+		##Option has to be enabled
+		has_global_flag = dynamic_peace_enabled	
+		##can't fire, if peace was declined or is in progress. Flags are cleared after negotiation is finished
+		NOT = { has_country_flag = peace_declined }
+		NOT = { has_global_flag = peace_in_process }
+		
+		
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	
+	##Send invitation to PLAYER 
+	option = {
+		name = swp_winning.1.a 
+		ai_chance = { factor = 100 }
+
+		every_country = {
+		
+			limit = {
+				has_war_with = ROOT
+				is_ai = no
+			}
+		
+		country_event = { days = 1 id = swp_winning.4}
+		
+		}
+
+
+	}
+	
+	##No peace deal, AI COUNTRY doesn't trigger the chain
+	option = {
+	name = swp_winning.1.b
+
+		set_country_flag = peace_declined
+		
+		hidden_effect = {
+			country_event = { days = 200 id = dw_flags.7 }	
+		}
+		
+	}
+		
+}
+
+
+##TAG = FACTION LEADER (AI); is asked directly ##CURRENTLY DISABLED##
+##MEMBERS are asked later
+country_event = {
+
+    id = swp_winning_dynamic.2                         
+    title = swp_winning.2.t                  
+    desc = swp_winning.2.d                 
+	picture = GFX_report_event_soviet_tanks_snow 						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning_dynamic.2" }
+	
+	#hidden = yes 
+	#fire_only_once = yes 
+	is_triggered_only = yes
+	
+	#trigger = {
+	
+	#	is_ai = yes
+	#	is_in_faction = yes
+	#	is_faction_leader = yes
+
+		
+	#	OR = {
+		
+	#	##manpower and economy laws
+	#	has_country_flag = swp_laws
+			
+		
+	#	}
+
+	#	any_allied_country = {
+				
+	#		##manpower and economy laws
+	#		has_country_flag = swp_laws
+	#	}
+		
+	#	OR = {
+		
+	#	any_allied_country = {
+	#		OR = {
+	#			has_capitulated = yes
+	#			surrender_progress > 0.30
+	#		}
+
+	#		surrender_progress > 0.30	
+#
+	#	}
+
+		
+		#tag = AI, player is winning!
+	#	any_enemy_country = {
+	#		is_ai = no
+	#		has_country_flag = dw_player_war
+
+		
+	#	}
+
+		##manpower and economy laws
+	#	has_country_flag = swp_laws
+			
+	#	has_global_flag = dynamic_peace_enabled
+	#	NOT = { has_country_flag = peace_declined }
+	#	NOT = { has_global_flag = peace_in_process }
+	#
+	#
+	#	}		
+	#}
+
+
+	#mean_time_to_happen = {
+	#	days = 2
+	#}
+	
+
+	#Send peace proposal to PLAYER
+	option = { 								
+	name = swp_winning.2.a
+	ai_chance = {factor = 100}
+	
+		every_country = {
+		
+			limit = {
+
+				has_war_with = ROOT
+				is_ai = no
+				is_subject = no
+
+			}
+		
+		country_event = { days = 1 id = swp_winning.5}
+
+		}
+
+	}
+	
+	#Fight shall continue, abort the event chain
+	option = { 	
+	name = swp_winning.2.b
+	ai_chance = {factor = 0}
+	
+	set_country_flag = peace_declined
+		
+		hidden_effect = {
+			country_event = { days = 200 id = dw_flags.7 }	
+		}
+	
+	}
+	
+}

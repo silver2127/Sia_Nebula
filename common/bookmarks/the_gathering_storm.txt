@@ -1,0 +1,37 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1824.6.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "TTR"
+		default = yes
+
+		"TTR"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = technocracy
+		}
+		"HHE"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = theocracy
+		}
+		"SES"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = enlightenism
+		}
+		"TCI"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = authoritarianism
+		}
+		# minors from DLC ####
+		"LLA"={
+			minor = yes
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = authoritarianism
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

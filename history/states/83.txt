@@ -1,0 +1,26 @@
+
+state={
+	id=83
+	name="STATE_83"
+
+	history={
+		owner = GSP
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = GSP
+
+	}
+
+	provinces={
+		1490 1585 2601 3638 3765 5110 5159 5180 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

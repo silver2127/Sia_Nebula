@@ -1,0 +1,1071 @@
+ideas = {
+	hidden_ideas = {
+	
+		ATT_idea_Armor2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				light_tank_equipment = {
+					armor_value = 0.5
+					breakthrough = -0.4
+					maximum_speed = -0.5
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Armor3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					armor_value = 0.15
+					instant = no
+				}
+			}		
+		}
+		
+		ATT_idea_Armor5 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					experience_loss_factor = -0.1
+					casualty_trickleback = 0.1
+					reliability_factor = 0.05
+					armor_value = 0.05
+					instant = no
+				}
+			}		
+		}
+		
+		ATT_idea_Armor4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				light_tank_equipment = {
+					armor_value = 0.1
+					hardness = 0.1
+					instant = yes
+				}
+				light_tank_artillery_equipment = {
+					armor_value = 0.1
+					hardness = 0.1
+					instant = yes
+				}
+				light_tank_destroyer_equipment = {
+					armor_value = 0.1
+					hardness = 0.1
+					instant = yes
+				}
+				light_tank_aa_equipment = {
+					armor_value = 0.1
+					hardness = 0.1
+					instant = yes
+				}
+				amphibious_tank_equipment = {
+					armor_value = 0.1
+					hardness = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Armor6 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				light_tank_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+				light_tank_artillery_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+				light_tank_destroyer_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+				light_tank_aa_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+				amphibious_tank_equipment = {
+					build_cost_ic = -0.2
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Armor8 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					experience_loss_factor = -0.2
+					casualty_trickleback = 0.2
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Armor1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					armor_value = 0.1
+					instant = yes
+				}
+				heavy_tank_artillery_equipment = {
+					armor_value = 0.1
+					instant = yes
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.1
+					instant = yes
+				}
+				heavy_tank_aa_equipment = {
+					armor_value = 0.1
+					instant = yes
+				}
+				super_heavy_tank_equipment = {
+					armor_value = 0.1
+					instant = yes
+				}
+				super_heavy_tank_artillery_equipment = {
+					armor_value = 0.1
+					instant = yes
+				}
+				super_heavy_tank_destroyer_equipment = {
+					armor_value = 0.1
+					instant = yes
+				}
+				super_heavy_tank_aa_equipment = {
+					armor_value = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Armor7 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = { #Enjoy it while it last. Super AP shells will make this useless, I can guarantee it
+				heavy_tank_equipment = {
+					armor_value = 0.3
+					instant = yes
+				}
+				heavy_tank_artillery_equipment = {
+					armor_value = 0.3
+					instant = yes
+				}
+				heavy_tank_destroyer_equipment = {
+					armor_value = 0.3
+					instant = yes
+				}
+				heavy_tank_aa_equipment = {
+					armor_value = 0.3
+					instant = yes
+				}
+				super_heavy_tank_equipment = {
+					armor_value = 0.3
+					instant = yes
+				}
+				super_heavy_tank_artillery_equipment = {
+					armor_value = 0.3
+					instant = yes
+				}
+				super_heavy_tank_destroyer_equipment = {
+					armor_value = 0.3
+					instant = yes
+				}
+				super_heavy_tank_aa_equipment = {
+					armor_value = 0.3
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Hull1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				light_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				light_tank_artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				light_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				light_tank_aa_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				amphibious_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Hull2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				medium_tank_artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				medium_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				medium_tank_aa_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				modern_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				modern_tank_artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				modern_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				modern_tank_aa_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Hull3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				heavy_tank_artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				heavy_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				heavy_tank_aa_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				super_heavy_tank_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				super_heavy_tank_artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				super_heavy_tank_destroyer_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				super_heavy_tank_aa_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_APShell4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					ap_attack = 2 #Because fuck you and your heavy tanks
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_repair1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					reliability = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_repair2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					reliability = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_repair3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					reliability = 0.15
+					instant = yes
+				}
+			}		
+		}
+		
+		
+		ATT_idea_Suspensions1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					maximum_speed = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Suspensions2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					maximum_speed = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Suspensions3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					maximum_speed = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Suspensions4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					maximum_speed = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon1_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					reliability = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon2_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					breakthrough = 0.05
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon3_1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					fuel_consumption = -0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon1_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					reliability = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon2_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					breakthrough = 0.05
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon3_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					fuel_consumption = -0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon1_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					reliability = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon2_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					breakthrough = 0.05
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon3_3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					fuel_consumption = -0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon1_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					reliability = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon2_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					breakthrough = 0.05
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_EngineIcon3_4 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					fuel_consumption = -0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Aim = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					hard_attack = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Sight1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					hard_attack = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Sight2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					hard_attack = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_Sight3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					hard_attack = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_AAShell1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				modern_tank_aa_equipment = {
+					air_attack = 0.4
+					instant = yes
+				}
+				light_tank_aa_equipment = {
+					air_attack = 0.4
+					instant = yes
+				}
+				medium_tank_aa_equipment = {
+					air_attack = 0.4
+					instant = yes
+				}
+				heavy_tank_aa_equipment = {
+					air_attack = 0.4
+					instant = yes
+				}
+				super_heavy_tank_aa_equipment = {
+					air_attack = 0.4
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_AAShell2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				modern_tank_aa_equipment = {
+					air_attack = 0.2
+					soft_attack = 0.4
+					instant = yes
+				}
+				light_tank_aa_equipment = {
+					air_attack = 0.2
+					soft_attack = 0.4
+					instant = yes
+				}
+				medium_tank_aa_equipment = {
+					air_attack = 0.2
+					soft_attack = 0.4
+					instant = yes
+				}
+				heavy_tank_aa_equipment = {
+					air_attack = 0.2
+					soft_attack = 0.4
+					instant = yes
+				}
+				super_heavy_tank_aa_equipment = {
+					air_attack = 0.2
+					soft_attack = 0.4
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_AAShell3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				modern_tank_aa_equipment = {
+					air_attack = 0.4
+					ap_attack = 0.4
+					instant = yes
+				}
+				light_tank_aa_equipment = {
+					air_attack = 0.4
+					ap_attack = 0.4
+					instant = yes
+				}
+				medium_tank_aa_equipment = {
+					air_attack = 0.4
+					ap_attack = 0.4
+					instant = yes
+				}
+				heavy_tank_aa_equipment = {
+					air_attack = 0.4
+					ap_attack = 0.4
+					instant = yes
+				}
+				super_heavy_tank_aa_equipment = {
+					air_attack = 0.4
+					ap_attack = 0.4
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_APShell1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					ap_attack = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_APShell2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					ap_attack = 0.15
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_APShell3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					ap_attack = 0.15
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_HEShell1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					soft_attack = 0.1
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_HEShell2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					soft_attack = 0.15
+					instant = yes
+				}
+			}		
+		}
+		
+		ATT_idea_HEShell3 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				armor_equipment = {
+					soft_attack = 0.15
+					instant = yes
+				}
+			}		
+		}
+	
+	}
+}

@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		four_children_per_family = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				monthly_population = 0.2
+			}
+		}
+		six_children_per_family = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				monthly_population = 0.35
+			}
+		}
+		harmony_imperal_improvement = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantee
+
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.1
+				theocracy_drift = 0.05
+				subjects_autonomy_gain = -0.25
+			}
+		}
+	}
+}

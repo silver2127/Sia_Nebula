@@ -1,0 +1,185 @@
+﻿add_namespace = HHE
+
+country_event = {
+	id = HHE.0
+	title = HHE.0.t
+	desc = HHE.0.d
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+
+	option = { 
+		name = HHE.0.a
+		ai_chance = {
+			factor = 10
+		}
+		create_country_leader = {
+			name = "Luke Deed"
+			desc = "POLITICS_XXX_DESC"
+			picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			expire = "1965.1.1"
+			ideology = theocratic_leader
+			traits = {
+				assassination_survivor
+				inexperienced_priest
+			}
+			id = 200
+		}
+	}
+}
+
+country_event = {
+	id = HHE.1
+	title = HHE.1.t
+	desc = HHE.1.d
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+
+	option = { 
+		name = HHE.1.a
+		ai_chance = {
+			factor = 10
+		}
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Harmonain Senate"
+			desc = "POLITICS_XXX_DESC"
+			#picture = "Portrait_XXX.dds"
+			expire = "1965.1.1"
+			ideology = theocratic_leader
+			traits = {
+				harmonain_senate
+			}
+			id = 201
+		}
+	}
+}
+
+country_event = {
+	id = HHE.2
+	title = HHE.2.t
+	desc = HHE.2.desc
+	picture = GFX_report_event_usa_election_generic
+	is_triggered_only = yes
+
+	option = {  # Tradition
+		name = HHE.2.a
+		ai_chance = {
+			base = 1
+			factor = 12
+		}
+		create_country_leader = {
+			name = "Gabriel Strongheart"
+			desc = "POLITICS_XXX_DESC"
+			#picture = "Portrait_XXX.dds"
+			expire = "1965.1.1"
+			ideology = theocratic_leader
+			traits = {
+				silent_workhorse
+			}
+			id = 202
+		}
+	}
+	option = {  # Influencer
+		name = HHE.2.b
+		ai_chance = {
+			base = 1
+			factor = 8
+		}
+		create_country_leader = {
+			name = "XXX"
+			desc = "POLITICS_XXX_DESC"
+			#picture = "Portrait_XXX.dds"
+			expire = "1965.1.1"
+			ideology = theocratic_leader
+			traits = {
+				political_dancer
+				ideological_crusader
+			}
+			id = 203
+		}
+	}
+	option = {  # Authority
+		name = HHE.2.c
+		ai_chance = {
+			base = 1
+			factor = 6
+		}
+		create_country_leader = {
+			name = "XXX"
+			desc = "POLITICS_XXX_DESC"
+			#picture = "Portrait_XXX.dds"
+			expire = "1965.1.1"
+			ideology = authoritarian_leader
+			traits = {
+				prince_of_terror
+			}
+			id = 204
+		}
+		add_popularity = {
+			ideology = authoritarianism
+			popularity = 0.08
+		}
+		set_politics = {
+			ruling_party = authoritarianism
+			elections_allowed = no
+		}
+	}
+	option = {  # Warmonger
+		name = HHE.2.d
+		ai_chance = {
+			base = 1
+			factor = 3
+		}
+		create_country_leader = {
+			name = "Archard Vlad"
+			desc = "POLITICS_XXX_DESC"
+			picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+			expire = "1965.1.1"
+			ideology = authoritarian_leader
+			traits = {
+				warmonger
+				two_country_rule
+			}
+			id = 205
+		}
+		LPA = {
+			create_country_leader = {
+				name = "Archard Vlad"
+				desc = "POLITICS_XXX_DESC"
+				picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+				expire = "1965.1.1"
+				ideology = authoritarian_leader
+				traits = {
+					warmonger
+					two_country_rule
+				}
+				id = 401
+			}
+		}
+		add_popularity = {
+			ideology = authoritarianism
+			popularity = 0.15
+		}
+		set_politics = {
+			ruling_party = authoritarianism
+			elections_allowed = no
+		}
+	}
+	option = {  # Senate
+		name = HHE.2.e
+		ai_chance = {
+			factor = 6
+		}
+		create_country_leader = {
+			name = "The Senate"
+			desc = "POLITICS_XXX_DESC"
+			#picture = "Portrait_XXX.dds"
+			expire = "1965.1.1"
+			ideology = theocratic_leader
+			traits = {
+				
+			}
+			id = 206
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state={
+	id=402
+	name="STATE_402"
+	state_category = large_town
+	history={
+		owner = USA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 0
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = USA
+	}
+	provinces={
+		3050 4537 4581 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

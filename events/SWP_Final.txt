@@ -1,0 +1,492 @@
+﻿##This file contains every event to formally end a war. Loser pay territory, get spirits, get a dmz and finally a peace agreement
+##However, if the player wins against a faction, the events are in SWP_Winning.txt
+add_namespace = swp_dmz
+add_namespace = swp_final
+add_namespace = whitepeace ##For Status quo
+
+
+########################################
+###  TRANSFER STATE AND WHITEPEACE   ###
+########################################
+
+##IMPORTANT: TRIGGER TO BRING IN A GUARANTEOR AS LOSER!
+
+##if PLAYER = LOSER -> I get an event
+##if PLAYER = WINNER -> AI gets event
+##Factions only get this event when player losing
+country_event = {
+
+    id = swp_final.1                        
+    title = swp_final.1.t                  
+    desc = swp_final.1.d                    
+	picture = GFX_report_event_soviet_tanks_snow    						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_final.1" }
+	
+	is_triggered_only = yes 
+
+	
+	##Since it works both ways, an AI winner and her faction member need "is_in_faction_with"
+	immediate = {
+
+		hidden_effect = {
+			
+			every_state = {										  #adding state flags; later those states are annexed
+				
+				limit = {
+				
+					#Loser or allies own territory			
+					OR = {
+						
+						any_country = {
+							OR = {
+								is_subject_of = ROOT              ##faction only matters to player = losing
+								is_in_faction_with = ROOT
+								any_country = {
+									has_guaranteed = ROOT
+									has_war_with = FROM							
+								}
+								tag = ROOT						
+							}
+							
+						owns_state = PREV
+						}					
+					}
+
+					#Winner or allies control territory
+					OR = {											
+						
+						any_country = {
+							OR = {
+								is_subject_of = FROM
+								is_in_faction_with = FROM
+								any_country = {
+									has_guaranteed = FROM
+									has_war_with = ROOT							
+								}								
+								tag = FROM
+							}
+							
+							controls_state = PREV 						
+						}
+					}
+				}
+
+			set_state_flag = SWP_demanded
+				
+			}
+
+
+			##IN CASE OF PLAYING WITH A BUDDY
+			every_state = {										  #adding state flags; later those states are annexed
+				
+				limit = {
+				
+					#Loser or allies own territory			
+					OR = {
+						
+						any_country = {
+							OR = {
+								is_subject_of = ROOT              ##faction only matters to player = losing
+								is_in_faction_with = ROOT
+								any_country = {
+									has_guaranteed = ROOT
+									has_war_with = FROM							
+								}
+								tag = ROOT						
+							}
+							
+						owns_state = PREV
+						}					
+					}
+
+					#Player in a faction also controls territory
+					OR = {											
+						
+						any_country = {
+							is_ai = no 
+							has_war_with = ROOT	
+							NOT = { tag = FROM }
+								
+							OR = {
+								is_subject_of = FROM
+								is_in_faction_with = FROM
+								any_country = {
+									has_guaranteed = FROM
+									has_war_with = ROOT							
+								}
+								
+							}
+							
+							controls_state = PREV 						
+						}
+					}
+				}
+
+			set_state_flag = SWP_demanded_MP
+				
+			}
+
+			
+			##No triggered whitepeace in case the vanilla conference was enabled
+			if = { 
+				limit = { 
+					NOT = { has_global_flag = swp_vanilla_conference_settings } 
+				} 
+				
+			FROM = { reverse_add_opinion_modifier = { target = ROOT modifier = swp_signed_peace_treaty } } 
+			FROM = { white_peace = ROOT }
+
+				if = {
+					limit = {
+						AND = {
+							is_in_faction = yes					
+						}				
+					}
+					every_country = {
+						limit = {
+							OR = {
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT						
+							}
+						}
+						
+					FROM = { reverse_add_opinion_modifier = { target = PREV modifier = swp_signed_peace_treaty } }		
+					FROM = { white_peace = PREV }
+					
+					
+					}		
+				}
+			
+			}
+
+			
+			
+			##Adding one country flag for the player after 30 days (Truce_End)!
+			if = {
+				limit = {
+					is_ai = no
+				}
+				
+				country_event = { days = 30 id = dw_flags.11 }
+			}
+		
+			##NEWS	
+			if = {
+				limit = {		
+					NOT = { has_global_flag = swp_news_read}			
+				}
+			
+				news_event = { id = dynamic_wp_news.2 }			
+			}
+
+		}
+	
+	}
+
+	#DMZ event, state transfer and spirits 
+	option = { 
+		name = swp_final.1.a
+
+
+			##demilitarized Zone event. Requires Loser nation to control at least 5 states	
+			FROM = {country_event = { days = 7 id = swp_dmz.1} }
+			
+			##Adding one country flag for the player after 30 days (Truce_End)!
+			if = {
+				limit = {
+					is_ai = no
+				}
+				
+				country_event = { days = 30 id = dw_flags.11 }
+				
+			}
+			
+	
+			##national spirits for losers which lost territory
+			every_country = {
+				limit = {			
+					has_country_flag = swp_loser
+					any_state = {
+						is_owned_by = PREV						
+						has_state_flag = SWP_demanded
+					}
+						
+				}
+			
+				add_timed_idea = { idea = SWP_reparations days = 130 } 
+				add_timed_idea = { idea = SWP_government days = 60 }
+
+				
+				##No easier decisions were enabled; penalties are normal
+				if = {
+					limit = {
+						NOT = { has_global_flag = swp_easier_decisions_settings }
+					}
+					
+					add_war_support = -0.25
+					add_stability = -0.15
+					add_political_power = -65
+				}
+				
+				
+				##Easier decisions were enabled; higher penalties for leaving the war
+				if = {
+					limit = {
+						has_global_flag = swp_easier_decisions_settings
+					}
+					
+					add_war_support = -0.30
+					add_stability = -0.15
+					add_political_power = -100
+				}
+			
+			}
+			
+			
+			##national spirits for losers which did NOT lose territory
+			every_country = {
+				limit = {			
+					has_country_flag = swp_loser
+					NOT = {					
+						any_state = {
+							is_owned_by = PREV						
+							has_state_flag = SWP_demanded
+						}
+					
+					}
+						
+				}
+
+				
+				##No easier decisions were enabled; penalties are normal
+				if = {
+					limit = {
+						NOT = { has_global_flag = swp_easier_decisions_settings }
+					}
+					
+					add_war_support = -0.15
+					add_stability = -0.10
+					add_political_power = -35
+				}
+												
+				
+				##Easier decisions = higher penalties
+				if = {
+					limit = {
+						has_global_flag = swp_easier_decisions_settings
+					}
+					
+					add_war_support = -0.20
+					add_stability = -0.15
+					add_political_power = -70
+				}
+			
+			}
+			
+			
+			every_country = {
+				limit = {			
+					has_country_flag = swp_winner				
+				}
+				
+				add_timed_idea = { idea = SWP_victorious days = 130 }
+				
+				##No easier decisions were enabled; penalties are normal
+				if = {
+					limit = {
+						NOT = { has_global_flag = swp_easier_decisions_settings }
+					}
+					
+					add_war_support = -0.05
+					add_stability = -0.05
+					add_political_power = 40
+				}
+				
+				
+				##Easier decisions = higher penalties
+				if = {
+					limit = {
+						has_global_flag = swp_easier_decisions_settings
+					}
+					
+					add_war_support = -0.15
+					add_stability = -0.10
+					add_political_power = 25
+				}
+			
+					
+			}
+			
+			##In case the original system was used (No vanilla conferences)
+			if = {
+				limit = {
+					NOT = { has_global_flag = swp_vanilla_conference_settings }
+				
+				}
+				
+				##CEDING STATES	
+				every_state = {						
+					limit = {
+						has_state_flag = SWP_demanded		
+					}
+
+					FROM = { transfer_state = PREV }
+				}
+				
+				
+				##CEDING STATES	TO MP BUDDY (MIGHT NOT SUPPORT 3 or more players) ++ will be done soon
+				every_state = {						
+					limit = {
+						has_state_flag = SWP_demanded_MP		
+					}	
+					every_country = {
+						limit = {
+							is_ai = no
+							is_in_faction_with = FROM
+							NOT = { tag = FROM }
+							owns_state = PREV							
+						}
+					
+						transfer_state = PREV
+					} 
+				}
+				
+			}
+			
+			
+			##In case vanilla peace conferences were enabled and loser is AI
+			if = {
+				limit = {
+					has_global_flag = swp_vanilla_conference_settings
+					FROM = { has_country_flag = swp_winner }
+				
+				}
+				
+				##Give all losers a national spirit
+				every_country = {						
+					limit = {
+						has_country_flag = swp_loser
+						is_ai = yes						
+					}	
+					add_timed_idea = { idea = SWP_surrender_limit days = 5 }
+				}
+
+				
+			}
+					
+
+			
+			####Removing all flags####
+			every_country = {
+			
+				##Remove the country flag for all loser nations
+				if = { limit = { has_country_flag = swp_loser } clr_country_flag = swp_loser }				
+				##Remove country flag for all winner nations
+				if = { limit = { has_country_flag = swp_winner } clr_country_flag = swp_winner }
+
+			}
+			
+			##remove state flags			
+			country_event = { days = 20 id = dw_flags.10 }
+			
+			##Remove global peace in process flag
+			if = { limit = { has_global_flag = peace_in_process } clr_global_flag = peace_in_process }
+					
+	}
+	
+}
+
+
+##tag = AI COUNTRY; PLAYER has refused (LOSER HAS NO FACTION)
+country_event = {
+
+    id = swp_final.2                       
+    title = swp_final.2.t                 
+    desc = swp_final.2.d                   
+	picture = GFX_report_event_soviet_tanks_snow      						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_final.2" }
+	
+	is_triggered_only = yes 
+
+	
+	#Damn
+	option = { 
+	name = swp_final.2.a
+	
+		set_country_flag = peace_declined
+		
+		hidden_effect = {
+			country_event = { days = 200 id = dw_flags.7 }	
+		}
+		
+		every_country = {
+
+			if = { limit = { has_country_flag = swp_loser } clr_country_flag = swp_loser }
+			
+			if = { limit = { has_country_flag = swp_winner } clr_country_flag = swp_winner }
+
+		}
+		
+		##Peace negotiations have ended; can start in another place in the world
+		if = { limit = { has_global_flag = peace_in_process } clr_global_flag = peace_in_process }
+
+	
+	}
+	
+}
+
+
+##################################
+####    DEMILITARIZED ZONE    ####
+##################################
+
+##tag = WINNER
+country_event = {
+
+    id = swp_dmz.1                       
+    title = swp_dmz.1.t               
+    desc = swp_dmz.1.d                   
+	picture = GFX_report_event_soviet_tanks_snow
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_dmz.1" }
+
+	is_triggered_only = yes 
+
+	
+	option = { 	##We impose a DMZ along the border
+	name = swp_dmz.1.a
+	
+		trigger = {		
+			FROM = { num_of_controlled_states > 5 }			
+		}
+	
+	#Every neighbor state gets demilitarized
+		every_state = {
+		
+			limit = {
+			
+				is_controlled_by = ROOT												
+				is_owned_by = ROOT
+			
+			}
+		
+			every_neighbor_state = {
+			
+				limit = {					
+					is_owned_by = FROM
+				}
+
+			set_demilitarized_zone = yes }
+
+		}	
+		
+	}
+	
+	
+	option = {		##No, this is not necessary
+		name = swp_dmz.1.b
+
+			add_political_power = -25
+			
+	}
+			
+}

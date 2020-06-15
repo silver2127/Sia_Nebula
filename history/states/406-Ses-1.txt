@@ -1,0 +1,25 @@
+state={
+	id=406
+	name="STATE_406"
+	state_category = town
+	history={
+		owner = NCU
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = NCU
+		add_core_of = GPF
+		add_claim_by = SES
+	}
+	provinces={
+		1730 2033 3308 3610 3980 4117 5900 6003 6025 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

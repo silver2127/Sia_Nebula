@@ -1,0 +1,33 @@
+state={
+	id=373
+	name="STATE_373"
+	state_category = large_city
+	resources={
+		steel=12
+		oil=24
+		rubber=8
+	}
+	history={
+		owner = ATA
+		victory_points = { 1609 6 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			1609 = {
+				naval_base = 4
+			}
+			industrial_complex = 3
+			arms_factory = 3
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = ATA
+		add_core_of = HIN
+		add_core_of = MTA
+	}
+	provinces={
+		1609 7634 7644 7652 
+	}
+	manpower=425750
+	buildings_max_level_factor=1.000
+}

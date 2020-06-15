@@ -1,0 +1,36 @@
+
+state={
+	id=381
+	name="STATE_381"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+		grain=32
+	}
+	state_category = town
+	history={
+		owner = MUR
+		victory_points = { 4850 15 }
+		buildings = {
+			infrastructure = 1
+			#dockyard = 0
+			4850 = {
+				naval_base = 3
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = MUR
+	}
+	provinces={
+		950 951 1153 2165 4815 4837 4850 4889 4893 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+}

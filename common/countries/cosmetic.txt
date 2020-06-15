@@ -1,0 +1,16 @@
+MUR_SES = {
+	color = rgb { 45 75 125 }
+	color_ui = rgb { 45 75 125 }
+}
+
+
+
+EOH_UNIFIED = {
+	color = rgb { 129 3 113 }
+	color_ui = rgb { 129 3 113 }
+}
+
+TCI_CRUSADE = {
+	color = rgb { 5 5 5 }
+	color_ui = rgb { 5 5 5 }
+}

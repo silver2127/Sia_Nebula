@@ -1,0 +1,27 @@
+
+state={
+	id=442
+	name="STATE_442"
+
+	history={
+		owner = KOE
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = KOE
+		add_core_of = NCU
+
+	}
+
+	provinces={
+		1595 1678 2988 3102 6142 6148 6175 6194 6209 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=town
+}

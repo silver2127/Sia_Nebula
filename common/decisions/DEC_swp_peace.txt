@@ -1,0 +1,390 @@
+##Peace decisions
+
+swp_peace = {
+
+
+	swp_peace_dove = {		
+			
+			icon = GFX_swp_peace_dove
+		
+			cost = 35
+					 
+		
+			ai_will_do = {
+				factor = 0
+			}
+		
+			days_remove = 7
+		
+			allowed = {			
+				always = yes ##always allowed			
+			}
+					
+		
+			available = {
+				
+				hidden_trigger = { is_ai = no }
+				surrender_progress < 0.05
+				has_war = yes
+				has_country_flag = dw_player_war
+				num_of_controlled_states > 1 
+				
+				any_enemy_country = {
+						hidden_trigger = { is_ai = yes }
+						has_country_flag = dw_ai_war
+						
+						if = {
+							limit = {
+								NOT = { has_global_flag = swp_easier_decisions_settings }
+							}
+						
+							OR = {						
+									
+								has_country_flag = swp_laws
+								
+								
+								any_allied_country = {
+									has_country_flag = swp_laws
+								}
+							
+							}						
+												
+						
+						}
+												
+						
+						##FIND BETTER SOLUTION
+						OR = {
+							has_capitulated = yes
+						
+							any_state = {					
+								is_owned_by = PREV
+								is_controlled_by = ROOT
+							}
+						
+						}
+
+						###faction leader has to be at war!
+						if = {
+							limit = {
+								is_in_faction = yes
+								is_faction_leader = no
+							}
+							any_allied_country = {
+								is_faction_leader = yes
+								has_war_with = ROOT
+							}
+						}
+						
+						##can't fire if peace was declined or is in progress. Flags are cleared after negotiation is finished; peace_declined goes away after 50 days
+						NOT = { has_country_flag = peace_declined }
+						NOT = { has_global_flag = peace_in_process }
+				}
+								
+
+				
+			}
+			
+				
+			
+			visible = {
+				always = yes ##always visible								
+			}
+		
+		
+		
+			complete_effect = {
+			
+				custom_effect_tooltip = tooltip_peace_dove
+			
+				hidden_effect = {			
+				
+					log = "[GetDateText]: [Root.GetName]: swp_peace_dove -> Peace Dove (Decision) was triggered!" 
+				
+					if = {				
+						limit = {
+							is_in_faction = yes
+							is_faction_leader = no							
+						}
+					
+						country_event = { days = 2 id = swp_winning_fl.1 }	
+							
+					}
+						
+					if = {				
+						limit = {
+							OR = {
+								AND = {
+									is_in_faction = yes
+									is_faction_leader = yes	
+								}
+
+							is_in_faction = no
+							}												
+						}
+							
+					country_event = { days = 2 id = swp_winning.0 }
+					
+					}
+				
+				}
+
+			}
+		
+
+	}
+	
+	
+	swp_surrender = {		
+			
+			icon = GFX_swp_surrender
+		
+			cost = 15
+		
+			days_remove = 7
+		
+			ai_will_do = {
+				factor = 0
+			}
+		
+		
+			allowed = {			
+				always = yes ##always allowed
+			}
+					
+		
+			available = {			
+			
+				#Who gets the event? Player is losing
+				hidden_trigger = { is_ai = no }
+				surrender_progress > 0.15
+				has_country_flag = dw_player_war
+				
+				if = {
+					limit = {
+						NOT = { has_global_flag = swp_easier_decisions_settings }
+					}
+					
+					has_country_flag = swp_laws	
+				}
+
+				#Enemy has to fulfill these conditions
+				any_enemy_country = {
+					hidden_trigger = { is_ai = yes }					
+					has_country_flag = dw_ai_war
+					
+					
+					###Faction Leader has to be at war!
+					OR = {
+						is_in_faction = no
+					
+						AND = {
+							is_in_faction = yes
+							is_faction_leader = yes					
+						}					
+					}			
+				}
+									
+				NOT = { has_country_flag = peace_declined }
+				NOT = { has_global_flag = peace_in_process }
+
+					
+			}
+							
+			
+			visible = {
+				always = yes ##always visible								
+			}
+		
+		
+		
+			complete_effect = {
+			
+				custom_effect_tooltip = tooltip_surrender
+			
+				hidden_effect = {
+				
+					log = "[GetDateText]: [Root.GetName]: swp_peace_dove -> Conditional Surrender (Decision) was triggered!" 
+				
+					if = {					
+						limit = {
+							is_in_faction = yes
+							is_faction_leader = no							
+						}
+					
+						country_event = { days = 2 id = swp_losing_fl.0 }
+								
+							
+					}
+						
+						
+					if = {					
+						limit = {
+							OR = {
+								AND = {
+									is_in_faction = yes
+									is_faction_leader = yes	
+								}
+
+							is_in_faction = no
+							}
+													
+						}
+							
+					country_event = { days = 2 id = swp_losing.0 }					
+					
+					}
+				
+				}
+
+
+			}
+		
+
+	}
+	
+	
+	swp_whitepeace = {		
+			
+			icon = GFX_swp_whitepeace
+		
+			cost = 20
+				 
+		
+			ai_will_do = {
+				factor = 0
+			}
+		
+			days_remove = 7
+		
+			allowed = {			
+				always = yes ##always allowed		
+			}
+					
+		
+			available = {
+			
+				hidden_trigger = { is_ai = no }
+				surrender_progress < 0.1
+				
+				##Player is at war
+				has_country_flag = dw_player_war
+				
+				##manpower and economy laws
+				if = {
+					limit = {
+						NOT = { has_global_flag = swp_easier_decisions_settings }
+					}
+					
+					has_country_flag = swp_laws	
+				}
+					
+					any_enemy_country = {
+					
+						hidden_trigger = { is_ai = yes }
+						surrender_progress < 0.1
+						has_country_flag = dw_ai_war
+						
+						##manpower and economy laws
+						if = {
+							limit = {
+								NOT = { has_global_flag = swp_easier_decisions_settings }
+							}
+							
+							has_country_flag = swp_laws	
+						}
+						
+					}
+				
+				
+				NOT = { has_country_flag = peace_declined }
+				NOT = { has_global_flag = peace_in_process }
+				
+			}
+			
+				
+			
+			visible = {
+				always = yes ##always visible								
+			}
+		
+		
+		
+			complete_effect = {
+			
+				custom_effect_tooltip = tooltip_whitepeace
+			
+				hidden_effect = {
+				
+					log = "[GetDateText]: [Root.GetName]: swp_peace_dove -> Restore the Status Quo (Decision) was triggered!" 
+				
+					country_event = { days = 2 id = whitepeace.1 }	
+				
+				}			
+				
+				
+			}
+		
+
+	}
+
+	
+	
+	swp_truce = {		
+			
+			##Still vanilla; will get a brand new icon soon
+			icon = GFX_decision_category_generic 
+				
+			ai_will_do = {
+				factor = 0
+			}
+		
+			allowed = {			
+				always = yes ##(available to everypony!)		
+			}
+
+			##truce over is available after 30 days
+			available = {
+				#NOT = { has_country_flag = swp_truce_over }
+				has_political_power > 0
+			}
+
+
+			 activation = {
+			  
+				has_country_flag = swp_truce_over
+				   
+			}
+		  
+		  
+          is_good = yes	##Only applies to tooltips
+		  
+		  selectable_mission = yes
+		  
+          days_mission_timeout = 50
+		  
+          timeout_effect = {
+               
+			##FAILURE ENDS IN DEATH!
+			clr_country_flag = swp_truce_over
+			add_war_support = 0.01
+						   		   		  			   
+			   
+          }
+		  		  
+		  
+          complete_effect = {
+
+			##SUCCESS!	 
+			custom_effect_tooltip = tooltip_truce		  
+            country_event = { days = 2 id = swp_truce.1 }			   
+			clr_country_flag = swp_truce_over
+		  	
+			
+          }
+		
+
+	}
+	
+	
+}

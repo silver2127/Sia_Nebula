@@ -1,0 +1,28 @@
+
+state={
+	id=85
+	name="STATE_85"
+	resources={
+		grain=16
+	}
+	history={
+		owner = HPA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HPA
+
+	}
+
+	provinces={
+		661 1454 2702 3458 5353 5380 5400 
+	}
+	manpower=125000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

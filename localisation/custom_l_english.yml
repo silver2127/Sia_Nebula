@@ -1,0 +1,7 @@
+﻿l_english:
+ PRODUCTION_MATERIALS_GRAIN:0 "Grain"
+ grain_desc:0 "The essential resource to feed your troops."
+
+ food_equipment:0 "Rations"
+ food_equipment_desc:0 "Food production - the ultimate battle decider. Food alone now accounts for roughly 50% of your fighting power, so don't completely rely on your gun stockpile."
+ food_equipment_0:0 "Rations"

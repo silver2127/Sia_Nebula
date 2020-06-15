@@ -1,0 +1,25 @@
+state={
+	id=459
+	name="STATE_459"
+	state_category = large_town
+	history={
+		owner = NTK
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = NTK
+		add_core_of = GRA
+		add_core_of = HIN
+	}
+	provinces={
+		2627 2692 3761 7516 7523 7541 
+	}
+	manpower=235000
+	buildings_max_level_factor=1.000
+}

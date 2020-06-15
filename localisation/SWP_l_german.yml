@@ -1,0 +1,315 @@
+﻿l_german:
+
+ 
+ ##SKELSA'S WHITEPEACE - CONFIGURATION##
+ #Settings Event - Introduction
+ dynamic_wp_config.1.t:0 "Make Peace, Not War - Einstellungen"
+ dynamic_wp_config.1.d:0 "Make Peace, Not War" ermöglicht es Ihnen auch, mehrere Optionen zu aktivieren. Nach dem Klicken auf" Bring mich dahin! "Wird eine Ereigniskette gestartet und führt Sie durch alle vier Optionen.\nBitte lesen Sie die Ereignisbeschreibungen sorgfältig und wählen Sie die gewünschten Optionen für diesen Spieldurchgang.\nBedenkt, dass es nicht möglich ist, einen von ihnen während des Spiels zu ändern."
+ dynamic_wp_config.1.a:0 "Bring mich dahin!"
+ dynamic_wp_config.1.b:0 "Ich kenne die Einstellungen und bin NICHT interessiert."
+ #First Option - AI # CURRENTLY DEACTIVATED
+ dynamic_wp_config.2.t:0 "Make Peace, Not War - Einstellungen - AI"
+ dynamic_wp_config.2.d:0 "Mit dieser Einstellung kann die KI selbst um Frieden bitten. Wenn sie übel verloren haben, können sie Ihnen ein Ereignis schicken, um um Frieden zu bitten. Sie haben jedoch weiterhin die Möglichkeit, dies abzulehnen und Ihren eigenen Frieden zu erzwingen.\nIn der Vergangenheit hat dies zu Problemen wie Dutzenden von Friedensanfragen geführt, die an Sie gespammt wurden. Die meisten Fehler sind wahrscheinlich jetzt behoben."
+ dynamic_wp_config.2.a:0 "Aktivieren!"
+ dynamic_wp_config.2.b:0 "Nicht aktivieren!"
+ #Second Option - government and coup stuff
+ dynamic_wp_config.3.t:0 "Make Peace, Not War - Einstellungen - Putsch und Bürgerkrieg"
+ dynamic_wp_config.3.d:0 ""Make Peace, Not War" bietet auch die Möglichkeit, dass kleinere Nationen nach einer Niederlage in einem Krieg einen Putsch oder sogar eine Revolution hinnehmen müssen. Die Chancen sind jedes Mal zufällig und wenn eine Nation Glück hat, wird sich nichts ändern. Es wird empfohlen, dies nur in unhistorischen Spielen zu wählen, da die historische Genauigkeit ohne Zweifel vermasselt wird."
+ dynamic_wp_config.3.a:0 "Aktivieren!"
+ dynamic_wp_config.3.b:0 "Nicht aktivieren!"
+ #Third Option - vanilla peace conference
+ dynamic_wp_config.4.t:0 "Make Peace, Not War - Einstellungen - Vanilla Friedenskonferenz"
+ dynamic_wp_config.4.d:0 "Mit der Veröffentlichung des 1.5.2 Cornflakes Patches wurde es endlich möglich, eine Friedenskonferenz per Kommando auszuführen. Dies ist eine benutzerfreundlichere Methode, als die Mod-Lösung der Übertragung von Zuständen an den Gewinner und erlaubt auch, Marionetten zu bilden. \nDies kann jedoch recht einfach ausgenutzt werden! Es gibt keine Einschränkungen, um die Konferenz abzubrechen, wenn ein Spieler zu viel nimmt. Ich schlage vor, NUR dies zu auszuwählen, wenn Sie sich davon abhalten können, der KI gegenüber unfair zu sein (oder wenn Sie sowieso ein Betrüger sind). \nEs ist Ihre Entscheidung."
+ dynamic_wp_config.4.a:0 "Aktivieren!"
+ dynamic_wp_config.4.b:0 "Nicht aktivieren!"
+ 
+ #Fourth Option - easier decisions
+ dynamic_wp_config.5.t:0 "Make Peace, Not War - Einstellungen - Einfachere Entscheidungen"
+ dynamic_wp_config.5.d:0 "Einige Leute sind genervt von der Wehrpflicht und den Gesetzen, um die Entscheidungen zu treffen. Während der Autor des Mods denkt, dass diese Gesetze ein Weg sind, das Spiel zu einfach zu halten, ist es jetzt Ihre Entscheidung, einfachere Entscheidungen zu aktivieren oder zu deaktivieren. Wenn Sie sie aktivieren, kostet das Erzwingen von Frieden zusätzlich Kriegsunterstützung, Stabilität und Parteipopularität."
+ dynamic_wp_config.5.a:0 "Aktivieren!"
+ dynamic_wp_config.5.b:0 "Nicht aktivieren!"
+ 
+ #Last Event of the Chain - Success!
+ dynamic_wp_config.6.t:0 "Make Peace, Not War - Einstellungen - Erfolgreich!"
+ dynamic_wp_config.6.d:0 "Herzlichen Glückwunsch, Sie haben Ihre Optionen erfolgreich ausgewählt! Es wird immer noch eine letzte Ereigniskette geben, falls Sie mit großen Overhaul-Mods spielst. Danach darfst du weitermachen!"
+ dynamic_wp_config.6.a:0 "Yay!"
+ 
+ 
+ ##SETTINGS EVENT - DID YOU ENABLE MODS?##
+ ##Intro
+ dynamic_wp_config_mod.1.t:0 "Make Peace, Not War - Mod-Kompatibilität"
+ dynamic_wp_config_mod.1.d:0 "Obwohl "Make Peace, Not War" im Allgemeinen mit fast allem kompatibel ist, was einige große Overhaul-Mods drastisch ändern oder ersetzen, können Ideologien, Wehrpflichtgesetze oder Wirtschaftsgesetze drastisch geändert werden. Das wird irgendwann zu Problemen führen.\nIch habe zunächst einige Kompatibilitätsversionen (für Millenium Dawn und BICE) erstellt, um MPNW-Durchgänge mit diesen Mods zu ermöglichen. Leider war die Pflege der Kompatibilitätsmods zeitaufwendig und manchmal habe ich sie vernachlässigt. \nJetzt habe ich "Make Peace, Not War" direkt modifiziert. In den nächsten Menüs können Sie den Overhaul-Modus auswählen, den Sie gerade verwenden, und entsprechend werden einige Einstellungen, die Sie zuvor aktiviert haben, deaktiviert, um die Kompatibilität zu aktivieren. Fahren Sie mit der Maus über die Option, um zu sehen, welche Einstellungen deaktiviert werden. \nEinige große Overhaul-Mods erfordern keine Einbußen bei den Einstellungen.\nHier ist die Liste:\n\n- Road to '56\n\n- The Great War\nJedenfalls, wenn du Vanilla (ohne große Overhaul-Mods) oder einen der aufgelisteten Mods verwendest, können Sie dieses Menü schließen. Ansonsten können Sie den Mod, den Sie gerade benutzen, auswählen. \nWenn es einen inkompatiblen Mod gibt, den Sie gerne mit MPNW verwenden würden, schreiben Sie mir bitte auf den Steam Workshop."
+ dynamic_wp_config_mod.1.a:0 "Lass mich auswählen ..."
+ dynamic_wp_config_mod.1.b:0 "Schließen"
+ 
+ ##modern day mods
+ dynamic_wp_config_mod.2.t:0 "Make Peace, Not War - Mod-Kompatibilität - Seite 1"
+ dynamic_wp_config_mod.2.d:0 "Welchen modern day mod benutzen Sie? Wenn Sie keine davon verwenden, klicken Sie bitte auf "Nächste Seite"."
+ dynamic_wp_config_mod.2.a:0 "Millennium Dawn"
+ dynamic_wp_config_mod.2.b:0 "Modern Day 4"
+ dynamic_wp_config_mod.2.c:0 "Nächste Seite ->"
+ 
+ 
+ dynamic_wp_config_mod.3.t:0 "Make Peace, Not War - Mod-Kompatibilität - Seite 2"
+ dynamic_wp_config_mod.3.d:0 "Benutzen Sie vielleicht BlackICE oder Kaiserreich?"
+ dynamic_wp_config_mod.3.a:0 "BlackICE"
+ dynamic_wp_config_mod.3.b:0 "Kaiserreich"
+ dynamic_wp_config_mod.3.c:0 "Abbrechen."
+ 
+ 
+ ##FACTION LEADER IS ASKED (PLAYER NOT LEADER)##
+ swp_fl.1.t:0 "Wir müssen unseren Fraktionsführer fragen!"
+ swp_fl.1.d:0 "Da wir nur ein einfaches Mitglied sind, hat unser Fraktionsführer immer noch das letzte Wort. Bevor wir einen möglichen Friedensvorschlag unterschreiben, müssen wir sicherstellen, dass jeder in unserer Fraktion dieser Entscheidung zustimmt."
+ swp_fl.1.a:0 "Lasst uns ihn fragen!"
+ swp_fl.1.b:0 "Ich habe nie nach einem Frieden gefragt ?!"
+ swp_fl.2.t:0 "Eines unserer Mitglieder möchte einen Frieden unterzeichnen!"
+ swp_fl.2.d:0 "Akzeptieren wir? Der Krieg wird dann für jeden in unserer Fraktion enden, einschließlich uns"
+ swp_fl.2.a:0 "Eine gute Idee!"
+ swp_fl.2.b:0 "Verweigern!"
+ swp_fl.3.t:0 "Unser Fraktionsführer hat akzeptiert!"
+ swp_fl.3.d:0 "Wir können jetzt endlich etwas bewegen."
+ swp_fl.3.a:0 "Sehr gut!"
+ swp_fl.4.t:0 "Unser Fraktionsführer hat akzeptiert!"
+ swp_fl.4.d:0 "Unser Anführer hat sich geweigert, einen Frieden zwischen uns und unserem Feind zuzulassen. Der Krieg geht weiter ..."
+ swp_fl.4.a:0 "Vielleicht sollten wir diese Allianz irgendwann verlassen ..."
+
+ 
+ ##DYNAMIC EVENTS - PLAYER IS WINNING##
+ #no faction AI country
+ swp_dynamic.1.t:0 "Dynamic Whitepeace - Frieden mit unserem Feind?"
+ swp_dynamic.1.d:0 "Wir sind seit mehreren Monaten im Krieg und unsere Soldaten, geschweige denn die Zivilbevölkerung, sind des Kampfes und Sterbens müde. Wir haben mehrere Gebiete verloren und es gibt derzeit keine Möglichkeit, sie wiederzuerlangen. Es wäre jetzt sicherlich besser, Frieden zu schließen und neue Kräfte aufzubauen. Am Ende werden wir sie schlagen ..."
+ swp_dynamic.1.a:0 "Sendet einen Friedensvorschlag!"
+ swp_dynamic.1.b:0 "Wir brauchen keinen neuen Krieg, wir werden irgendwann gewinnen!"
+ #enemy faction leader (enemy is player)
+ swp_dynamic.2.t:0 "Dynamic Whitepeace - Frieden mit der feindlichen Fraktion?"
+ swp_dynamic.2.d:0 "Wir und unsere Verbündeten befinden sich jetzt mehrere Monate in einem Krieg und unsere Soldaten, geschweige denn die Zivilbevölkerung, sind des Kampfes und Sterbens müde. Wir haben mehrere Gebiete verloren und es gibt derzeit keine Möglichkeit, sie wiederzuerlangen. Es wäre jetzt sicherlich besser, Frieden zu schließen und neue Kräfte aufzubauen. Am Ende werden wir sie schlagen ..."
+ swp_dynamic.2.a:0 "Lasst uns um Frieden bitten!" 
+ swp_dynamic.2.b:0 "Wir brauchen keinen neuen Krieg. Wir werden es jetzt tun!"
+ ##Player gets peace proposal (enemy no faction)
+ swp_dynamic.4.t:0 "Dynamic Whitepeace - Unser Feind bietet uns Frieden!?" 
+ swp_dynamic.4.d:0 "Wir sind seit mehreren Monaten im Krieg und unsere Soldaten, geschweige denn die Zivilbevölkerung, sind des Kampfes und Sterbens müde. Wir haben bemerkenswerte Fortschritte gemacht, aber unsere Kämpfe sind zu einer Pattsituation geworden, und wir haben keine Kraft, weiter zu kommen. Jetzt hat uns unser Feind, der viel schlechter dran ist, einen Friedensvorschlag geschickt. Wenn wir akzeptieren, wird der Frieden zurückkehren und wir können die Staaten, die wir gerade besetzen, behalten. Andernfalls könnte es zu einer Fortsetzung des Tötens kommen und wir könnten vielleicht Territorium verlieren. Was antworten wir?"
+ swp_dynamic.4.a:0 "Wir akzeptieren es für´s erste"
+ swp_dynamic.4.b:0 "Niemals! Der Sieg ist in unserer Hand!"
+ ##Player gets peace proposal (enemy is faction)
+ swp_winning.5.t:0 "Dynamic Whitepeace - Der feindliche Fraktionsführer bietet uns Frieden !?" 
+ swp_winning.5.d:0 "Wir sind seit mehreren Monaten im Krieg und unsere Armeen und Soldaten, geschweige denn die Zivilbevölkerung, sind des Kampfes und Sterbens müde. Wir haben bemerkenswerte Fortschritte gemacht, aber unsere Kämpfe sind zu einer Pattsituation geworden, und wir haben keine Kraft, weiter zu kommen. Jetzt hat uns unser gegnerischer Fraktionsführer, der viel schlechter dran ist, einen Friedensvorschlag geschickt. Wenn wir akzeptieren, wird der Frieden zurückkehren und wir können die Staaten, die wir gerade besetzen, behalten. Andernfalls könnte es zu einer Fortsetzung des Tötens kommen und wir könnten vielleicht Territorium verlieren. Was antworten wir?"
+ swp_winning.5.a:0 "Wir akzeptieren."
+ swp_winning.5.b:0 "Wir werden den Job beenden!"
+ ##enemy faction members have the choice to give up territory
+ swp_winning.6.t:0 "Unser Fraktionsführer hat einen Vertrag zur Beendigung des Krieges unterzeichnet - geben wir das besetzte Gebiet auf?"
+ swp_winning.6.d:0 "Der Führer unserer Fraktion konnte keine andere Lösung finden und unterzeichnete einen Friedensvertrag mit unserem Feind. Wir können natürlich das Angebot ablehnen und unser Territorium behalten, aber das könnte zu einem weiteren Krieg in der Zukunft führen ..."
+ swp_winning.6.a:0 "Verdammt! Fein..." 
+ swp_winning.6.b:0 "Wir werden unser Territorium behalten!"
+ 
+ ##enemy FL gets event
+ swp_winning.12.t:0 "Dynamic Whitepeace - [From.GetName] hat akzeptiert"
+ swp_winning.12.d:0 "Unser Gegner hat unseren Friedensvorschlag angenommen und damit endet der Krieg laut dem Friedensvertrag. Das wird uns verletzen, aber unser Volk muss nicht mehr unter dem Krieg leiden." 
+ swp_winning.12.a:0 "Dieser Krieg war ein schrecklicher Fehler ..."
+ ##enemy faction member agrees to give up territory
+ swp_winning.13.t:0 "Dynamic Whitepeace - [From.GetName] hat akzeptiert, Territorium der (Fraktionsmitglied) abzutreten " 
+ swp_winning.13.d:0 "Die feindlichen Fraktionsmitglieder, deren Land wir besetzen, haben akzeptiert, jeden Staat, den wir kontrollieren, an uns abzutreten. Ein Frieden wurde bereits unterzeichnet und somit sind wir wieder siegreich! ...!"    
+ swp_winning.13.a:0 "Ein bitterer Preis für sie ..."
+ ##enemy faction member to give up territory 
+ swp_winning.14.t:0 "Dynamic Whitepeace - [From.GetName] hat sich geweigert, Territorium der (Fraktionsmitglied) abzutreten" 
+ swp_winning.14.d:0 "Unser Feind hat sich geweigert, Territorium abzutreten, das wir zurzeit von ihnen besetzen. Ein Friedensvertrag wird immer noch mit dem Fraktionsführer und damit dem Rest der Fraktion unterzeichnet werden, aber vielleicht wird ein anderer Krieg ihre Meinung ändern .." 
+ swp_winning.14.a:0 "Haben sie nichts gelernt?"
+ 
+ ##Create new localisation for use with the peace dove. swp_winning; MAYBE transfer the debug event into the first event
+ swp_test.1.t:0 "Sollte der Frieden zurückkehren?"
+ swp_test.1.d:0 "Wir sind seit mehreren Monaten im Krieg und unsere Soldaten, geschweige denn die Zivilbevölkerung, sind des Kampfes und Sterbens müde. Wir haben bemerkenswerte Fortschritte gemacht, aber unsere Kämpfe sind zu einer Pattsituation geworden, und wir haben keine Kraft, weiter zu kommen. Jetzt hat unser Feind, der viel schlechter dran ist, unserem ursprünglichen Vorschlag zugestimmt. Wenn wir akzeptieren, wird der Frieden zurückkehren und wir können die Staaten, die wir gerade beschäftigen, behalten. Andernfalls könnte es zu einer Fortsetzung des Tötens kommen und wir könnten vielleicht Territorium verlieren. Wie antworten wir?"
+ swp_test.1.a:0 "Wir akzeptieren es für´s erste"
+ swp_test.1.b:0 "Niemals!"
+ 
+ ##DYNAMIC EVENTS - PLAYER IS LOSING##
+ #event for player (no faction and faction - faction leader) are swp_dynamic
+ swp_losing.3.t:0 "Dynamic Whitepeace - Frieden mit unserem Feind (Fraktionsführer nicht im Krieg)?"  
+ swp_losing.3.d:0 "Wir sind seit mehreren Monaten im Krieg und unsere Soldaten, geschweige denn die Zivilbevölkerung, sind des Kampfes und Sterbens müde. Wir haben mehrere Gebiete verloren und es gibt derzeit keine Möglichkeit, sie wiederzuerlangen. Es wäre jetzt sicherlich besser, Frieden zu schließen und neue Kräfte aufzubauen. Am Ende werden wir sie schlagen ..."
+ swp_losing.3.a:0 "Senden Sie einen Vorschlag ..."
+ swp_losing.3.b:0 "Nie und nimmer!"
+ 
+ 
+ ##DYNAMIC EVENTS - PEACE WITHOUT SLOTS##
+ #these events should be triggered throughout the game, but for some reason they can appear if disabled! Need major rework!
+ #no faction AI country
+ swp_winning.1.t:0 "Unser Feind bietet uns Frieden - (KEINE ENTSCHEIDUNG GEWÄHLT)"
+ swp_winning.1.d:0 "Wir sind seit mehreren Monaten im Krieg und unsere Soldaten, geschweige denn die Zivilbevölkerung, sind des Kampfes und Sterbens müde. Wir haben mehrere Gebiete verloren und es gibt derzeit keine Möglichkeit, sie wiederzuerlangen. Es wäre jetzt sicherlich besser, Frieden zu schließen und neue Kräfte aufzubauen. Am Ende werden wir sie schlagen"
+ swp_winning.1.a:0 "Gut, wir stimmen zu ..."
+ swp_winning.1.b:0 "Glauben sie wirklich, dass sie uns täuschen können?"
+ #enemy faction leader (enemy is player)
+ swp_winning.2.t:0 "Der feindliche Fraktionsführer bietet uns Frieden an - (KEINE ENTSCHEIDUNG GEWÄHLT)"
+ swp_winning.2.d:0 "Wir und unsere Verbündeten befinden sich jetzt mehrere Monate in einem Krieg und unsere Soldaten, geschweige denn die Zivilbevölkerung, sind des Kampfes und Sterbens müde. Wir haben mehrere Gebiete verloren und es gibt derzeit keine Möglichkeit, sie wiederzuerlangen. Es wäre jetzt sicherlich besser, Frieden zu schließen und neue Kräfte aufzubauen. Am Ende werden wir sie schlagen ..."
+ swp_winning.2.a:0 "Gut, wir stimmen zu ..." 
+ swp_winning.2.b:0 "Glauben sie wirklich, dass sie uns täuschen können??"
+ 
+
+
+ ##FINAL EVENTS TO TRANSFER STATES AND PEACE## -> Player vs faction is not affected!
+ swp_final.1.t:0 "Dynamic Whitepeace - [From.GetName] hat akzeptiert"
+ swp_final.1.d:0 "Unser Gegner hat unseren Friedensvorschlag angenommen und damit endet der Krieg laut dem Friedensvertrag. Das wird uns verletzen, aber unser Volk muss nicht mehr unter dem Krieg leiden."
+ swp_final.1.a:0 "Dieser Krieg war ein schrecklicher Fehler ..." 
+ swp_final.2.t:0 "Dynamic Whitepeace - [From.GetName] hat abgelehnt" 
+ swp_final.2.d:0 "Unser Gegner hat unser Angebot für den Frieden abgelehnt und wird anscheinend nicht aufhören, bis seine Truppen auf den Straßen unserer Hauptstadt marschieren. Das Leiden wird weitergehen ...!" 
+ swp_final.2.a:0 "Unsere Nation wird nie wieder wie früher sein." 
+ 
+ 
+ ##DMZ##
+ swp_dmz.1.t:0 "Dynamic Whitepeace - Erzwingen wir eine entmilitarisierte Zone?"
+ swp_dmz.1.d:0 "Unser Feind ist besiegt und hat uns jeden Staat, den wir besetzen, abgetreten. Sollten wir in den Staaten, die uns angrenzen, eine demilitarisierte Zone verhängen? Dies würde einen Präventivkrieg verhindern und unseren Truppen wertvolle Zeit geben, um zu reagieren ..." 
+ swp_dmz.1.a:0 "Natürlich!"
+ swp_dmz.1.b:0 "Wir haben sie hart genug bestraft." 
+ 
+  
+ ##WHITEPEACE, NO TERRITORY CHANGES##
+ ##country, who uses slot, gets event
+ whitepeace.1.t:0 "Whitepeace - Frieden mit unserem Feind?
+ whitepeace.1.d:0 "Wir sind seit mehreren Monaten im Krieg und unsere Armeen und Soldaten, geschweige denn die Zivilbevölkerung, sind des Kampfes und Sterbens müde. Wir haben bemerkenswerte Fortschritte gemacht, aber unsere Kämpfe sind zu einer Pattsituation geworden, und wir haben keine Kraft, weiter zu kommen. Sollen wir unserem Feind einen Friedensvertrag anbieten, um das Gemetzel zu beenden? Sicherlich werden unsere Grenzen wieder in die Vorkriegslage zurückkehren .."
+ whitepeace.1.a:0 "Kehren wir zur Vorkriegssituation zurück!" 
+ whitepeace.1.b:0 "Niemals! Der Sieg ist in unserer Hand!"
+ #enemy country gets event
+ whitepeace.2.t:0 "Whitepeace - [From.GetName] bietet uns einen weißen Frieden!!"
+ whitepeace.2.d:0 "Wir haben den Kampf verloren und unser Feind hat uns einen Friedensvorschlag unterbreitet. Jeder Staat wird zu seinem ursprünglichen Besitzer zurückkehren und die Vorkriegsgrenze wird wiederhergestellt werden. Wir können jedoch die Zeit nutzen, um unsere Wunden zu heilen, unsere Männer wieder aufzurichten oder die Infrastruktur wieder aufzubauen, um ihnen schließlich einen vernichtenden Schlag zu versetzen. Akzeptieren wir für´s erste?"
+ whitepeace.2.a:0 "Das ist eine gute Lösung ..."
+ whitepeace.2.b:0 "Sie wollen uns täuschen! Niemals!"
+ #accepted
+ whitepeace.3.t:0 "Whitepeace - [From.GetName] hat unseren weißen Friedensvorschlag angenommen!"
+ whitepeace.3.d:0 "Der Krieg ist vorbei. Lasst uns unsere Toten begraben und diejenigen ehren, die gefallen sind ..." 
+ whitepeace.3.a:0 "Endlich"
+ #refused
+ whitepeace.4.t:0 "Whitepeace - [From.GetName] hat unseren weißen Friedensvorschlag abgelehnt!"
+ whitepeace.4.d:0 "Haben sie nichts gelernt ?! Dieser Krieg wird keinen Gewinner haben!"
+ whitepeace.4.a:0 "Idioten..."
+ 
+ 
+ ##GOVERNMENT STUFF##
+ #democracy coup
+ swp_government.2.t:0 "Demokraten fordern unseren Rücktritt!"
+ swp_government.2.d:0 "Nach der jüngsten Niederlage gegen einen unserer Nachbarn protestieren mehrere Menschen, vor allem Studenten und Intellektuelle, gegen unser Regime. Sie fordern nicht nur liberale Veränderungen oder andere demokratische Ideale, sondern wollen uns durch Vertreter des Volkes ersetzen! Unsere langjährige Herrschaft würde dann enden und wenn wir nicht mehrere Dokumente zerstören, werden wir möglicherweise wegen Verbrechen gegen unser Volk angeklagt und hingerichtet!\nLassen wir das zu und zerstören irgendwelche Beweise, die uns und das Land belasten würden? Oder wäre es besser, die Verhaftung und Hinrichtung jener Leute fortzusetzen, die ihre Meinung kundtun?\nLetztere Lösung kann zu einem Aufstand oder sogar einem Bürgerkrieg führen ..."
+ swp_government.2.a:0 "Wir steigen in das nächste Flugzeug ein."
+ swp_government.2.b:0 "Verhaftet diese Liberalen."
+ #fascism coup
+ swp_government.3.t:0 "Nationalismus bedroht unser Land!"
+ swp_government.3.d:0 "In den letzten Wochen seit unserer Niederlage in einem Krieg mit einem unserer Nachbarn sind einige nationalistische Gedanken aufgetaucht. Nachdem wir Territorium verloren und Reparationen zahlen mussten, wurde der Revanchismus stärker und ermutigte mehr und mehr Menschen, die Idee der Rückeroberung dieser verlorenen Länder zu unterstützen.\nMehrere faschistische Führer haben uns jetzt ein Ultimatum gestellt, das verlangt, unser Parlament aufzulösen, unsere Ämter aufzugeben und ihnen die Kontrolle über den Staat zu überlassen!\nWie antworten wir? Das Einreichen würde wahrscheinlich das Land stabilisieren, obwohl die Faschisten unser schönes Land in einen totalitären Staat verwandeln und Minderheiten jagen würden. Das Ultimatum abzulehnen und faschistische Sympathisanten zu jagen, kann entweder ihre Bewegung unterdrücken oder im schlimmsten Fall einen Bürgerkrieg auslösen! Dies ist eine schwierige Wahl, die nur Sie treffen können "
+ swp_government.3.a:0 "Wir sind ihnen nicht gewachsen ..."
+ swp_government.3.b:0 "Exekutiert ihren Anführer und verbietet ihre Partei!"
+ #communism coup
+ swp_government.4.t:0 "Arbeiter steigen in unseren Städten auf!!"
+ swp_government.4.d:0 "Unsere Zivilbevölkerung hat im Krieg schrecklich gelitten, und jetzt müssen die Reparationen, die wir zahlen müssen, zu massiven Demonstrationen und Ausschreitungen geführt. Die meisten Menschen, insbesondere die Arbeitnehmer, fordern soziale Sicherheit, liberale Reformen, Antikorruptionsmaßnahmen und eine Reform unseres gegenwärtigen politischen Systems, das ihrer Ansicht nach derzeit nur die Bourgeois repräsentiert.\nDiese Demonstranten sind ein ernstes Problem und wir müssen vorsichtig damit umgehen. Wenn wir uns ihren Änderungen unterwerfen, werden wir uns effektiv aus dem Land verbannen und sie können uns sogar wegen möglicher Verbrechen strafrechtlich verfolgen. Die Ermordung ihrer Anführer und das Verbot des Kommunismus könnten funktionieren, ist aber sehr riskant. Wenn wir unsere Arbeit nicht gut machen, können sie eine Revolte organisieren und das Land ins Chaos stürzen!\nWas sollen wir machen?"
+ swp_government.4.a:0 "Der Sozialismus wird sich durchsetzen, wir können nichts tun!"
+ swp_government.4.b:0 "Säubert diese roten Bastarde!"
+ 
+ #CIVIL WAR!
+ #democracy
+ swp_government.5.td:0 "Demonstranten nehmen Waffen auf!"
+ swp_government.5.dd:0 "Jede Minute werden die Berichte immer schlimmer! Mehrere Demonstranten bewaffnen sich jetzt selbst und es gab dutzende Zusammenstöße zwischen ihnen und unseren Polizeikräften im ganzen Land! Unser Bemühen, demokratische Werte zu stoppen, ist gescheitert, einige belastende Dokumente wurden von der demokratischen Partei entdeckt und veröffentlicht, und sogar ein Teil unseres Militärs ist übergelaufen, um sich der Sache der Rebellen anzuschließen!\nDie Führer der demokratischen Bewegung haben die Menschen ermutigt, lokale Milizen zu bilden, sich gegen unser System zu erheben und wichtige Regierungsgebäude zu besetzen!\nWir können jetzt nicht viel tun, außer auf das Beste hoffen und natürlich diese Rebellion niederschlagen!"
+ swp_government.5.ad:0 "Verdammt! Zerquetscht die Rebellen!"
+ swp_government.5.bd:0 "(VERTEIDIGT DEMOKRATIE)"
+ #fascists
+ swp_government.5.tf:0 "Konflikte mit Nationalisten sind eskaliert!"
+ swp_government.5.df:0 "Obwohl wir unser Bestes gaben, um unser Volk von faschistischen und nationalistischen Gedanken zu reinigen, haben wir es versäumt, Schlüsselfiguren der faschistischen Partei in unserem Land auszuschalten. Sie nutzten die Gelegenheit, um mehr Menschen gegen uns zu sammeln, und beschuldigten uns, für jedes aktuelle Problem verantwortlich zu sein. Jetzt ist die Situation eskaliert, als faschistische Sympathisanten gestern mit unserer Polizei kollidierten. 180 Menschen wurden getötet, mehrere Autos wurden angezündet und ein Wohnhaus brach zusammen! Anschließend beschuldigen uns die Faschisten nun einen "Krieg gegen die Nation" und beginnen, Milizen zu bilden, das Militär zu überzeugen, sich ihrer Seite anzuschließen und jeden zu ermutigen, so viele "Reaktionäre" wie möglich zu töten!\nWir haben nicht mehr viele Unterstützer, da die meisten der faschistischen Propaganda inzwischen glauben. Dennoch ist unsere Armee noch nicht in großer Zahl übergelaufen und wir können möglicherweise einen bewaffneten Konflikt gegen unsere eigene Bevölkerung gewinnen.\nDas wird ein schrecklicher Krieg ..."
+ swp_government.5.af:0 "Wir werden sie vernichten!"
+ swp_government.5.bf:0 "(UNTERSTÜTZT DIE FASCHISTISCHE URSACHE)"
+ #communism
+ swp_government.5.tc:0 "Die [GetMonth] Revolution!"
+ swp_government.5.dc:0 "Schreckliche Nachrichten! Überall im Land erheben sich die Menschen, um unser Regime ein für allemal zu beenden! Unsere Attentäter und Agenten konnten wichtige Führer der kommunistischen Bewegung nicht ausschalten und wurden von ihnen gefangen genommen, gefoltert und hingerichtet. Unser Plot ist gescheitert und wurde leider von der Kommunistischen Partei aufgedeckt, deren Mitglieder jetzt wichtige Gebäude in unseren größten Städten besetzen.\nZusätzlich wurden mehrere belastende Dokumente veröffentlicht und somit verlieren wir jede Minute Anhänger für unsere Sache!\nDie Situation sieht für uns jetzt düster aus ..."
+ swp_government.5.ac:0 "Lass uns diese roten Teufel zerquetschen!"
+ swp_government.5.bc:0 "(WERDE TEIL DER REVOLUTION)"
+ ##Civil war averted
+ swp_government.6.t:0 "Krise abgewendet, Rebellen verhaftet und hingerichtet!"
+ swp_government.6.d:0 "Vor ein paar Tagen haben mehrere Demonstrationen große Veränderungen gefordert, die uns außer Landes gebracht und drastisch verändert hätten. Sie haben beschlossen, ihre Forderungen abzulehnen und begannen, jeden festzunehmen und hinzurichten, der sozialistische, liberale oder nationalistische Ideen unterstützte. Mehrere Experten in unseren Reihen waren überzeugt, dass dies schließlich zu einem Bürgerkrieg führen würde, aber zum Glück sind die meisten Bewegungen jetzt desorganisiert und still!\nWir müssen Ihnen danken, dass Sie den richtigen Weg gewählt haben! Sie haben wieder mal bewiesen, dass Sie der Anführer dieser Nation sind, der Wohlstand und Glück erreicht!"
+ swp_government.6.a:0 "Wir werden uns durchsetzen!"
+
+ 
+ ##IDEAS AND NATIONAL SPIRITS##
+ SWP_reparations:0 "Kriegsreparationen"
+ SWP_reparations_desc:0 "Diese Nation hat vor kurzem einen Krieg verloren und ist nun gezwungen, dem Gewinner Wiedergutmachung zu leisten"
+ #government spirits
+ SWP_government:0 "Land in der Krise"
+ SWP_government_desc:0 "Aufgrund eines kürzlich verlorenen Krieges ist die Regierung dieser Nation unpopulär und unzusammenhängend. Viele fürchten auch die Chance eines Putsches in naher Zukunft ..."
+ #democracy
+ SWP_government_d:0 "Land in der Krise"
+ SWP_government_d_desc:0 "Aufgrund eines kürzlich verlorenen Krieges ist die Regierung dieser Nation unpopulär und unzusammenhängend. Viele fürchten auch die Chance eines Putsches in naher Zukunft ..."
+ #communism
+ SWP_government_c:0 "Land in der Krise"
+ SWP_government_c_desc:0 "Aufgrund eines kürzlich verlorenen Krieges ist die Regierung dieser Nation unpopulär und unzusammenhängend. Viele fürchten auch die Chance eines Putsches in naher Zukunft ..."
+ #fascism
+ SWP_government_f:0 "Land in der Krise"
+ SWP_government_f_desc:0 "Aufgrund eines kürzlich verlorenen Krieges ist die Regierung dieser Nation unpopulär und unzusammenhängend. Viele fürchten auch die Chance eines Putsches in naher Zukunft ..."
+ #neutrality
+ SWP_government_n:0 "Land in der Krise"
+ SWP_government_n_desc:0 "Aufgrund eines kürzlich verlorenen Krieges ist die Regierung dieser Nation unpopulär und unzusammenhängend. Viele fürchten auch die Chance eines Putsches in naher Zukunft ..."
+ #end of government spirits
+ SWP_victorious:0 "Siegreiche Macht"
+ SWP_victorious_desc:0 "Ein neuer Sieg gegen eine andere Nation hat Moral und Selbstvertrauen gestärkt. Forderungen nach Reparationen sind derzeit auch für die Wirtschaft von Vorteil."
+ 
+ 
+ ##MISC##
+ dw_player_war: "Der Spieler war 80 Tage lang im Krieg"
+ dw_ai_war:0 "AI war mit dem Spieler 80 Tage lang im Krieg
+ swp_laws:0 "Hat "Begrenzte Wehrpflicht" oder höher. Hat "Teilmobilmachung" oder höher."
+ peace_declined:0 "Ein kürzlich geschlossener Friedensvertrag wurde abgelehnt! (Dauer: 200 Tage)"
+ peace_in_process:0 "Frieden ist in Prozess (Friedensereignisse geschehen gerade jetzt)"
+ swp_signed_peace_treaty:0 "Unterzeichnete einen Friedensvertrag mit uns"
+ 
+ ##TOOLTIPS##
+ tooltip_peace_dove:0 "§M Friedensverhandlungen werden beginnen, der diesen Krieg zu unseren Gunsten beendet.§!"
+ tooltip_surrender:0 "§R Wir werden die feindliche Regierung auffordern, über ein mögliches Friedensabkommen zu verhandeln. Hoffen wir, dass die Bedingungen nicht zu streng sind ...§!"
+ tooltip_whitepeace:0 "§G Friedensgespräche werden beginnen, diesen Krieg ohne Änderungen zu stoppen. Die Vorkriegssituation wird wiederhergestellt.§!"
+ tooltip_truce:0 "§G "Der Krieg endete vor etwa einem Monat und der festgeschriebene Waffenstillstand ist gestern abgelaufen. Um den Frieden für einige zusätzliche Monate zu garantieren, sollten wir versuchen, ihn zu verlängern. Unsere Diplomaten erwarten Ihr Wort.
+ 
+ ##Mod SETTINGS
+ tooltip_modern_day_4:0 "Wählen Sie dies, wenn Sie "Modern Day 4" benutzen.\\nnDie für die Entscheidungen erforderliche Wehrpflicht- und Wirtschaftsgesetzgebung werden §aufgehoben§.\nDie Putsch- und Bürgerkriegsereignisse werden §Runbrauchbar§ sein."
+ tooltip_md:0 "Wählen Sie dies, wenn Sie "Millenium Dawn" benutzen.\\nnThe conscription and economy law requirement for the decisions will be §Rdisabled§.\nDie Putsch- und Bürgerkriegsereignisse werden §Runbrauchbar§."
+ tooltip_kaiserreich:0 "Wählen Sie dies, wenn Sie "Kaiserreich" benutzen.\\nnDie Putsch- und Bürgerkriegsereignisse werden §Runbrauchbar§."
+ tooltip_blackice:0 "Wählen Sie dies, wenn Sie "Black ICE" benutzen.\\nnDie Putsch- und Bürgerkriegsereignisse werden §Runbrauchbar§."
+
+  
+ ##EDIT: Some color codes didn't work. Might want to revisit this in the future
+ 
+ ##Decisions##
+ swp_peace:0 "Zusätzliche diplomatische Aktionen"
+ swp_peace_desc:0 "Unsere Beziehungen zu anderen Ländern sind von größter Bedeutung. Wir sollten versuchen, eine gute Beziehung zu anderen Nationen zu halten, um Bündnisse, gute Handelsgeschäfte und mögliche Feinde in Schach zu halten. Außerdem könnten unsere diplomatischen Bemühungen im Falle eines Konflikts bedingungslos Kriege beenden und weiteres Blutvergießen verhindern."
+ #swp_peace_slot:0 "Diplomatic Option"    
+ swp_peace_dove:0 "Frieden vorschlagen"
+ swp_peace_dove_desc:0 "Obwohl wir einen guten Vorstoß in feindliches Gebiet gemacht haben, sind die Kämpfe zu einer Pattsituation geworden. Da die gesamte Besatzung unter den gegenwärtigen Umständen ein ferner Traum ist, schlagen unsere ranghöchsten Generäle vor, mit dem Feind ein Friedensabkommen abzuschließen. Wir werden auf die Annexion der derzeit von unseren Streitkräften und Reparationszahlungen besetzten Staaten drängen und Frieden bieten. Niemand will wirklich unbedingt einen bedingungslosen Krieg führen."
+ swp_surrender:0 "Bedingte Kapitulation"
+ swp_surrender_desc:0 "Der Krieg ist verloren gegangen und der Feind fängt jeden Tag Dutzende unserer Städte und Dörfer ein! Um einen Konkurrenzkampf und furchtbar hohe Reparationen zu vermeiden, raten unsere Generäle und Politiker, ein Friedensabkommen mit dem Feind zu unterschreiben. Sie können jedes Territorium behalten, das sie besetzen, aber endlich wird der Frieden zurückkehren ..."
+ #swp_idle:0 "No Diplomatic Action"      
+ swp_whitepeace:0 "Stellen Sie den Status Quo wieder her"
+ swp_whitepeace_desc:0 "Der Krieg war monatelang eine Pattsituation! Es gibt keine Chance, dass wir diesen Krieg gewinnen werden und das gleiche gilt für den Feind. Am besten wäre es, Friedensgespräche zu eröffnen und eine Rückkehr zu den Grenzen vor dem Krieg auszuhandeln, da weitere Forderungen ausländische Diplomaten abschrecken würden."
+ #SWP_truce
+ swp_truce:0 "Erneuerung des Waffenstillstands?"
+ swp_truce_desc:0 "Unsere Nation muss noch umbauen. Es wäre eine gute Idee, nach einem längeren Waffenstillstand zu fragen!"
+ 
+ 
+ ##RENEW THE TRUCE## 
+ swp_truce.1.t:0 "Erneuerung des Waffenstillstands?"
+ swp_truce.1.d:0 "Der Friedensvertrag, den wir im letzten Jahr abgeschlossen haben, beinhaltete auch einen einmonatigen Waffenstillstand. Dies ist jetzt abgelaufen und unser Land, sowie der ehemalige Feind, können den Konflikt jetzt wiederbeleben. Um den Frieden zu sichern, wäre es eine gute Idee, den Waffenstillstand zu erneuern. Unsere Nation muss noch umgebaut werden und wir können jetzt keine Überraschungen erleben. \nUnsere Diplomaten sind bereit zu gehen."
+ swp_truce.1.a:0 "Absolut!"
+ swp_truce.1.b:0 "Wir haben eigentlich andere Pläne ..."
+ ##Counter with the opinion modifier get an event. Can either accept or refused
+ swp_truce.2.t:0 "Nachricht von [From.GetName] - Erneuerung des Waffenstillstands?"
+ swp_truce.2.d:0 "Der Friedensvertrag, den wir im letzten Jahr abgeschlossen haben, beinhaltete auch einen einmonatigen Waffenstillstand. Dies ist nun abgelaufen und der jüngste Krieg könnte jederzeit neu beginnen. Um Frieden zu sichern, wäre es eine kluge Idee, den Waffenstillstand, wie [From.GetName] vorgeschlagen hat, zu erneuern. Unsere Nation muss noch umgebaut werden und wir können jetzt keine Überraschungen erleben. Ein Krieg wird dann für mindestens ein weiteres Jahr nicht möglich sein."
+ swp_truce.2.a:0 "Natürlich!"
+ swp_truce.2.b:0 "Ist das ein schlechter Scherz? Niemals!"
+ ##From has accepted
+ swp_truce.3.t:0 "Erneuerung des Waffenstillstands - [From.GetName] hat akzeptiert!"
+ swp_truce.3.d:0 "Die Regierung von [From.GetLeader] hat die Erneuerung eines Waffenstillstandes zwischen unseren Nationen akzeptiert. Es wird keinen Krieg für mindestens ein weiteres Jahr geben!"
+ swp_truce.3.a:0 "Sehr schön zu hören!"
+ ##From has refused
+ swp_truce.4.t:0 "Erneuerung des Waffenstillstands - [From.GetName] hat abgelehnt!"
+ swp_truce.4.d:0 "Die Regierung von [From.GetLeader] hat die Erneuerung eines Waffenstillstandes zwischen unseren Nationen abgelehnt und uns sogar beleidigt! Das ist sehr wahrscheinlich [From.GetName], die  schon einige Pläne geschmiedet heben. Wir müssen uns vorbereiten ."
+ swp_truce.4.a:0 "Verdammt!"
+ 
+ 
+ 
+ ##NEWS EVENTS##
+ ##Startup news event
+ dynamic_wp_news.1.t:0 "Make Peace, Not War - Einführung"
+ dynamic_wp_news.1.d:0 "Hallo, Benutzer meines Mods! \n"Make Peace, not War" ist ein Versuch, bedingungslose Kapitulation in Hearts of Iron im Rahmen der Moddingmöglichkeiten zu bringen. Daher sollten Sie gewarnt sein, dass Fehler und andere Fehler aufgrund der Tausenden von Möglichkeiten, Kriege zu beenden, und aufgrund der Einschränkungen des "Whitepeace" -Befehls passieren können. Um ein fehlerfreies Durchspielen zu gewährleisten, kann ich nur empfehlen, die Kriege so einfach wie möglich zu halten. Falls Sie jedoch auf etwas stoßen, seien Sie bitte so freundlich und melden Sie sie auf der Workshop-Seite unter "Bugs". \nLesen Sie auch die Mod-Beschreibung für weitere Informationen, falls noch Fragen bestehen. Anregungen oder Feedback sind natürlich auch willkommen.\nDanke!"
+ dynamic_wp_news.1.a:0 "Okay."
+ ##News event after peace
+ dynamic_wp_news.2.t:0 "Friedensvertrag zwischen  [From.From.GetName] und [Root.GetName] unterzeichnet!"
+ dynamic_wp_news.2.d:0 "Vor einigen Tagen trafen sich [From.From.GetLeader] und [Root.GetLeader] in [Root.GetName]'s Hauptstadt, um einen möglichen Friedensvertrag zwischen den beiden Ländern auszuhandeln.\nObwohl es [From.From.GetName] gelang, einige bemerkenswerte Fortschritte zu erzielen, waren sie gezwungen, einen Friedensvertrag zu unterzeichnen, um weiteres Blutvergießen zu verhindern. .\nAn diesem Nachmittag gaben Beamte beider Regierungen bekannt, dass ein Friedensabkommen unterzeichnet wurde und die feindseligen Aktivitäten morgen eingestellt werden. Territoriale Veränderungen wurden ebenfalls bestätigt. Zusätzlich zu Kriegsreparationen, hat [Root.GetName] zugestimmt, jeden Staat, der während des Krieges verloren ging, an [From.From.GetName] abzutrten.\nEs ist noch unklar, ob die Regierung um [Root.GetLeader] zurücktreten oder bleiben wird. Aufgrund der aufsteigenden linken und rechten Gesinnung nehmen einige Experten einen baldigen Regimewechsel vorweg."
+ dynamic_wp_news.2.a:0 "Ein weiterer Krieg ist vorbei." 
+ dynamic_wp_news.2.b:0 "Der Sieg ist unser."
+ dynamic_wp_news.2.c:0 "Wir werden Rache nehmen"

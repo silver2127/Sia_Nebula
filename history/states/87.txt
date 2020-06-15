@@ -1,0 +1,26 @@
+
+state={
+	id=87
+	name="STATE_87"
+
+	history={
+		owner = HCZ
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = HCZ
+
+	}
+
+	provinces={
+		466 1140 2833 2869 3297 3716 5339 5351 5352 5393 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

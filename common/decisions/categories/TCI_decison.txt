@@ -1,0 +1,6 @@
+damand_territory = {
+	icon = generic_propaganda
+	visible = {
+		original_tag = TCI
+	}
+}

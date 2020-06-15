@@ -1,0 +1,32 @@
+state={
+	id=476
+	name="STATE_476"
+	state_category = town
+	resources={
+		oil=16
+		rubber=48
+	}
+	history={
+		owner = LNA
+		victory_points = { 7130 4 }
+		buildings = {
+			infrastructure = 3
+			#dockyard = 0
+			7130 = {
+				naval_base = 1
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = LNA
+		add_core_of = VKA
+		add_core_of = VIT
+	}
+	provinces={
+		614 3445 7107 7130 7138 7148 
+	}
+	manpower=110575
+	buildings_max_level_factor=1.000
+}

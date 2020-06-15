@@ -1,0 +1,38 @@
+
+state={
+	id=130
+	name="STATE_130"
+
+	history={
+		owner = LPA
+		victory_points = {
+			5422 16 
+		}
+		victory_points = {
+			1192 6 
+		}
+		buildings = {
+			infrastructure = 7
+			5422 = {
+				naval_base = 4
+			}
+			1192 = {
+				naval_base = 1
+			}
+			industrial_complex = 3
+			arms_factory = 3
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = LPA
+
+	}
+
+	provinces={
+		355 1192 2887 5419 5422 5483 
+	}
+	manpower=595000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

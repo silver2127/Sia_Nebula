@@ -1,0 +1,30 @@
+
+state={
+	id=166
+	name="STATE_166"
+	resources={
+		chromium=64.000
+		steel=128.000
+	}
+
+	history={
+		owner = NWA
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = NWA
+
+	}
+
+	provinces={
+		2926 3107 3662 4721 4731 4762 4795 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

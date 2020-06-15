@@ -1,0 +1,38 @@
+state={
+	id=117
+	name="STATE_117"
+	state_category = large_town
+	resources={
+		aluminium=32
+		tungsten=32
+		chromium=32
+		steel=32
+	}
+	history={
+		owner = TGC
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 7
+			#dockyard = 0
+			3253 = {
+				naval_base = 2
+			}
+			6719 = {
+				naval_base = 4
+			}
+			6702 = {
+				naval_base = 3
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 4
+			anti_air_building = 0
+		}
+		add_core_of = TGC
+	}
+	provinces={
+		293 895 1624 2967 3253 3875 6674 6687 6702 6708 6719 
+	}
+	manpower=15000000
+	buildings_max_level_factor=1.000
+}

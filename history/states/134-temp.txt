@@ -1,0 +1,33 @@
+
+state={
+	id=134
+	name="STATE_134"
+	resources={
+		aluminium=12.000
+	}
+
+	history={
+		owner = LPA
+		victory_points = {
+			325 16 
+		}
+		buildings = {
+			infrastructure = 7
+			dockyard = 5
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 1
+
+		}
+		add_core_of = LPA
+
+	}
+
+	provinces={
+		325 1031 5494 5535 5571 5619 
+	}
+	manpower=2980000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

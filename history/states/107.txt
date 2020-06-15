@@ -1,0 +1,38 @@
+
+state={
+	id=107
+	name="STATE_107"
+	resources={
+		aluminium=24.000
+		tungsten=18.000
+	}
+
+	history={
+		owner = HHE
+		victory_points = {
+			4891 10 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HHE
+		#HHE = {
+		#	set_province_controller = 4869
+		#	set_province_controller = 4891
+		#	set_province_controller = 4972
+		#	set_province_controller = 4909
+		#}
+	}
+
+	provinces={
+		3617 4869 4891 4909 4972 6279 
+	}
+	manpower=2880000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

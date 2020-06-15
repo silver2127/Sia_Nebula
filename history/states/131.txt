@@ -1,0 +1,36 @@
+
+state={
+	id=131
+	name="STATE_131"
+	resources={
+		aluminium=8.000
+	}
+
+	history={
+		owner = LPA
+		victory_points = {
+			5290 18 
+		}
+		buildings = {
+			infrastructure = 8
+			5290 = {
+				naval_base = 5
+			}
+			dockyard = 3
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 3
+			anti_air_building = 3
+
+		}
+		add_core_of = LPA
+
+	}
+
+	provinces={
+		1699 1749 4005 5290 5301 5336 5371 
+	}
+	manpower=10225500
+	buildings_max_level_factor=1.500
+	state_category=megalopolis
+}

@@ -1,0 +1,26 @@
+state={
+	id=133
+	name="STATE_133"
+	state_category = city
+	history={
+		owner = LPA
+		victory_points = { 2607 3 }
+		buildings = {
+			infrastructure = 6
+			dockyard = 2
+			2607 = {
+				naval_base = 3
+			}
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = LPA
+	}
+	provinces={
+		1089 2564 2607 3082 5662 5682 5689 5701 
+	}
+	manpower=346000
+	buildings_max_level_factor=1.000
+}

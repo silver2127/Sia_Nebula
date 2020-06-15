@@ -1,0 +1,30 @@
+state={
+	id=8
+	name="STATE_8"
+	state_category = megalopolis
+	resources={
+		aluminium=64
+		tungsten=64
+		chromium=64
+	}
+	history={
+		owner = SES
+		victory_points = { 3119 24 }
+		buildings = {
+			infrastructure = 8
+			dockyard = 2
+			3119 = {
+				naval_base = 7
+			}
+			industrial_complex = 5
+			arms_factory = 3
+			air_base = 7
+		}
+		add_core_of = SES
+	}
+	provinces={
+		2066 2467 2485 2496 2527 3119 4032 5977 5991 
+	}
+	manpower=12575000
+	buildings_max_level_factor=1.000
+}

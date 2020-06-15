@@ -1,0 +1,31 @@
+state={
+	id=489
+	name="STATE_489"
+	state_category = city
+	history={
+		owner = MTA
+		victory_points = { 620 16 }
+		buildings = {
+			infrastructure = 3
+			#dockyard = 0
+			620 = {
+				naval_base = 2
+			}
+			7290 = {
+				naval_base = 1
+			}
+			industrial_complex = 2
+			arms_factory = 4
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = MTA
+		add_core_of = VIT
+		add_core_of = VKA
+	}
+	provinces={
+		620 2348 2685 3869 7205 7253 7290 7308 7318 
+	}
+	manpower=1075420
+	buildings_max_level_factor=1.000
+}

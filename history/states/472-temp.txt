@@ -1,0 +1,28 @@
+state={
+	id=472
+	name="STATE_472"
+	state_category = large_town
+	history={
+		owner = BNA
+		victory_points = { 7191 6 }
+		buildings = {
+			infrastructure = 1
+			#dockyard = 0
+			7191 = {
+				naval_base = 1
+			}
+			industrial_complex = 1
+			arms_factory = 2
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = BNA
+		add_core_of = LNA
+		add_core_of = NTK
+	}
+	provinces={
+		3353 3611 7172 7191 7251 7293 
+	}
+	manpower=398000
+	buildings_max_level_factor=1.000
+}

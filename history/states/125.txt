@@ -1,0 +1,34 @@
+state={
+	id=125
+	name="STATE_125"
+	state_category = large_city
+	resources={
+		oil=32
+	}
+	history={
+		owner = HPA
+		victory_points = { 5527 6 }
+		victory_points = { 5444 14 }
+		victory_points = { 5518 18 }
+		buildings = {
+			infrastructure = 7
+			dockyard = 1
+			5527 = {
+				naval_base = 1
+			}
+			5518 = {
+				naval_base = 4
+			}
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 3
+			anti_air_building = 1
+		}
+		add_core_of = HPA
+	}
+	provinces={
+		1758 1898 2895 3631 5444 5480 5488 5512 5518 5527 
+	}
+	manpower=762000
+	buildings_max_level_factor=1.000
+}

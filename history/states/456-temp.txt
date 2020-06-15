@@ -1,0 +1,33 @@
+state={
+	id=456
+	name="STATE_456"
+	state_category = city
+	history={
+		owner = HIN
+		victory_points = { 7594 4 }
+		victory_points = { 7635 4 }
+		victory_points = { 253 8 }
+		buildings = {
+			infrastructure = 3
+			#dockyard = 0
+			7594 = {
+				naval_base = 2
+			}
+			7635 = {
+				naval_base = 2
+			}
+			industrial_complex = 2
+			arms_factory = 4
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = HIN
+		add_core_of = GRA
+		add_core_of = ATA
+	}
+	provinces={
+		253 301 7592 7594 7606 7610 7625 7635 
+	}
+	manpower=578900
+	buildings_max_level_factor=1.000
+}

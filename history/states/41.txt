@@ -1,0 +1,31 @@
+state={
+	id=41
+	name="STATE_41"
+	state_category = large_town
+	resources={
+		aluminium=12
+		tungsten=16
+		steel=12
+	}
+	history={
+		owner = TTR
+		victory_points = { 5922 5 }
+		buildings = {
+			infrastructure = 6
+			dockyard = 1
+			5922 = {
+				naval_base = 3
+			}
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 3
+			anti_air_building = 0
+		}
+		add_core_of = TTR
+	}
+	provinces={
+		1249 3179 3450 5864 5890 5922 5952 5988 6029 
+	}
+	manpower=221200
+	buildings_max_level_factor=1.000
+}

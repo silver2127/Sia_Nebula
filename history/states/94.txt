@@ -1,0 +1,26 @@
+
+state={
+	id=94
+	name="STATE_94"
+
+	history={
+		owner = AWA
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = AWA
+
+	}
+
+	provinces={
+		321 1675 1905 2327 5117 5139 5154 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,28 @@
+state={
+	id=461
+	name="STATE_461"
+	state_category = town
+	resources={
+		steel=12
+	}
+	history={
+		owner = ATA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 3
+			#dockyard = 0
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = ATA
+		add_core_of = MTA
+		add_core_of = HIN
+	}
+	provinces={
+		1293 2703 2944 3182 4018 7556 7578 
+	}
+	manpower=220750
+	buildings_max_level_factor=1.000
+}

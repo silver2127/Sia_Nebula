@@ -1,0 +1,23 @@
+state={
+	id=12
+	name="STATE_12"
+	state_category = city
+	history={
+		owner = SES
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 5
+			#dockyard = 0
+			industrial_complex = 4
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = SES
+	}
+	provinces={
+		1216 2743 2855 3954 4066 5992 6012 6060 
+	}
+	manpower=1608400
+	buildings_max_level_factor=1.000
+}

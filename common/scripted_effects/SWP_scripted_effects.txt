@@ -1,0 +1,33 @@
+####SCRIPTED EFFECTS FOR SKELSAS'S WHITEPEACE####
+
+
+#	Example:
+# 
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+##dw_flags.10
+swp_delete_state_flags = {
+
+	every_state = {
+		limit = {
+			has_state_flag = SWP_demanded
+		}
+		clr_state_flag = SWP_demanded
+	
+	}
+		
+}

@@ -1,0 +1,27 @@
+state={
+	id=42
+	name="STATE_42"
+	state_category = town
+	history={
+		owner = TTR
+		victory_points = { 5897 1 }
+		victory_points = { 5849 3 }
+		buildings = {
+			infrastructure = 5
+			#dockyard = 0
+			5897 = {
+				naval_base = 1
+			}
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = TTR
+	}
+	provinces={
+		603 845 1827 5832 5849 5897 5931 
+	}
+	manpower=188500
+	buildings_max_level_factor=1.000
+}

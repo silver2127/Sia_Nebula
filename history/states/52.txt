@@ -1,0 +1,41 @@
+state={
+	id=52
+	name="STATE_52"
+	state_category = city
+	resources={
+		steel=24
+		chromium=24
+		grain=14
+	}
+	history={
+		owner = TTR
+		victory_points = { 2054 6 }
+		buildings = {
+			infrastructure = 7
+			dockyard = 3
+			2054 = {
+				naval_base = 4
+			}
+			5146 = {
+				bunker = 2
+			}
+			5183 = {
+				bunker = 2
+			}
+			5219 = {
+				bunker = 2
+			}
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 5
+			anti_air_building = 3
+		}
+		add_core_of = HPA
+		add_core_of = TTR
+	}
+	provinces={
+		2054 2423 3333 5146 5183 5190 5219 5262 
+	}
+	manpower=481000
+	buildings_max_level_factor=1.000
+}

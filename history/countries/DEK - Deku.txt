@@ -1,0 +1,22 @@
+﻿capital = 156
+OOB = "temp_1824"
+
+add_ideas = {
+	nez_free_trade
+}
+
+set_politics = {
+	ruling_party = enlightenism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	enlightenism = 100
+	technocracy = 0
+	theocracy = 0
+	authoritarianism = 0
+}
+
+set_stability = 0.8
+set_war_support = 0.0

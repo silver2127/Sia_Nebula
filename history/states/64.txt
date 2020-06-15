@@ -1,0 +1,30 @@
+
+state={
+	id=64
+	name="STATE_64"
+
+	history={
+		owner = TCI
+		victory_points = {
+			2480 6 
+		}
+		buildings = {
+			infrastructure = 8
+			dockyard = 3
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 4
+			anti_air_building = 0
+
+		}
+		add_core_of = TCI
+
+	}
+
+	provinces={
+		1113 1127 1322 2480 2881 3633 5801 5848 5887 
+	}
+	manpower=3575000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

@@ -1,0 +1,16 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_TCI_conic"
+		texturefile = "gfx/interface/ideas/idea_TCI_conic.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TTR_silicon_city"
+		texturefile = "gfx/interface/ideas/idea_TTR_silicon_city.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_USA_inner_conflic"
+		texturefile = "gfx/interface/ideas/idea_USA_inner_conflic.dds"
+	}
+	
+}

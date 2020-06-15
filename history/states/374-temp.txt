@@ -1,0 +1,33 @@
+
+state={
+	id=374
+	name="STATE_374"
+	state_category = city
+	resources={
+		oil=48
+		rubber=16
+	}
+	history={
+		owner = VKA
+		victory_points = { 7385 16 }
+		buildings = {
+			infrastructure = 3
+			#dockyard = 0
+			7385 = {
+				naval_base = 4
+			}
+			industrial_complex = 2
+			arms_factory = 4
+			air_base = 4
+			anti_air_building = 0
+		}
+		add_core_of = VKA
+		add_core_of = LNA
+		add_core_of = VIT
+	}
+	provinces={
+		1195 2412 4119 7313 7331 7341 7346 7367 7385 
+	}
+	manpower=1106750
+	buildings_max_level_factor=1.000
+}

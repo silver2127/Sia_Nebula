@@ -1,0 +1,69 @@
+﻿###########################
+# CONEEZEAN Events
+###########################
+
+add_namespace = consortium
+
+country_event = {
+	id = consortium.1
+	title = consortium.1.t
+	desc = consortium.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = consortium.1.a
+		ai_chance = { factor = 75 }
+		HHE = {
+			country_event = { days = 3 id = consortium.2 }
+		}
+		create_wargoal = {
+			type = take_state
+			target = TCI
+			generator = { 73 }
+		}
+	}
+
+	option = { # Refuse
+		name = consortium.1.b
+		ai_chance = { factor = 50 }
+		HHE = {
+			country_event = { days = 3 id = consortium.3 }
+		}
+	}
+}
+
+country_event = {
+	id = consortium.2
+	title = consortium.2.t
+	desc = consortium.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = consortium.2.a
+		add_political_power = 75
+		TCM = {
+			declare_war_on = {
+				target = TCI
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = consortium.3
+	title = consortium.3.t
+	desc = consortium.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = consortium.3.a
+		add_political_power = -10
+	}
+}

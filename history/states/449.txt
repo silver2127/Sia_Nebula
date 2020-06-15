@@ -1,0 +1,30 @@
+state={
+	id=449
+	name="STATE_449"
+	state_category = large_city
+	resources={
+		aluminium=40
+		tungsten=40
+		steel=40
+		chromium=40
+		grain=20
+	}
+	history={
+		owner = ZUK
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 6
+			#dockyard = 0
+			industrial_complex = 3
+			arms_factory = 4
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = ZUK
+	}
+	provinces={
+		662 1894 1921 1943 3408 5674 5679 5730 5743 5744 5752 
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,28 @@
+﻿capital = 104
+OOB = "CPI_Creature"
+
+set_fuel_ratio = 1.0
+set_research_slots = 0
+set_convoys = 0
+
+set_technology = {
+	plantoids_weapons
+}
+
+set_politics = {
+	ruling_party = authoritarianism
+	last_election = "1933.3.5"
+	election_frequency = 96
+	elections_allowed = no
+}
+set_popularities = {
+	authoritarianism = 100
+}
+
+set_stability = 1.0
+set_war_support = 1.0
+
+add_ideas = {
+	war_economy
+	closed_economy
+}

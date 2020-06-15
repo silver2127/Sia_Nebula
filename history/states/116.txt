@@ -1,0 +1,23 @@
+state={
+	id=116
+	name="STATE_116"
+	state_category = large_town
+	history={
+		owner = TGC
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 6
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = TGC
+	}
+	provinces={
+		1320 1334 1457 2434 2718 3081 6650 6691 6706 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,23 @@
+state={
+	id=19
+	name="STATE_19"
+	history={
+		owner = SES
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = SES
+
+	}
+	provinces={
+		411 1606 1794 1888 2903 5918 5920 6048 
+	}
+	manpower=89500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

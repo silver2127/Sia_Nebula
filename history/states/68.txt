@@ -1,0 +1,24 @@
+state={
+	id=68
+	name="STATE_68"
+	state_category = megalopolis
+	history={
+		owner = TCI
+		victory_points = { 2252 12 }
+		victory_points = { 6121 8 }
+		buildings = {
+			infrastructure = 7
+			#dockyard = 0
+			industrial_complex = 7
+			arms_factory = 3
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = TCI
+	}
+	provinces={
+		201 1889 2235 2252 3318 3581 6000 6021 6055 6121 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+}

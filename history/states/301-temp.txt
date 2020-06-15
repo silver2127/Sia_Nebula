@@ -1,0 +1,10 @@
+state={
+	id=301
+	name="STATE_301"
+	state_category = town
+	provinces={
+		673 791 1026 1071 1199 2000 2148 3229 3291 3562 3797 4011 4029 4096 6767 6770 6783 6807 6821 6847 6850 6891 6898 6915 6919 6920 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

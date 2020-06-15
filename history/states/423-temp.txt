@@ -1,0 +1,23 @@
+state={
+	id=423
+	name="STATE_423"
+	state_category = large_town
+	history={
+		owner = TCM
+		victory_points = { 6496 10 }
+		buildings = {
+			infrastructure = 5
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = TCM
+	}
+	provinces={
+		818 1885 1966 2355 6412 6453 6463 6468 6479 6484 6490 6496 6520 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=16
+	name="STATE_16"
+	state_category = large_town
+	resources={
+		grain=40
+	}
+	history={
+		owner = SES
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = SES
+	}
+	provinces={
+		593 1396 1734 3455 6092 6124 6157 6186 6193 6218 
+	}
+	manpower=108400
+	buildings_max_level_factor=1.000
+}

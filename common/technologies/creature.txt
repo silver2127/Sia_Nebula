@@ -1,0 +1,28 @@
+technologies = {
+	plantoids_weapons = {
+		allow = {
+			always = no
+		}
+		#enable_equipments = {
+		#	plantoid_equipment_0
+		#}
+		enable_subunits = {
+			plantoids
+		}
+		research_cost = 1
+		start_year = 1798
+	}
+	fleshy_weapons = {
+		allow = {
+			always = no
+		}
+		#enable_equipments = {
+		#	fleshy_equipment_0
+		#}
+		enable_subunits = {
+			the_flash_that_hates
+		}
+		research_cost = 1
+		start_year = 1798
+	}
+}

@@ -1,0 +1,38 @@
+####SCRIPTED TRIGGERS FOR SKELSAS'S WHITEPEACE####
+
+
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+
+##PREVIOUSLY THIS WAS HANDLED VIA GLOBAL AND COUNTRY FLAGS IN SWP_Setup
+
+
+##Manpower and Economy Laws (dw_flags.8 + dw_flags.9 ) -> swp_laws = yes means that the laws are fulfilled; swp_laws = no means that the laws are NOT fulfilled
+swp_laws = {
+		OR = {
+			has_idea = partial_economic_mobilisation
+			has_idea = war_economy
+			has_idea = tot_economic_mobilisation
+		}
+
+		OR = {		
+			has_idea = limited_conscription 
+			has_idea = extensive_conscription
+			has_idea = service_by_requirement
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel	
+		}
+	}

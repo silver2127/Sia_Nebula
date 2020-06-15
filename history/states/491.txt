@@ -1,0 +1,35 @@
+
+state={
+	id=491
+	name="STATE_491"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+	}
+	state_category = town
+	history={
+		owner = CAJ
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 1
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = CAJ
+	}
+	provinces={
+		1508 2680 2980 3571 5457 5470 5478 5513 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+}

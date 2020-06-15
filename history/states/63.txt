@@ -1,0 +1,23 @@
+state={
+	id=63
+	name="STATE_63"
+	state_category = advance_megalopolis
+	history={
+		owner = TCI
+		victory_points = { 5838 8 }
+		buildings = {
+			infrastructure = 8
+			dockyard = 2
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = TCI
+	}
+	provinces={
+		503 2405 3706 5831 5838 5859 5888 5910 5921 
+	}
+	manpower=21896000
+	buildings_max_level_factor=1.000
+}

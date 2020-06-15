@@ -1,0 +1,26 @@
+
+state={
+	id=61
+	name="STATE_61"
+
+	history={
+		owner = TCI
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 2
+			anti_air_building = 3
+
+		}
+		add_core_of = TCI
+		add_claim_by = BTF
+	}
+
+	provinces={
+		1503 2019 2385 2816 5378 5467 5468 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

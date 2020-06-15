@@ -1,0 +1,12 @@
+##Diplomacy Decisions
+
+
+##Category 
+swp_peace = {
+
+	icon = GFX_swp_idle
+
+	picture = GFX_swp_diplomacy
+
+
+}

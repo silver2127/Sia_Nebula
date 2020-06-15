@@ -1,0 +1,26 @@
+
+state={
+	id=151
+	name="STATE_151"
+
+	history={
+		owner = NWA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = NWA
+
+	}
+
+	provinces={
+		249 2368 3419 4732 4737 4792 4817 4833 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

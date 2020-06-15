@@ -1,0 +1,29 @@
+state={
+	id=473
+	name="STATE_473"
+	state_category = town
+	resources={
+		steel=12
+		rubber=16
+	}
+	history={
+		owner = BNA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			industrial_complex = 0
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = BNA
+		add_core_of = LNA
+		add_core_of = NTK
+	}
+	provinces={
+		1400 2517 3327 7279 7286 7349 
+	}
+	manpower=325000
+	buildings_max_level_factor=1.000
+}

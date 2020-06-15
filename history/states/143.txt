@@ -1,0 +1,36 @@
+
+state={
+	id=143
+	name="STATE_143"
+	resources={
+		tungsten=32.000
+	}
+
+	history={
+		owner = BTF
+		victory_points = {
+			5227 18
+		}
+		buildings = {
+			infrastructure = 8
+			dockyard = 3
+			5227 = {
+				naval_base = 3
+			}
+			industrial_complex = 4
+			arms_factory = 3
+			air_base = 3
+			anti_air_building = 2
+
+		}
+		add_core_of = BTF
+
+	}
+
+	provinces={
+		2886 3295 5172 5188 5218 5227 5246 
+	}
+	manpower=5614112
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=418
+	name="STATE_418"
+
+	history={
+		owner = TCM
+		victory_points = {
+			6447 18 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = TCM
+
+	}
+
+	provinces={
+		1237 1408 3016 4094 6378 6432 6433 6447 6452 6458 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

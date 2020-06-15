@@ -1,0 +1,28 @@
+
+state={
+	id=140
+	name="STATE_140"
+	resources={
+		grain=16
+	}
+	history={
+		owner = BTF
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = BTF
+
+	}
+
+	provinces={
+		1528 2186 4003 5181 5196 5200 5236 5242 5272 5282 
+	}
+	manpower=112000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

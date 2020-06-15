@@ -1,0 +1,328 @@
+﻿##SkelSa's swp_losing//dynamic peace system. 
+##tag = PLAYER
+##PLAYER IS LOSING
+
+add_namespace = swp_losing
+
+
+##HIDDEN EVENT TO DETERMINE PLAYER LOSING
+##All ways lead to swp_losing.0
+country_event = {
+
+    id = swp_losing.0 
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_losing.0" }	
+ 
+	##Decisions
+	is_triggered_only = yes
+	hidden = yes
+
+	#War with no faction
+	option = {
+	
+		if = {	
+			limit = {
+			
+				any_enemy_country = {
+					is_ai = yes
+					is_in_faction = no
+					has_country_flag = dw_ai_war						
+				}		
+			}			
+			country_event = swp_losing.1
+		}
+
+	##War with faction leader
+		if = {	
+			limit = {
+			
+				any_enemy_country = {
+							
+					is_in_faction = yes
+					is_faction_leader = yes
+					has_country_flag = dw_ai_war
+						
+				}
+			
+			}			
+			country_event = swp_losing.2
+		}
+
+	#War with faction member, leader not at war!; doesn't exist in winning anymore!
+		if = {	
+			limit = {
+			
+				any_enemy_country = {
+		
+					is_in_faction = yes
+					is_faction_leader = no
+					has_country_flag = dw_ai_war
+					
+					any_allied_country = {
+			
+						is_faction_leader = yes
+						NOT = { any_enemy_country = { is_ai = no}	}		
+
+					}
+				}			
+			}			
+			country_event = swp_losing.3
+		}	
+	}	
+}
+
+##tag = PLAYER; 
+##enemy country has NO FACTION
+country_event = {
+
+    id = swp_losing.1 	
+    title =  swp_dynamic.1.t
+    desc = swp_dynamic.1.d              
+	picture = GFX_report_event_soviet_tanks_snow 
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_losing.1" }		
+
+	
+	##Decision
+	is_triggered_only = yes
+	
+	
+	option = {		##Send invitation to AI country
+		name = swp_dynamic.1.a 
+		
+			every_country = {
+			
+				limit = {
+					has_war_with = ROOT
+					is_ai = yes
+					is_in_faction = no
+				}
+			
+			country_event = { days = 1 id = swp_losing.4}	
+			
+			}
+
+	}
+	
+	
+	
+	option = {		##Player goes Hitler and believes in an Endsieg
+			name = swp_dynamic.1.b
+
+		set_country_flag = peace_declined
+		
+		hidden_effect = {
+			country_event = { days = 200 id = dw_flags.7 }	
+		}
+		
+	}
+
+	
+}
+
+
+##TAG = PLAYER, begs for peace
+##Enemy country is faction leader
+country_event = {
+
+    id = swp_losing.2                          
+    title = swp_dynamic.2.t                  
+    desc = swp_dynamic.2.d                 
+	picture = GFX_report_event_soviet_tanks_snow 						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_losing.2" }		
+	
+	is_triggered_only = yes
+
+	
+	#Send peace proposal to AI country
+	option = { 								
+	name = swp_dynamic.2.a
+
+		#player is loser
+			
+		every_country = {
+		
+			limit = {
+
+				has_war_with = ROOT
+				is_ai = yes
+				
+				##only target countries which occupy territory
+				any_state = {
+				
+					is_owned_by = ROOT
+					is_controlled_by = PREV
+				
+				}
+
+			}
+		
+		country_event = { days = 1 id = swp_losing.4}
+		
+		}
+		
+	}
+	
+	#Abort the peace events
+	option = { 	
+	name = swp_dynamic.2.b
+	
+		set_country_flag = peace_declined
+		
+		hidden_effect = {
+			country_event = { days = 200 id = dw_flags.7 }	
+		}
+	}
+	
+}
+	
+	
+##faction member, faction leader not at war	
+##tag = PLAYER; can beg for peace!
+country_event = {
+
+    id = swp_losing.3                          
+    title = swp_losing.3.t                
+    desc = swp_losing.3.d                   
+	picture = GFX_report_event_soviet_tanks_snow     						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_losing.3" }		
+	
+	is_triggered_only = yes
+
+	#Send invitation to WINNER
+	option = { 								
+	name = swp_losing.3.a
+	ai_chance = {factor = 100}
+
+		every_country = {
+		
+			limit = {
+
+				has_war_with = ROOT
+				is_ai = yes
+				
+				##only target countries which occupy territory
+				any_state = {
+				
+					is_owned_by = ROOT
+					is_controlled_by = PREV
+				
+				}
+
+				any_allied_country = {
+
+					is_faction_leader = yes
+					NOT = { any_enemy_country = { is_ai = no }	}		
+
+				}
+
+			}
+		
+		country_event = { days = 1 id = swp_losing.4}
+
+		}
+	}
+				
+	#Player decides for Endsieg
+	option = { 	
+	name = swp_losing.3.b
+	
+		set_country_flag = peace_declined
+		
+		hidden_effect = {
+			country_event = { days = 200 id = dw_flags.7 }	
+		}
+	
+	}		
+}
+
+##Country who guarantees you gets also event
+##tag = AI COUNTRY/WINNER; is notified about player's peace proposal
+country_event = {
+
+    id = swp_losing.4                         
+    title = swp_dynamic.4.t                 
+    desc = swp_dynamic.4.d                    
+	picture = GFX_report_event_soviet_tanks_snow      						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_losing.4" }		
+	
+	is_triggered_only = yes 
+	
+	
+	#Peace treaty will happen
+	option = { 
+	name = swp_dynamic.4.a 
+	ai_chance = {factor = 100}
+	
+		
+		##Every loser nation gets swp_loser		
+		every_country = {
+			limit = {
+			
+				has_war_with = ROOT
+				
+				OR = {
+					is_in_faction_with = FROM
+					has_guaranteed = FROM
+					is_subject_of = FROM
+					tag = FROM				
+				}
+				
+				##JUMP, to do: equip loser in faction
+				any_state = {
+				
+					is_owned_by = PREV
+						any_country = {
+							OR = {
+								is_in_faction_with = ROOT
+								has_guaranteed = ROOT
+								is_subject_of = ROOT
+								tag = ROOT
+							}
+							controls_state = PREV
+						}										
+				}			
+			}
+			
+		set_country_flag = swp_loser
+		
+		##only instance of swp_final.1
+		country_event = { days = 1 id = swp_final.1 }	
+								
+		}
+		
+		add_opinion_modifier = { target = FROM modifier = swp_signed_peace_treaty }
+		
+		##Every winner nation gets swp_winner	
+		every_country = {
+			limit = {
+			
+				has_war_with = FROM
+				OR = {
+					is_in_faction_with = ROOT
+					has_guaranteed = ROOT
+					is_subject_of = ROOT
+					tag = ROOT
+					
+				}
+
+			}
+			
+			set_country_flag = swp_winner
+		}
+
+		
+		set_global_flag = peace_in_process
+
+	}
+		
+	#AI country says fuck you to Player, Usually doesn't happen
+	option = { 	
+	name = swp_dynamic.4.b
+	ai_chance = {factor = 0}
+
+		FROM = {		
+			country_event = { days = 2 id = swp_final.2}		
+		}
+	
+	}
+		
+}

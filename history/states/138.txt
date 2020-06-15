@@ -1,0 +1,28 @@
+
+state={
+	id=138
+	name="STATE_138"
+	resources={
+		grain=20
+	}
+	history={
+		owner = LPA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = LPA
+
+	}
+
+	provinces={
+		1227 2396 5564 5587 5592 5600 5625 5635 5669 
+	}
+	manpower=287000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

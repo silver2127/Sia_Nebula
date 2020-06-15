@@ -1,0 +1,468 @@
+﻿##SkelSa's DYNAMIC PEACE SYSTEM.
+##COPIED FROM SWP_WINNING
+
+
+add_namespace = swp_winning
+
+
+##TAG = FACTION MEMBER; IS_IN_FACTION: Faction leader whitepeaces in another event; this only goes to countries which have territory occupied
+country_event = {
+
+	id = swp_winning.6                        
+    title = swp_winning.6.t                  
+    desc = swp_winning.6.d                    
+	picture = GFX_report_event_soviet_tanks_snow 
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning.6" }
+
+	is_triggered_only = yes 
+	
+	immediate = {
+	
+		every_state = {	
+		
+				limit = {
+				
+					OR = {
+					
+						is_owned_by = ROOT
+					
+						any_country = {
+						
+							OR = {
+								is_subject_of = ROOT
+								has_guaranteed = ROOT
+							}
+							
+						owns_state = PREV
+						}
+					}
+					
+					
+					OR = {
+					
+						is_controlled_by = FROM
+						
+						any_country = {
+							OR = {
+								has_guaranteed = FROM
+								is_subject_of = FROM
+								is_in_faction_with = FROM
+							}
+						controls_state = PREV
+						
+						}
+					}						
+				}
+				
+		set_state_flag = SWP_demanded				
+		}
+
+	}
+
+	##We accept
+	option = { 
+		name = swp_winning.6.a
+			ai_chance = {factor = 100}
+
+			#faction members lose territory
+			FROM = { country_event = { id = swp_winning.13 } }
+			
+			if = {
+				limit = {
+					has_global_flag = peace_in_process
+				}
+				clr_global_flag = peace_in_process	
+			}
+			
+			}
+	
+	
+	##NO
+	option = { 
+		name = swp_winning.6.b
+	
+			if = {
+				limit = {
+					has_global_flag = peace_in_process
+				}
+				clr_global_flag = peace_in_process	
+			}
+				
+			FROM = {country_event = { id = swp_winning.14} }
+			
+	}
+}	
+
+
+
+##tag = FACTION LEADER; Player has accepted - Faction leader gets whitepeace	
+country_event = {
+
+    id = swp_winning.12                     
+    title = swp_winning.12.t                  
+    desc = swp_winning.12.d                     
+	picture = GFX_report_event_soviet_tanks_snow
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning.12" }
+
+	is_triggered_only = yes  
+
+	##set flags for news events
+	immediate = {
+	
+		##SET FLAGS, DEFINE HERE WHO HAS TO CEDE STATES
+		every_state = {				
+				limit = {
+				
+					#ROOT IS LOSER, no is_in_faction; as this event goes to every member anyways 
+					OR = {
+					
+						any_country = {
+							OR = {
+								is_subject_of = ROOT
+								has_guaranteed = ROOT
+								tag = ROOT
+							}
+							owns_state = PREV
+						}					
+					}
+
+					#FROM IS WINNER
+					OR = {
+					
+						any_country = {
+							OR = {
+								is_subject_of = FROM
+								is_in_faction_with = FROM
+								has_guaranteed = FROM
+								tag = FROM
+							}
+							controls_state = PREV 							
+						}
+					}					
+				}
+				
+				set_state_flag = SWP_demanded		
+			}
+	
+
+		hidden_effect = {
+		
+			##NEWS
+			if = {
+				limit = {		
+					NOT = { has_global_flag = swp_news_read}			
+				}
+				
+			news_event = { id = dynamic_wp_news.2 }				
+			}	
+			
+		}	
+	}	
+	
+	
+	#We accept
+	option = { 
+		name = swp_winning.12.a 
+	
+		##Every loser nation gets swp_loser		
+			every_country = {						##explanation: every country, who has war with FROM = PLAYER/WINNER; has a state occupied by any enemy, who's related to FROM and has to be itself related to ROOT
+				limit = {
+				
+					has_war_with = FROM
+					any_state = {
+						is_owned_by = PREV
+						any_country = {
+						
+							OR = {
+								is_in_faction_with = FROM
+								has_guaranteed = FROM
+								is_subject_of = FROM
+								tag = FROM
+							}
+							
+						controls_state = PREV
+						}				
+					}
+					OR = {
+						is_in_faction_with = ROOT
+						has_guaranteed = ROOT
+						is_subject_of = ROOT
+						tag = ROOT
+						
+					}			
+				}
+				
+				set_country_flag = swp_loser
+				add_timed_idea = { idea = SWP_reparations days = 120 } 
+				add_timed_idea = { idea = SWP_government days = 60 }
+				
+				
+			}
+
+			##Every winner nation gets swp_winner	
+			every_country = {
+				limit = {
+				
+					has_war_with = ROOT
+					OR = {
+						is_in_faction_with = FROM
+						has_guaranteed = FROM
+						is_subject_of = FROM
+						tag = FROM
+						
+					}		
+				}
+				
+				set_country_flag = swp_winner
+				add_timed_idea = { idea = SWP_victorious days = 120 }
+								
+			}
+	
+	
+		##In case the vanilla peace conference was enabled
+		if = {
+			limit = {
+				has_global_flag = swp_vanilla_conference_settings		
+			}
+			
+			##Give all losers a national spirit
+			every_country = {						
+				limit = {
+					has_country_flag = swp_loser
+					is_ai = yes						
+				}	
+				add_timed_idea = { idea = SWP_surrender_limit days = 5 }
+			}
+
+			
+		}
+
+	
+	
+		##ROOT is loser; faction leader
+		##whitepeace only works between the two initial countries, nevertheless (NEEDS TESTING AFTER 1.5)
+		reverse_add_opinion_modifier = { target = FROM modifier = swp_signed_peace_treaty } 
+			
+		
+		##In case the original state transfer system was used
+		if = {
+			limit = {
+				NOT = { has_global_flag = swp_vanilla_conference_settings }	
+			}
+
+			
+			every_country = { 
+				limit = {				
+					has_war_with = ROOT
+					
+					OR = {						
+						is_in_faction_with = FROM
+						is_subject_of = FROM
+						has_guaranteed = FROM
+						tag = FROM
+					}
+					
+				}
+			
+			white_peace = ROOT
+			}
+
+
+			##state changes come here
+			every_state = {
+			
+				if = {		
+					limit = {		
+						has_state_flag = SWP_demanded
+						is_owned_by = ROOT
+					}
+
+				FROM = { transfer_state = PREV }
+				
+				}		
+			}
+
+			
+		}
+
+		####REMOVE FLAGS####		
+		every_country = {
+
+			##All loser nations lose the country flag assigned earlier
+			if = { limit = { has_country_flag = swp_loser } clr_country_flag = swp_loser }
+			
+			##All winner nations lose the country flag assigned earlier
+			if = { limit = { has_country_flag = swp_winner } clr_country_flag = swp_winner }
+
+		}
+
+		##Peace negotiations are finally over
+		if = { limit = { has_global_flag = peace_in_process } clr_global_flag = peace_in_process }
+		
+		##state flag will be removed by allies
+		
+	}
+	
+}
+
+
+
+#############################################
+####EVENT 13 AND 14 ARE MUTUALLY EXCLUSIVE!##
+#############################################
+
+
+##tag = PLAYER; Success; faction member transfers territory	
+country_event = {
+
+    id = swp_winning.13                     
+    title = swp_winning.13.t                 
+    desc = swp_winning.13.d                
+	picture = GFX_report_event_soviet_tanks_snow
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning.13" }
+
+	is_triggered_only = yes 
+
+	
+	#Nice
+	option = { 
+	name = swp_winning.13.a
+	
+	FROM = { reverse_add_opinion_modifier = { target = ROOT modifier = swp_signed_peace_treaty } }
+	
+	##Original system is used
+	if = { 
+		limit = { 
+			NOT = { has_global_flag = swp_vanilla_conference_settings } 
+		}
+
+	FROM = { white_peace = ROOT }
+	}
+	
+	##Adding one country flag for the player after 30 days (Truce_End)!
+	if = {
+		limit = {
+			is_ai = no
+		}
+		
+		country_event = { days = 30 id = dw_flags.11 }
+	}
+	
+	every_country = {
+		
+		limit = {
+			OR = {
+				is_in_faction_with = ROOT
+				has_guaranteed = ROOT
+				is_subject_of = ROOT
+				tag = ROOT
+			}
+		}
+		FROM = { reverse_add_opinion_modifier = { target = PREV modifier = swp_signed_peace_treaty } }	
+		white_peace = FROM	
+			
+	}
+	
+	
+	
+	
+	##Original system is used
+	if = { 
+		limit = { 
+			NOT = { has_global_flag = swp_vanilla_conference_settings } 
+		}
+
+		every_state = {
+		
+			limit = {			
+				has_state_flag = SWP_demanded
+				is_owned_by = FROM
+			}
+
+			ROOT = { transfer_state = PREV }
+			
+					
+		}
+	}
+	
+	##Spirits are by the leader!	
+
+	
+	if = { limit = { has_global_flag = peace_in_process } clr_global_flag = peace_in_process }
+	
+	##remove state flags			
+	country_event = { days = 20 id = dw_flags.10 }
+	
+	}
+			
+}
+
+##tag = PLAYER; faction member refuses territory, gains a war goal	
+country_event = {
+
+    id = swp_winning.14                       
+    title = swp_winning.14.t                
+    desc = swp_winning.14.d                   
+	picture = GFX_report_event_soviet_tanks_snow
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning.14" }
+
+	is_triggered_only = yes 
+
+	
+	#STUPID AI
+	option = { 
+	name = swp_winning.14.a
+
+		create_wargoal = { type = annex_everything target = FROM }
+		
+		##Faction Leader can't make whitepeace (NEEDS TESTING AFTER 1.5)
+		FROM = { reverse_add_opinion_modifier = { target = ROOT modifier = swp_signed_peace_treaty } }	
+		
+
+		if = { 
+			limit = { 
+				NOT = { has_global_flag = swp_vanilla_conference_settings } 
+			}
+
+		FROM = { white_peace = ROOT }
+		}
+
+		
+		##Adding one country flag for the player after 30 days (Truce_End)!
+		if = {
+			limit = {
+				is_ai = no
+			}
+			
+			country_event = { days = 30 id = dw_flags.11 }
+		}
+
+		every_country = {
+		
+			limit = {
+				OR = {
+					is_in_faction_with = ROOT
+					has_guaranteed = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			
+			FROM = { reverse_add_opinion_modifier = { target = PREV modifier = swp_signed_peace_treaty } }	
+			FROM = { white_peace = PREV }
+		}
+
+		
+
+		##Spirits are removed by the leader!		
+		
+		
+		##Peace negotiations are over
+		if = { limit = { has_global_flag = peace_in_process } clr_global_flag = peace_in_process }
+		
+			
+		##remove state flags			
+		country_event = { days = 20 id = dw_flags.10 }
+		
+	}
+
+}

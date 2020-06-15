@@ -1,0 +1,26 @@
+
+state={
+	id=6
+	name="STATE_6"
+
+	history={
+		owner = SES
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 2
+			air_base = 4
+			anti_air_building = 0
+
+		}
+		add_core_of = SES
+
+	}
+
+	provinces={
+		1486 2121 2736 3245 3991 5725 5749 5755 5802 
+	}
+	manpower=398555
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

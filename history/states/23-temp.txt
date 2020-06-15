@@ -1,0 +1,30 @@
+state={
+	id=23
+	name="STATE_23"
+	state_category = rural
+	resources={
+		oil=64
+	}
+	history={
+		owner = SES
+		victory_points = { 29 1 }
+		victory_points = { 5969 5 }
+		buildings = {
+			infrastructure = 1
+			dockyard = 1
+			29 = {
+				naval_base = 2
+			}
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 5
+			anti_air_building = 2
+		}
+		add_core_of = SES
+	}
+	provinces={
+		29 5969 5976 6008 6011 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,3647 @@
+technologies = {
+	@1810 = -1	# 	@1918 = -1
+	@1822 = 2	# 	@1934 = 2
+	@1824 = 5	# 	@1936 = 5
+	@1826 = 8	# 	@1938 = 8
+	@1827 = 11	# 	@1939 = 11
+	@1828 = 14	# 	@1940 = 14
+	@1829 = 17	# 	@1941 = 17
+	@1830 = 20	# 	@1942 = 20
+	@1831 = 23	# 	@1943 = 23
+	@1832 = 26	# 	@1944 = 26
+	@1833 = 29	# 	@1945 = 29
+	@1834 = 32	# 	@1946 = 32
+	@AM = -3
+	@LT = -1
+	@MT = 1
+	@MDT = 2
+	@HT = 3
+	@SHT = 5
+	
+	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
+	gwtank = { #Leichttraktor
+
+		enable_equipments = {
+			gw_tank_equipment
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {	has_template_containing_unit = light_armor }
+				NOT = {	has_template_containing_unit = heavy_armor }
+				NOT = {	has_template_containing_unit = medium_armor }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+	
+		path = {
+			leads_to_tech = basic_light_tank
+			research_cost_coeff = 1
+		}
+	
+		path = {
+			leads_to_tech = basic_heavy_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1810
+		folder = {
+			name = armour_folder
+			position = { x = @MT y = @1810 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1826.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1827.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+
+	basic_light_tank = { #Panzer I
+
+		enable_equipments = {
+			light_tank_equipment_1 
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {	has_template_containing_unit = light_armor }
+				NOT = {	has_template_containing_unit = heavy_armor }
+				NOT = {	has_template_containing_unit = medium_armor }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = improved_light_tank
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_Armor2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1822
+		folder = {
+			name = armour_folder
+			position = { x = @LT y = @1822 }
+		}
+		
+		sub_technologies = {
+			basic_light_td
+			basic_light_art
+			basic_light_spaa
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1826.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1827.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+	
+	ATT_Armor2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = @AM y = @1824 }
+		}
+	
+		research_cost = 0.5
+		start_year = 1824
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Armor2
+			}
+			custom_effect_tooltip = ATT_tooltip_Armor2
+		}
+	
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				add = 100
+				OR = {
+					tag = FRA
+					tag = ENG
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_light_td = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1822
+		
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 100
+				OR = {
+					tag = GER
+					tag = SOV
+				}
+				has_war = yes
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 25
+						}
+					}
+				}
+			}
+			modifier = {
+				has_template_containing_unit = light_tank_destroyer_brigade
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories > 50
+				num_of_military_factories < 120
+				factor = 2
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_light_td
+					can_research = improved_light_td
+					is_researching_technology = improved_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_light_art = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1822
+		
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				has_template_containing_unit = light_sp_artillery_brigade
+				add = 2
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_light_art
+					can_research = improved_light_art
+					is_researching_technology = improved_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_light_spaa = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1822
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				is_major = yes
+				add = 0.25
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_light_spaa
+					can_research = improved_light_spaa
+					is_researching_technology = improved_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+
+	improved_light_tank = { #Panzer II
+
+		enable_equipments = {
+			light_tank_equipment_2 
+		}
+		
+		path = {
+			leads_to_tech = ATT_Armor4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_Hull1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = amphibious_tank
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = basic_medium_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1824
+		
+		folder = {
+			name = armour_folder
+			position = { x = @LT y = @1824 }
+		}
+		
+		sub_technologies = {
+			improved_light_td
+			improved_light_art
+			improved_light_spaa
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
+				}
+			}
+			modifier = {
+				is_major = yes
+				not = { tag = JAP }
+				has_war = yes
+				factor = 10 #you are embarassing yourself
+			}
+			modifier = {
+				tag = SOV
+				factor = 3
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1826.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1827.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	
+	ATT_Hull1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1826 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Hull1
+			}
+			custom_effect_tooltip = ATT_tooltip_Hull1
+		}
+	
+		research_cost = 1
+		start_year = 1826
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_Armor4 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = @LT y = @1827 }
+		}
+		
+		path = {
+			leads_to_tech = advanced_light_tank
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Armor4
+			}
+			custom_effect_tooltip = ATT_tooltip_Armor4
+		}
+	
+		research_cost = 1
+		start_year = 1827
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	improved_light_td = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1824
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 120
+				OR = {
+					#tag = GER
+					tag = SOV
+				}
+				has_war = yes
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 27
+						}
+					}
+				}
+			}
+			modifier = {
+				has_template_containing_unit = light_tank_destroyer_brigade
+				factor = 2
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_light_td
+					can_research = advanced_light_td
+					is_researching_technology = advanced_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	improved_light_art = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1824
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				has_template_containing_unit = light_sp_artillery_brigade
+				add = 2
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_light_art
+					can_research = advanced_light_art
+					is_researching_technology = advanced_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	improved_light_spaa = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1824
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_light_spaa
+					can_research = advanced_light_spaa
+					is_researching_technology = advanced_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+
+	amphibious_tank = { #SchwimmPanzer II
+
+		enable_equipments = {
+			amphibious_tank_equipment_1
+		}
+
+		enable_subunits = {
+			amphibious_armor
+		}
+
+		path = {
+			leads_to_tech = amphibious_tank_2
+			research_cost_coeff = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 2
+		start_year = 1828
+		
+		folder = {
+			name = armour_folder
+			position = { x = @AM y = @1828 }
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					original_tag = USA
+					original_tag = JAP
+				}
+				factor = 2
+			}
+			modifier = {
+				not = {
+					any_state = {
+						is_controlled_by = ROOT
+						is_coastal = yes
+					}
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			armor
+			tp_tech
+		}
+	}
+
+	amphibious_tank_2 = { #tauchPanzer III
+
+		enable_equipments = {
+			amphibious_tank_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1830
+		
+		folder = {
+			name = armour_folder
+			position = { x = @AM y = @1830 }
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					original_tag = USA
+					original_tag = JAP
+				}
+				factor = 2
+			}
+			modifier = {
+				not = {
+					any_state = {
+						is_controlled_by = ROOT
+						is_coastal = yes
+					}
+				}
+				factor = 0
+			}
+		}
+		
+		categories = {
+			armor
+			tp_tech
+		}
+	}
+	
+	advanced_light_tank = { #Leopard
+
+		enable_equipments = {
+			light_tank_equipment_3 
+		}	
+		
+		research_cost = 2
+		start_year = 1829
+		
+		path = {
+			leads_to_tech = ATT_Armor6
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = @LT y = @1829 }
+		}
+		
+		sub_technologies = {
+			advanced_light_td
+			advanced_light_art
+			advanced_light_spaa
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1830.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1831.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1832.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	
+	ATT_Armor6 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = @LT y = @1831 }
+		}
+	
+		research_cost = 1
+		start_year = 1831
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Armor6
+			}
+			custom_effect_tooltip = ATT_tooltip_Armor6
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_light_td = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1829
+		
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 130
+				OR = {
+					#tag = GER
+					tag = SOV
+				}
+				has_war = yes
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 27
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_light_art = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1829
+	
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_light_spaa = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1829
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_medium_tank = { #Panzer III
+
+		enable_equipments = {
+			medium_tank_equipment_1 
+		}
+		
+		path = {
+			leads_to_tech = improved_medium_tank 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_Armor3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_Hull2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1827
+
+		folder = {
+			name = armour_folder
+			position = { x = @MT y = @1827 }
+		}
+		
+		sub_technologies = {
+			basic_medium_td
+			basic_medium_art
+			basic_medium_spaa
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
+				}
+				date > "1826.1.1"
+			}
+			modifier = {
+				tag = SOV
+				factor = 1.5
+			}
+			modifier = {
+				factor = 1.1
+				date > "1828.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1829.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1830.1.1"
+			}
+			
+			modifier = {
+				factor = 15.0
+				tag = GER
+				has_opinion_modifier = sov_ger_treaty
+			}
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	ATT_Armor3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1828 }
+		}
+		
+		path = {
+			leads_to_tech = ATT_Armor5
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Armor3
+			}
+			custom_effect_tooltip = ATT_tooltip_Armor3
+		}
+	
+		research_cost = 4
+		start_year = 1828
+	
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_Armor5 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1830 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Armor5
+			}
+			custom_effect_tooltip = ATT_tooltip_Armor5
+		}
+		
+		research_cost = 1
+		start_year = 1830
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_Hull2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1828 }
+		}
+	
+		research_cost = 1
+		start_year = 1828
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Hull2
+			}
+			custom_effect_tooltip = ATT_tooltip_Hull2
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_medium_td = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1827
+
+		
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 140
+				OR = {
+					#tag = GER
+					tag = SOV
+				}
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 30
+						}
+					}
+				}
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_medium_td
+					can_research = improved_medium_td
+					is_researching_technology = improved_medium_tank
+				}
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1828.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1829.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1830.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_medium_art = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1827
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_medium_art
+					can_research = improved_medium_art
+					is_researching_technology = improved_medium_tank
+				}
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1828.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1829.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1830.1.1"
+			}
+			modifier = {
+				factor = 100
+				tag = Ger
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_medium_spaa = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1827
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_medium_spaa
+					can_research = improved_medium_spaa
+					is_researching_technology = improved_medium_tank
+				}
+			}
+			modifier = {
+				factor = 0 # we dont use it
+				tag = GER
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	improved_medium_tank = { #Panzer IV
+
+		enable_equipments = {
+			medium_tank_equipment_2 
+		}
+		
+		path = {
+			leads_to_tech = advanced_medium_tank 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = improved_heavy_tank 
+			research_cost_coeff = 0.9
+		}
+		
+		path = {
+			leads_to_tech = ATT_Armor8
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1829
+		
+		folder = {
+			name = armour_folder
+			position = { x = @MT y = @1829 }
+		}
+		
+		sub_technologies = {
+			improved_medium_td
+			improved_medium_art
+			improved_medium_spaa
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
+				}
+			}
+			modifier = {
+				date < "1829.1.1"
+				factor = 0.3
+			}
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1830.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1831.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1832.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	improved_medium_td = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1829
+
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 150
+				OR = {
+					#tag = GER
+					tag = SOV
+				}
+				has_war = yes
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
+			}
+			modifier = {
+				has_template_containing_unit = medium_tank_destroyer_brigade
+				factor = 3
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_medium_td
+					can_research = advanced_medium_td
+					is_researching_technology = advanced_medium_tank
+				}
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1830.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1831.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1832.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	improved_medium_art = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1829
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_medium_art
+					can_research = advanced_medium_art
+					is_researching_technology = advanced_medium_tank
+				}
+			}
+			modifier = {
+				has_template_containing_unit = medium_sp_artillery_brigade
+				factor = 3
+			}
+			modifier = {
+				factor = 1.1
+				date > "1830.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1831.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1832.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	improved_medium_spaa = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1829
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_medium_spaa
+					can_research = advanced_medium_spaa
+					is_researching_technology = advanced_medium_tank
+				}
+			}
+			modifier = {
+				factor = 0 # we dont use it
+				tag = GER
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_medium_tank = { #Panther
+
+		enable_equipments = {
+			medium_tank_equipment_3 
+		}
+		
+		path = {
+			leads_to_tech = main_battle_tank 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_heavy_tank 
+			research_cost_coeff = 0.9
+		}
+		path = {
+			leads_to_tech = ATT_APShell4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1831
+		
+		folder = {
+			name = armour_folder
+			position = { x = @MT y = @1831 }
+		}
+		
+		sub_technologies = {
+			advanced_medium_td
+			advanced_medium_art
+			advanced_medium_spaa
+		}
+		
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1832.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1833.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1834.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	ATT_APShell4 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1833 }
+		}
+	
+		research_cost = 1
+		start_year = 1833
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_APShell4
+			}
+			custom_effect_tooltip = ATT_tooltip_APShell4
+		}
+	
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_medium_td = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1831
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 160
+				OR = {
+					tag = GER
+					tag = SOV
+				}
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 35
+						}
+					}
+				}
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = modern_td
+					can_research = modern_td
+					is_researching_technology = main_battle_tank
+				}
+			}
+			modifier = {
+				has_template_containing_unit = medium_tank_destroyer_brigade
+				factor = 3
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1832.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1833.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1834.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_medium_art = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1831
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = modern_art
+					can_research = modern_art
+					is_researching_technology = main_battle_tank
+				}
+			}
+			modifier = {
+				has_template_containing_unit = medium_sp_artillery_brigade
+				factor = 3
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1832.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1833.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1834.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_medium_spaa = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1831
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = modern_spaa
+					can_research = modern_spaa
+					is_researching_technology = main_battle_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	main_battle_tank = { #E-50
+
+		enable_equipments = {
+			modern_tank_equipment_1
+		}	
+		
+		research_cost = 2.5
+		start_year = 1833
+		
+		folder = {
+			name = armour_folder
+			position = { x = @MDT y = @1833 }
+		}
+		
+		sub_technologies = {
+			modern_td
+			modern_art
+			modern_spaa
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1834.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	modern_td = {
+
+		enable_equipments = {
+			modern_tank_destroyer_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1833
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1834.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	modern_art = {
+
+		enable_equipments = {
+			modern_tank_artillery_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1833
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1834.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	modern_spaa = {
+
+		enable_equipments = {
+			modern_tank_aa_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1833
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_heavy_tank = { #Grosstraktor
+
+		enable_equipments = {
+			heavy_tank_equipment_1 
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {	has_template_containing_unit = light_armor }
+				NOT = {	has_template_containing_unit = heavy_armor }
+				NOT = {	has_template_containing_unit = medium_armor }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
+				}
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = ATT_Armor1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1822
+		
+		folder = {
+			name = armour_folder
+			position = { x = @HT y = @1822 }
+		}
+		
+		sub_technologies = {
+			basic_heavy_td
+			basic_heavy_art
+			basic_heavy_spaa
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1826.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1827.1.1"
+			}
+			modifier = {
+				tag = FRA
+				factor = 3
+			}
+			modifier = {
+				tag = JAP
+				num_of_military_factories < 100
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					can_research = improved_heavy_tank
+					has_tech = improved_heavy_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	ATT_Armor1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = @HT y = @1826 }
+		}
+		
+		path = {
+			leads_to_tech = improved_heavy_tank
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Armor1
+			}
+			custom_effect_tooltip = ATT_tooltip_Armor1
+		}
+	
+		research_cost = 1
+		start_year = 1826
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_heavy_td = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1822
+
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_heavy_td
+					can_research = improved_heavy_td
+					is_researching_technology = improved_heavy_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	basic_heavy_art = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1822
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_heavy_art
+					can_research = improved_heavy_art
+					is_researching_technology = improved_heavy_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+
+	
+	basic_heavy_spaa = {
+
+		enable_equipments = {
+			heavy_tank_aa_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1822
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_heavy_spaa
+					can_research = improved_heavy_spaa
+					is_researching_technology = improved_heavy_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	improved_heavy_tank = { #Tiger
+
+		enable_equipments = {
+			heavy_tank_equipment_2 
+		}
+		
+		path = {
+			leads_to_tech = advanced_heavy_tank 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_medium_tank 
+			research_cost_coeff = 0.9
+		}
+		
+		path = {
+			leads_to_tech = ATT_Armor8
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_Hull3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 1829
+		
+		folder = {
+			name = armour_folder
+			position = { x = @HT y = @1829 }
+		}
+		
+		sub_technologies = {
+			improved_heavy_td
+			improved_heavy_art
+			improved_heavy_spaa
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			modifier = {
+				tag = JAP
+				num_of_military_factories < 100
+				factor = 0
+			}
+			modifier = {
+				factor = 1.2
+				date > "1830.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1831.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1832.1.1"
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					can_research = advanced_heavy_tank
+					has_tech = advanced_heavy_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	ATT_Armor8 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1830 }
+		}
+	
+		research_cost = 1
+		start_year = 1830
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Armor8
+			}
+			custom_effect_tooltip = ATT_tooltip_Armor8
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	improved_heavy_td = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1829
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_heavy_td
+					can_research = advanced_heavy_td
+					is_researching_technology = advanced_heavy_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	improved_heavy_art = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1829
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_heavy_art
+					can_research = advanced_heavy_art
+					is_researching_technology = advanced_heavy_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+
+	
+	improved_heavy_spaa = {
+
+		enable_equipments = {
+			heavy_tank_aa_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1829
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_heavy_spaa
+					can_research = advanced_heavy_spaa
+					is_researching_technology = advanced_heavy_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_heavy_tank = { #King Tiger
+
+		enable_equipments = {
+			heavy_tank_equipment_3 
+		}
+		
+		path = {
+			leads_to_tech = main_battle_tank 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_Armor7
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = advanced_medium_tank 
+			research_cost_coeff = 0.9
+		}
+		
+		research_cost = 2.5
+		start_year = 1831
+		
+		folder = {
+			name = armour_folder
+			position = { x = @HT y = @1831 }
+		}
+		
+		sub_technologies = {
+			advanced_heavy_td
+			advanced_heavy_art
+			advanced_heavy_spaa
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			
+			modifier = {
+				factor = 1.2
+				date > "1832.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1833.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1834.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	ATT_Armor7 = { 
+	
+		research_cost = 1
+		start_year = 1832
+		folder = {
+			name = armour_folder
+			position = { x = @HT y = @1832 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Armor7
+			}
+			custom_effect_tooltip = ATT_tooltip_Armor7
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_heavy_td = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1831
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = modern_td
+					can_research = modern_td
+					is_researching_technology = main_battle_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_heavy_art = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1831
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = modern_art
+					can_research = modern_art
+					is_researching_technology = main_battle_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	advanced_heavy_spaa = {
+
+		enable_equipments = {
+			heavy_tank_aa_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1831
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = modern_spaa
+					can_research = modern_spaa
+					is_researching_technology = main_battle_tank
+				}
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_Hull3 = { 
+	
+		path = {
+			leads_to_tech = super_heavy_tank
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 1
+		start_year = 1830
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Hull3
+			}
+			custom_effect_tooltip = ATT_tooltip_Hull3
+		}
+		
+		folder = {
+			name = armour_folder
+			position = { x = @SHT y = @1830 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	super_heavy_tank = { #Maus
+
+		enable_equipments = {
+			super_heavy_tank_equipment_1
+		}
+	
+		research_cost = 2.5
+		start_year = 1831
+		folder = {
+			name = armour_folder
+			position = { x = @SHT y = @1831 }
+		}
+		
+		sub_technologies = {
+			super_heavy_td
+			super_heavy_art
+			super_heavy_spaa
+		}
+		
+		ai_will_do = {
+			factor = 0 # Hitler cries on the inside
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
+	super_heavy_td = {
+
+		enable_equipments = {
+			super_heavy_tank_destroyer_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1831
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	super_heavy_art = {
+
+		enable_equipments = {
+			super_heavy_tank_artillery_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1831
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	super_heavy_spaa = {
+
+		enable_equipments = {
+			super_heavy_tank_aa_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1831
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	#################
+	###ATT Repairs###
+	#################
+	
+	ATT_Repair1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1822 }
+		}		
+		
+		path = {
+			leads_to_tech = ATT_Repair2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_repair1
+			}
+			custom_effect_tooltip = ATT_tooltip_repair1
+		}
+		
+		research_cost = 1
+		start_year = 1822
+	
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_Repair2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1827 }
+		}		
+		
+		path = {
+			leads_to_tech = ATT_Repair3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_repair2
+			}
+			custom_effect_tooltip = ATT_tooltip_repair2
+		}
+		
+		research_cost = 1
+		start_year = 1827
+	
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_Repair3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1829 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_repair3
+			}
+			custom_effect_tooltip = ATT_tooltip_repair3
+		}
+		
+		research_cost = 1
+		start_year = 1829
+	
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	#################
+	###ATT Suspensions & Engines###
+	#################
+		
+	ATT_Suspensions1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1822 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Suspensions1
+			}
+			custom_effect_tooltip = ATT_tooltip_Suspensions1
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon1_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon3_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon2_1
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_EngineIcon1_1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1824 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon1_1
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon1_1
+		}
+		
+		path = {
+			leads_to_tech = ATT_Suspensions2
+			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			ATT_EngineIcon3_1
+		}
+		
+		XOR = {
+			ATT_EngineIcon2_1
+		}
+	
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				tag = GER
+			}
+			modifier = {
+				factor = 100
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_EngineIcon3_1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = @1824 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon3_1
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon3_1
+		}
+		
+		path = {
+			leads_to_tech = ATT_Suspensions2
+			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			ATT_EngineIcon1_1
+		}
+		
+		XOR = {
+			ATT_EngineIcon2_1
+		}
+		
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_EngineIcon2_1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1824 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon2_1
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon2_1
+		}
+		
+		path = {
+			leads_to_tech = ATT_Suspensions2
+			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			ATT_EngineIcon1_1
+		}
+		
+		XOR = {
+			ATT_EngineIcon3_1
+		}
+	
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_Suspensions2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1826 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Suspensions2
+			}
+			custom_effect_tooltip = ATT_tooltip_Suspensions2
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon1_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon3_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon2_2
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_EngineIcon1_2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1827 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon1_2
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon1_2
+		}
+		
+		path = {
+			leads_to_tech = ATT_Suspensions3
+			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			ATT_EngineIcon3_2
+		}
+		
+		
+		XOR = {
+			ATT_EngineIcon2_2
+		}
+	
+		research_cost = 1
+		start_year = 1827
+	
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				tag = GER
+			}
+			modifier = {
+				factor = 100
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_EngineIcon3_2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = @1827 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon3_2
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon3_2
+		}
+		
+		path = {
+			leads_to_tech = ATT_Suspensions3
+			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			ATT_EngineIcon1_2
+		}
+		
+		XOR = {
+			ATT_EngineIcon2_2
+		}
+		
+		research_cost = 1
+		start_year = 1827
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_EngineIcon2_2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1827 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon2_2
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon2_2
+		}
+		
+		path = {
+			leads_to_tech = ATT_Suspensions3
+			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			ATT_EngineIcon1_2
+		}
+		
+		XOR = {
+			ATT_EngineIcon3_2
+		}
+	
+		research_cost = 1
+		start_year = 1827
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_Suspensions3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1828 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Suspensions3
+			}
+			custom_effect_tooltip = ATT_tooltip_Suspensions3
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon1_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon3_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon2_3
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	
+	ATT_EngineIcon1_3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1829 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon1_3
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon1_3
+		}
+		
+		path = {
+			leads_to_tech = ATT_Suspensions4
+			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			ATT_EngineIcon3_3
+		}
+		
+		XOR = {
+			ATT_EngineIcon2_3
+		}
+	
+		research_cost = 1
+		start_year = 1830
+	
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				tag = GER
+			}
+			modifier = {
+				factor = 100
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_EngineIcon3_3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = @1829 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon3_3
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon3_3
+		}
+		
+		path = {
+			leads_to_tech = ATT_Suspensions4
+			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			ATT_EngineIcon1_3
+		}
+		
+		XOR = {
+			ATT_EngineIcon2_3
+		}
+	
+		research_cost = 1
+		start_year = 1830
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_EngineIcon2_3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1829 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon2_3
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon2_3
+		}
+		
+		path = {
+			leads_to_tech = ATT_Suspensions4
+			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			ATT_EngineIcon1_3
+		}
+		
+		XOR = {
+			ATT_EngineIcon3_3
+		}
+	
+		research_cost = 1
+		start_year = 1830
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_Suspensions4 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1830 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Suspensions4
+			}
+			custom_effect_tooltip = ATT_tooltip_Suspensions4
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon1_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon3_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_EngineIcon2_4
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+		
+	ATT_EngineIcon1_4 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1831 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon1_4
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon1_4
+		}
+		
+		XOR = {
+			ATT_EngineIcon3_4
+		}
+		
+		XOR = {
+			ATT_EngineIcon2_4
+		}
+	
+		research_cost = 1
+		start_year = 1833
+	
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				tag = GER
+			}
+			modifier = {
+				factor = 100
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+	ATT_EngineIcon3_4 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = @1831 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon3_4
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon3_4
+		}
+		
+		XOR = {
+			ATT_EngineIcon1_4
+		}
+		
+		XOR = {
+			ATT_EngineIcon2_4
+		}
+	
+		research_cost = 1
+		start_year = 1833
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+		
+	ATT_EngineIcon2_4 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1831 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_EngineIcon2_4
+			}
+			custom_effect_tooltip = ATT_tooltip_EngineIcon2_4
+		}
+		
+		XOR = {
+			ATT_EngineIcon1_4
+		}
+		
+		XOR = {
+			ATT_EngineIcon3_4
+		}
+	
+		research_cost = 1
+		start_year = 1833
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}
+	
+########################
+###ATT Sight & Shells###
+########################
+
+	
+	ATT_Sight1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1810 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Sight1
+			}
+			custom_effect_tooltip = ATT_tooltip_Sight1
+		}
+		
+		path = {
+			leads_to_tech = ATT_AAShell1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_APShell1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_HEShell1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_AAShell1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1824 }
+		}
+		
+		path = {
+			leads_to_tech = ATT_Aim
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_AAShell1
+			}
+			custom_effect_tooltip = ATT_tooltip_AAShell1
+		}
+		
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_APShell1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1824 }
+		}
+		
+		path = {
+			leads_to_tech = ATT_Aim
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_APShell1
+			}
+			custom_effect_tooltip = ATT_tooltip_APShell1
+		}
+		
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_HEShell1 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = @1824 }
+		}
+		
+		path = {
+			leads_to_tech = ATT_Aim
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_HEShell1
+			}
+			custom_effect_tooltip = ATT_tooltip_HEShell1
+		}
+		
+		research_cost = 1
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_Aim = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1826 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Aim
+			}
+			custom_effect_tooltip = ATT_tooltip_Aim
+		}
+		
+		path = {
+			leads_to_tech = ATT_AAShell2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_APShell2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_HEShell2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1826
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_AAShell2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1828 }
+		}
+		
+		path = {
+			leads_to_tech = ATT_Sight2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_AAShell2
+			}
+			custom_effect_tooltip = ATT_tooltip_AAShell2
+		}
+		
+		research_cost = 1
+		start_year = 1828
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_APShell2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1828 }
+		}
+		
+		path = {
+			leads_to_tech = ATT_Sight2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_APShell2
+			}
+			custom_effect_tooltip = ATT_tooltip_APShell2
+		}
+		
+		research_cost = 1
+		start_year = 1828
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_HEShell2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = @1828 }
+		}
+		
+		path = {
+			leads_to_tech = ATT_Sight2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_HEShell2
+			}
+			custom_effect_tooltip = ATT_tooltip_HEShell2
+		}
+		
+		research_cost = 1
+		start_year = 1828
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_Sight2 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1829 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Sight2
+			}
+			custom_effect_tooltip = ATT_tooltip_Sight2
+		}
+		
+		path = {
+			leads_to_tech = ATT_AAShell3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_APShell3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = ATT_HEShell3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1829
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_AAShell3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = @1831 }
+		}
+		
+		path = {
+			leads_to_tech = ATT_Sight3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_AAShell3
+			}
+			custom_effect_tooltip = ATT_tooltip_AAShell3
+		}
+		
+		research_cost = 1
+		start_year = 1831
+	
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_APShell3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1831 }
+		}
+		
+		path = {
+			leads_to_tech = ATT_Sight3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_APShell3
+			}
+			custom_effect_tooltip = ATT_tooltip_APShell3
+		}
+		
+		research_cost = 1
+		start_year = 1831
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_HEShell3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = @1831}
+		}
+		
+		path = {
+			leads_to_tech = ATT_Sight3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_HEShell3
+			}
+			custom_effect_tooltip = ATT_tooltip_HEShell3
+		}
+		
+		research_cost = 0.5
+		start_year = 1831
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_Sight3 = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = @1832 }
+		}
+		
+		on_research_complete = {
+			hidden_effect = { 
+				add_ideas = ATT_idea_Sight3
+			}
+			custom_effect_tooltip = ATT_tooltip_Sight2
+		}
+		
+		research_cost = 1
+		start_year = 1832
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_Camo = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 27 }
+		}
+		
+		research_cost = 0.5
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		category_all_armor = {
+			acclimatization_hot_climate_gain_factor = 0.10
+			acclimatization_cold_climate_gain_factor = 0.10
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	
+	ATT_CamoDesert = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 2 y = 27 }
+		}
+		
+		research_cost = 0.5
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		category_all_armor = {
+			acclimatization_hot_climate_gain_factor = 0.30
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+	ATT_CamoWinter = {
+	
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 27 }
+		}
+		
+		category_all_armor = {
+			acclimatization_cold_climate_gain_factor = 0.30
+		}
+		
+		research_cost = 0.5
+		start_year = 1824
+	
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		categories = {
+			armor
+		}
+	}	
+}

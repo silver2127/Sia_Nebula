@@ -1,0 +1,62 @@
+difficulty_settings = {
+	difficulty_setting = {
+		key = "custom_diff_strong_ttr"
+		modifier = diff_strong_ai_generic
+		countries = { TTR }
+		multiplier = 1.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_hhe"
+		modifier = diff_strong_ai_generic
+		countries = { HHE }
+		multiplier = 1.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_subjects"
+		modifier = diff_strong_ai_generic
+		countries = { HPA LPA BTF HFB NWA GSP HCZ AWA }
+		multiplier = 1.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_tci"
+		modifier = diff_strong_ai_generic
+		countries = { TCI }
+		multiplier = 1.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_tcm"
+		modifier = diff_strong_ai_generic
+		countries = { TCM }
+		multiplier = 1.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_ses"
+		modifier = diff_strong_ai_generic
+		countries = { SES }
+		multiplier = 1.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_tgc"
+		modifier = diff_strong_ai_generic
+		countries = { TGC }
+		multiplier = 1.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_techno_civ"
+		modifier = diff_strong_ai_generic
+		countries = { HIN VKA BNA }
+		multiplier = 1.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_unity_civ"
+		modifier = diff_strong_ai_generic
+		countries = { MTA LNA GRA }
+		multiplier = 1.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_enlighen_civ"
+		modifier = diff_strong_ai_generic
+		countries = { VIT ATA NTK }
+		multiplier = 1.0
+	}
+}

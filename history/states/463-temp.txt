@@ -1,0 +1,28 @@
+state={
+	id=463
+	name="STATE_463"
+	state_category = large_town
+	resources={
+		steel=12
+	}
+	history={
+		owner = VKA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = VKA
+		add_core_of = LNA
+		add_core_of = ATA
+	}
+	provinces={
+		3809 4071 7439 7461 7479 7497 7505 
+	}
+	manpower=273000
+	buildings_max_level_factor=1.000
+}

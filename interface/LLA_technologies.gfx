@@ -1,0 +1,61 @@
+spriteTypes = {
+
+	# technologies we need to override in DLC go in this file
+
+	### LLA tanks ###	
+
+	SpriteType = {
+		name = "GFX_LLA_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_LLA_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_LLA_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_LLA_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_LLA_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LLA_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LLA_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_LLA_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_LLA_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LLA_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LLA_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/LLA_superheavy_tank.dds"
+	}	
+}

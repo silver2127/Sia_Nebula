@@ -1,0 +1,100 @@
+HHE_influence_game = {
+	HHE_imperal_improvement = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_subject_of = HHE
+			}
+			#FROM = {
+			#	democratic < 0.9
+			#}
+			OR = {
+				political_power_daily > 0.75
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+			not = {
+				is_subject_of = HHE
+			}
+			or = {
+				has_government = enlightenism
+				has_government = theocracy
+				has_government = authoritarianism
+			}
+			FROM = {
+				is_subject_of = HHE
+				#or = {
+				#	enlightenism < 0.99
+				#	theocracy < 0.99
+				#	authoritarianism < 0.99
+				#}
+			}
+		}
+
+		#target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_subject_of = HHE
+			}
+		}
+
+		complete_effect = {
+			FROM = { add_timed_idea = { idea = harmony_imperal_improvement days = 120 } }
+		}
+
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+request_development = {
+	request_development_help = {
+
+		available = {
+			is_subject_of = HHE
+		}
+
+		visible = {
+			is_subject_of = HHE
+		}
+
+		fire_only_once = no
+		is_good = yes
+		cost = 50
+
+		days_remove = 120
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				has_political_power > 175
+			}
+			modifier = {
+				factor = -1
+				has_political_power < 150
+			}
+		}
+
+		modifier = {
+		}
+
+		complete_effect = {
+			HHE = {
+				country_event = { id = HHE_subject.0 days = 1 }
+			}
+		}
+	}
+}

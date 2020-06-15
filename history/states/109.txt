@@ -1,0 +1,28 @@
+state={
+	id=109
+	name="STATE_109"
+	resources={
+		steel=128.000
+	}
+
+	history={
+		owner = HHE
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HHE
+
+	}
+
+	provinces={
+		1519 1951 2042 4740 4767 4775 4834 4862 
+	}
+	manpower=185500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

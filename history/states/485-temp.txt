@@ -1,0 +1,33 @@
+state={
+	id=485
+	name="STATE_485"
+	state_category = large_city
+	resources={
+		steel=14
+		oil=12
+		rubber=6
+	}
+	history={
+		owner = MTA
+		victory_points = { 7388 15 }
+		buildings = {
+			infrastructure = 5
+			dockyard = 1
+			7388 = {
+				naval_base = 4
+			}
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 4
+			anti_air_building = 0
+		}
+		add_core_of = MTA
+		add_core_of = VIT
+		add_core_of = VKA
+	}
+	provinces={
+		1918 3421 4044 7328 7357 7388 7420 
+	}
+	manpower=750869
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,27 @@
+state={
+	id=51
+	name="STATE_51"
+	state_category = large_town
+	resources={
+		grain=10
+	}
+	history={
+		owner = TTR
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = HPA
+		add_core_of = TTR
+	}
+	provinces={
+		82 1557 3540 5155 5191 5224 5228 
+	}
+	manpower=352000‬
+	buildings_max_level_factor=1.000
+}

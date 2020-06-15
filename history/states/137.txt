@@ -1,0 +1,28 @@
+
+state={
+	id=137
+	name="STATE_137"
+	resources={
+		grain=18
+	}
+	history={
+		owner = LPA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = LPA
+
+	}
+
+	provinces={
+		921 2284 3259 3609 3792 5446 5469 5526 
+	}
+	manpower=100700
+	buildings_max_level_factor=1.000
+	state_category=town
+}

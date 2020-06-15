@@ -1,0 +1,24 @@
+state={
+	id=433
+	name="STATE_433"
+	state_category = town
+	history={
+		owner = GPF
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 1
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = GPF
+		add_core_of = NCU
+	}
+	provinces={
+		932 2356 2370 2733 6369 6370 6371 6391 6413 6438 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

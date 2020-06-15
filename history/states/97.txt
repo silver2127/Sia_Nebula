@@ -1,0 +1,40 @@
+
+state={
+	id=97
+	name="STATE_97"
+
+	history={
+		owner = HHE
+		victory_points = {
+			2099 15 
+		}
+		victory_points = {
+			1120 10 
+		}
+		victory_points = {
+			5145 7 
+		}
+		buildings = {
+			infrastructure = 7
+			dockyard = 5
+			1120 = {
+				naval_base = 8
+
+			}
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 7
+			anti_air_building = 3
+
+		}
+		add_core_of = HHE
+
+	}
+
+	provinces={
+		1120 2099 3236 5108 5111 5144 5145 
+	}
+	manpower=6777216
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

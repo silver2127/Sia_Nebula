@@ -1,0 +1,25 @@
+state={
+	id=462
+	name="STATE_462"
+	state_category = town
+	history={
+		owner = HIN
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = HIN
+		add_core_of = MTA
+		add_core_of = ATA
+	}
+	provinces={
+		1830 3166 7491 7508 7530 7548 
+	}
+	manpower=305000
+	buildings_max_level_factor=1.000
+}

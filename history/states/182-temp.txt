@@ -1,0 +1,29 @@
+state={
+	id=182
+	name="STATE_182"
+	state_category = town
+	resources={
+		oil=30
+	}
+	history={
+		owner = LLA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 0
+			#dockyard = 0
+			7835 = {
+				naval_base = 6
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = LLA
+	}
+	provinces={
+		7835 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

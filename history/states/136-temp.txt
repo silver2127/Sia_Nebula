@@ -1,0 +1,27 @@
+
+state={
+	id=136
+	name="STATE_136"
+
+	history={
+		owner = LPA
+		buildings = {
+			infrastructure = 5
+			dockyard = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = LPA
+
+	}
+
+	provinces={
+		1349 2910 3501 3966 5572 5620 5658 5663 
+	}
+	manpower=198000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

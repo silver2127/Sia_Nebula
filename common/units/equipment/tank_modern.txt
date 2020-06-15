@@ -1,0 +1,4 @@
+# modern tank/self propelled equipment
+equipments = {
+
+}

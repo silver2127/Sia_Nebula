@@ -1,0 +1,28 @@
+
+state={
+	id=20
+	name="STATE_20"
+	resources={
+		steel=32
+	}
+	history={
+		owner = SES
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = SES
+
+	}
+
+	provinces={
+		1937 2925 5946 5978 5985 6017 6024 6063 6068 6105 
+	}
+	manpower=290648
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

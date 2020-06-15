@@ -1,0 +1,35 @@
+state={
+	id=515
+	name="STATE_515"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+		grain=0
+	}
+	state_category = town
+	history={
+		owner = USA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 1
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = USA
+	}
+	provinces={
+		500 1255 2095 4086 4387 4403 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

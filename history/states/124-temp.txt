@@ -1,0 +1,30 @@
+state={
+	id=124
+	name="STATE_124"
+	state_category = large_town
+	history={
+		owner = HPA
+		victory_points = { 3020 3 }
+		victory_points = { 2670 6 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			3020 = {
+				naval_base = 1
+			}
+			2670 = {
+				naval_base = 3
+			}
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = HPA
+	}
+	provinces={
+		244 297 2670 3020 4823 4861 4881 4917 
+	}
+	manpower=240000
+	buildings_max_level_factor=1.000
+}

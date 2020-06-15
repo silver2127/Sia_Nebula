@@ -1,0 +1,21 @@
+state={
+	id=507
+	name="STATE_507"
+	history={
+		owner = TCM
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 2
+			anti_air_building = 2
+		}
+		add_core_of = TCM
+	}
+	provinces={
+		699 2422 2798 6094 6170 6182 6260 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

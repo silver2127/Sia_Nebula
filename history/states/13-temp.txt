@@ -1,0 +1,22 @@
+state={
+	id=13
+	name="STATE_13"
+	state_category=rural
+	history={
+		owner = SES
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = SES
+	}
+	provinces={
+		587 1569 1769 2846 5930 5951 
+	}
+	manpower=56750
+	buildings_max_level_factor=1.000
+}

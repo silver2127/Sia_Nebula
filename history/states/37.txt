@@ -1,0 +1,26 @@
+
+state={
+	id=37
+	name="STATE_37"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		141 1989 2247 2949 3307 4761 4765 4789 4794 4804 4875 4877 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

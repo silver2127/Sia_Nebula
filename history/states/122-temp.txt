@@ -1,0 +1,38 @@
+
+state={
+	id=122
+	name="STATE_122"
+	resources={
+		steel=48.000
+		chromium=24.000
+	}
+
+	history={
+		owner = HPA
+		victory_points = {
+			952 15 
+		}
+		buildings = {
+			infrastructure = 5
+			dockyard = 1
+			952 = {
+				naval_base = 5
+
+			}
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 3
+			anti_air_building = 0
+
+		}
+		add_core_of = HPA
+
+	}
+
+	provinces={
+		952 2028 2373 3461 4934 4955 5017 5030 5055 5062 5072 6199 
+	}
+	manpower=387500
+	buildings_max_level_factor=1.000
+	state_category=city
+}

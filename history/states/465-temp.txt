@@ -1,0 +1,25 @@
+state={
+	id=465
+	name="STATE_465"
+	state_category = large_town
+	history={
+		owner = NTK
+		victory_points = { 725 8 }
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = NTK
+		add_core_of = GRA
+		add_core_of = BNA
+	}
+	provinces={
+		43 725 987 1223 7404 7428 7453 
+	}
+	manpower=675000
+	buildings_max_level_factor=1.000
+}

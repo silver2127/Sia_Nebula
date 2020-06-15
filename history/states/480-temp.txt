@@ -1,0 +1,25 @@
+state={
+	id=480
+	name="STATE_480"
+	state_category = large_town
+	history={
+		owner = LNA
+		victory_points = { 6975 7 }
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = LNA
+		add_core_of = VKA
+		add_core_of = VIT
+	}
+	provinces={
+		2883 3001 6975 6993 7012 
+	}
+	manpower=250000
+	buildings_max_level_factor=1.000
+}

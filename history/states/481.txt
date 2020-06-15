@@ -1,0 +1,25 @@
+state={
+	id=481
+	name="STATE_481"
+	state_category = large_town
+	history={
+		owner = ATA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 3
+			#dockyard = 0
+			industrial_complex = 0
+			arms_factory = 4
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = ATA
+		add_core_of = MTA
+		add_core_of = HIN
+	}
+	provinces={
+		483 947 1553 1652 4014 7545 7547 
+	}
+	manpower=395000
+	buildings_max_level_factor=1.000
+}

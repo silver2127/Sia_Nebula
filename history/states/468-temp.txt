@@ -1,0 +1,33 @@
+state={
+	id=468
+	name="STATE_468"
+	state_category = city
+	resources={
+		steel=24
+		oil=32
+		rubber=8
+	}
+	history={
+		owner = NTK
+		victory_points = { 911 20 }
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			911 = {
+				naval_base = 4
+			}
+			industrial_complex = 2
+			arms_factory = 3
+			air_base = 4
+			anti_air_building = 0
+		}
+		add_core_of = NTK
+		add_core_of = GRA
+		add_core_of = BNA
+	}
+	provinces={
+		2 561 911 1862 3900 7284 7358 
+	}
+	manpower=1055420
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=187
+	name="STATE_187"
+	state_category = large_town
+	resources={
+		oil=12
+	}
+	history={
+		owner = LLA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 0
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = LLA
+	}
+	provinces={
+		3120 7714 7716 7718 7720 7721 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=420
+	name="STATE_420"
+
+	history={
+		owner = TCM
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = TCM
+	}
+
+	provinces={
+		207 220 1525 3923 3955 6130 6187 6228 6294 
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

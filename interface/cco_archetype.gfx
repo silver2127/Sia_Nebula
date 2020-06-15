@@ -1,0 +1,6 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "archetype_food_equipment"
+		texturefile = "gfx/interface/archetypes/archetype_food_equipment.dds"
+	}
+}

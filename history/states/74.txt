@@ -1,0 +1,30 @@
+
+state={
+	id=74
+	name="STATE_74"
+	resources={
+		oil=12.000
+	}
+
+	history={
+		owner = TCI
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 0
+			synthetic_refinery = 2
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TCI
+
+	}
+
+	provinces={
+		513 3300 6077 6095 6103 6109 6110 6140 6144 6145 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

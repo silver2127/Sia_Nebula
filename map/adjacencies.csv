@@ -1,0 +1,30 @@
+From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+4155;8624;sea;5820;-1;-1;-1;-1;GRAND_CANAL;Grand Canal
+10881;11088;sea;325;-1;-1;-1;-1;HARMONIAN_RIVER1;River_Canal
+11088;11087;sea;5290;-1;-1;-1;-1;HARMONIAN_RIVER2;River_Canal
+9528;11086;sea;5145;-1;-1;-1;-1;HARMONIAN_RIVER3;River_Canal
+11087;11086;sea;5100;-1;-1;-1;-1;HARMONIAN_RIVER4;River_Canal
+409;5408;sea;9062;-1;-1;-1;-1;;crossing
+3523;7799;sea;10197;-1;-1;-1;-1;;crossing
+2250;3829;sea;9646;-1;-1;-1;-1;;crossing
+5935;7801;sea;9547;-1;-1;-1;-1;;crossing
+7477;2107;sea;10017;-1;-1;-1;-1;;crossing
+30;4095;sea;7983;-1;-1;-1;-1;;crossing
+2817;2269;sea;10561;-1;-1;-1;-1;;crossing
+30;2379;sea;7983;-1;-1;-1;-1;;crossing
+6290;6231;sea;9693;-1;-1;-1;-1;;crossing
+7770;7769;sea;9213;-1;-1;-1;-1;;crossing
+945;7770;sea;9213;-1;-1;-1;-1;;crossing
+97;4300;sea;10655;-1;-1;-1;-1;;crossing
+1968;3383;sea;10655;-1;-1;-1;-1;;crossing
+4535;7778;sea;9519;-1;-1;-1;-1;;crossing
+3876;7778;sea;9519;-1;-1;-1;-1;;crossing
+10014;9741;sea;7012;-1;-1;-1;-1;LW_ARCHAGEA_CANAL1;Grand Canal
+10561;9741;sea;3593;-1;-1;-1;-1;LW_ARCHAGEA_CANAL2;Grand Canal
+8654;10994;sea;7605;-1;-1;-1;-1;LW_ARCHAGEA_CANAL3;Grand Canal
+4953;4913;sea;7851;-1;-1;-1;-1;;crossing
+5591;568;sea;9524;-1;-1;-1;-1;;crossing
+4940;4893;sea;10173;-1;-1;-1;-1;;crossing
+4940;4988;sea;10173;-1;-1;-1;-1;;crossing
+4452;4437;sea;9432;-1;-1;-1;-1;;crossing
+-1;-1;;-1;-1;-1;-1;-1;-1

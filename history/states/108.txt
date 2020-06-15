@@ -1,0 +1,36 @@
+
+state={
+	id=108
+	name="STATE_108"
+	resources={
+		aluminium=18.000
+		tungsten=24.000
+	}
+
+	history={
+		owner = HHE
+		victory_points = {
+			5161 14 
+		}
+		buildings = {
+			infrastructure = 9
+			5161 = {
+				naval_base = 2
+			}
+			industrial_complex = 6
+			arms_factory = 4
+			air_base = 0
+			anti_air_building = 3
+
+		}
+		add_core_of = HHE
+
+	}
+
+	provinces={
+		81 719 2180 5014 5081 5106 5120 5161 
+	}
+	manpower=8240000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

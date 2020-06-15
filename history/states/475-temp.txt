@@ -1,0 +1,28 @@
+state={
+	id=475
+	name="STATE_475"
+	state_category = city
+	history={
+		owner = BNA
+		victory_points = { 7112 8 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			7112 = {
+				naval_base = 2
+			}
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = BNA
+		add_core_of = LNA
+		add_core_of = VIT
+	}
+	provinces={
+		2358 2375 7069 7089 7094 7112 7139 
+	}
+	manpower=728050
+	buildings_max_level_factor=1.000
+}

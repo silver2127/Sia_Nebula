@@ -1,0 +1,78 @@
+ideas = {
+	country = {
+		SES_AI = {
+			allowed = {
+				is_ai = yes
+			}
+			picture = FRA_fortification_focus
+			removal_cost = -1
+			modifier = {
+				ai_call_ally_desire_factor = 15
+				ai_join_ally_desire_factor = -30
+				ai_focus_defense_factor = 0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		TTR_AI = {
+			allowed = {
+				is_ai = yes
+			}
+			picture = FRA_fortification_focus
+			removal_cost = -1
+			modifier = {
+				ai_call_ally_desire_factor = 15
+				ai_join_ally_desire_factor = 15
+				ai_focus_defense_factor = 0.2
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		HHE_AI = {
+			allowed = {
+				is_ai = yes
+			}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			modifier = {
+				ai_call_ally_desire_factor = 15
+				ai_join_ally_desire_factor = 15
+				ai_focus_defense_factor = -0.1
+				ai_focus_aggressive_factor = 0.1
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		TCI_AI = {
+			allowed = {
+				is_ai = yes
+			}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			modifier = {
+				ai_call_ally_desire_factor = 10
+				ai_focus_aggressive_factor = 0.1
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		lw_archagea_AI = {
+			allowed = {
+				is_ai = yes
+			}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			modifier = {
+				#ai_call_ally_desire_factor = 0
+				ai_focus_aggressive_factor = 0.2
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+}

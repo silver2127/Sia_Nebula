@@ -1,0 +1,37 @@
+state={
+	id=245
+	name="STATE_245"
+	state_category = megalopolis
+	resources={
+		aluminium=16
+		tungsten=64
+		steel=96
+		chromium=32
+	}
+	history={
+		owner = TKZ
+		victory_points = { 4998 24 }
+		victory_points = { 3853 18 }
+		victory_points = { 3507 15 }
+		buildings = {
+			infrastructure = 7
+			#dockyard = 0
+			4998 = {
+				naval_base = 5
+			}
+			3507 = {
+				naval_base = 3
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = TKZ
+	}
+	provinces={
+		16 113 362 1035 1916 2210 2307 2417 3315 3507 3703 3779 3853 4900 4931 4947 4975 4998 5025 5088 5094 5124 5169 
+	}
+	manpower=21000000
+	buildings_max_level_factor=1.000
+}

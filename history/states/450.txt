@@ -1,0 +1,23 @@
+state={
+	id=450
+	name="STATE_450"
+	state_category = city
+	history={
+		owner = ZUK
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 1
+			#dockyard = 0
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = ZUK
+	}
+	provinces={
+		1230 1479 3131 3660 3925 5773 5798 5809 5819 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+}

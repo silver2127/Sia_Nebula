@@ -1,0 +1,29 @@
+state={
+	id=55
+	name="STATE_55"
+	state_category = small_island
+	resources={
+		oil=24
+	}
+	history={
+		owner = TTR
+		victory_points = { 7814 1 }
+		buildings = {
+			infrastructure = 1
+			#dockyard = 0
+			7814 = {
+				naval_base = 2
+			}
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = TTR
+	}
+	provinces={
+		7814 
+	}
+	manpower=1327
+	buildings_max_level_factor=1.000
+}

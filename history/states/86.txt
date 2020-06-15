@@ -1,0 +1,29 @@
+
+state={
+	id=86
+	name="STATE_86"
+	resources={
+		steel=16.000
+	}
+
+	history={
+		owner = GSP
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = GSP
+
+	}
+
+	provinces={
+		1362 2113 2195 3620 4921 5012 5058 5070 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

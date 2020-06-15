@@ -1,0 +1,23 @@
+state={
+	id=251
+	name="STATE_251"
+	state_category = large_town
+	history={
+		owner = TKZ
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 0
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = TKZ
+	}
+	provinces={
+		27 1044 1301 1511 1544 1931 2545 2810 3740 4750 4788 4870 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

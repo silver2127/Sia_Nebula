@@ -1,0 +1,24 @@
+state={
+	id=408
+	name="STATE_408"
+	state_category = town
+	history={
+		owner = GPF
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 3
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = GPF
+		add_core_of = NCU
+	}
+	provinces={
+		269 2746 3422 3732 6268 6311 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

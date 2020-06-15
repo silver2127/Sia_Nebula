@@ -1,0 +1,60 @@
+is_enemy_ideology = {
+	OR = {
+		AND = {
+			has_government = enlightenism
+			ROOT = {
+				OR = {
+					has_government = theocracy
+					has_government = authoritarianism
+					has_government = unityism
+					not = {
+						tag = USA
+					}
+				}
+			}
+		}
+		AND = {
+			has_government = technocracy
+			ROOT = {
+				OR = {
+					has_government = theocracy
+					has_government = unityism
+				}
+			}
+		}
+		AND = {
+			has_government = theocracy
+			ROOT = {
+				OR = {
+					has_government = enlightenism
+					has_government = technocracy
+					has_government = unityism
+					not = {
+						tag = USA
+					}
+				}
+			}
+		}
+		AND = {
+			has_government = authoritarianism
+			ROOT = {
+				OR = {
+					has_government = enlightenism
+					not = {
+						tag = USA
+					}
+				}
+			}
+		}
+		AND = {
+			has_government = unityism
+			ROOT = {
+				OR = {
+					has_government = enlightenism
+					has_government = technocracy
+					has_government = theocracy
+				}
+			}
+		}
+	}
+}

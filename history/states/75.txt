@@ -1,0 +1,29 @@
+
+state={
+	id=75
+	name="STATE_75"
+
+	history={
+		owner = GSP
+		buildings = {
+			infrastructure = 0
+			2970 = {
+				naval_base = 2
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = GSP
+
+	}
+
+	provinces={
+		2970 5287 5325 5398 5434 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

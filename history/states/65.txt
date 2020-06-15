@@ -1,0 +1,33 @@
+
+state={
+	id=65
+	name="STATE_65"
+
+	history={
+		owner = TCI
+		victory_points = {
+			5857 12 
+		}
+		victory_points = {
+			3210 8 
+		}
+		buildings = {
+			infrastructure = 7
+			dockyard = 3
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TCI
+
+	}
+
+	provinces={
+		1489 1660 3210 3753 5794 5847 5857 5858 5896 5919 
+	}
+	manpower=1855000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

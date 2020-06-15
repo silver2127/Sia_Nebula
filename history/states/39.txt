@@ -1,0 +1,27 @@
+state={
+	id=39
+	name="STATE_39"
+	state_category = large_town
+	history={
+		owner = USA
+		victory_points = { 5750 5 }
+		buildings = {
+			infrastructure = 8
+			#dockyard = 0
+			5750 = {
+				naval_base = 4
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = USA
+		add_claim_by = LPA
+	}
+	provinces={
+		5750 
+	}
+	manpower=350750
+	buildings_max_level_factor=1.000
+}

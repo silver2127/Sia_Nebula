@@ -1,0 +1,29 @@
+state={
+	id=460
+	name="STATE_460"
+	state_category = large_town
+	resources={
+		oil=16
+		rubber=64
+	}
+	history={
+		owner = HIN
+		victory_points = { 3275 4 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 2
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = HIN
+		add_core_of = GRA
+		add_core_of = ATA
+	}
+	provinces={
+		2071 2388 2775 3275 7549 7559 7570 
+	}
+	manpower=420069
+	buildings_max_level_factor=1.000
+}

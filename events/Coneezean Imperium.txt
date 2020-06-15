@@ -1,0 +1,115 @@
+﻿###########################
+# CONEEZEAN Events
+###########################
+
+add_namespace = coneezean
+
+country_event = {
+	id = coneezean.1
+	title = coneezean.1.t
+	desc = coneezean.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = coneezean.1.a
+		ai_chance = { factor = 100 }
+		TCI = {
+			country_event = { days = 2 id = coneezean.3 }
+			effect_tooltip = {
+				transfer_state = 38
+				transfer_state = 39
+			}
+			transfer_state = 38
+			transfer_state = 39
+		}
+	}
+
+	option = { # Refuse
+		name = coneezean.1.b
+		ai_chance = { factor = 5 }
+		TCI = {
+			country_event = { days = 2 id = coneezean.4 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_state
+					target = USA
+					generator = { 38 39 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = coneezean.2
+	title = coneezean.2.t
+	desc = coneezean.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = coneezean.2.a
+		ai_chance = { factor = 5 }
+		TCI = {
+			country_event = { days = 3 id = coneezean.3 }
+			effect_tooltip = {
+				transfer_state = 400
+				transfer_state = 410
+				transfer_state = 291
+			}
+			transfer_state = 400
+			transfer_state = 410
+			transfer_state = 291
+		}
+	}
+
+	option = { # Refuse
+		name = coneezean.2.b
+		ai_chance = { factor = 100 }
+		TCI = {
+			country_event = { days = 3 id = coneezean.4 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_state
+					target = TCM
+					generator = { 400 410 291 }
+				}
+			}
+			create_wargoal = {
+				type = take_state
+				target = TCM
+				generator = { 400 410 291 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = coneezean.3
+	title = coneezean.3.t
+	desc = coneezean.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = coneezean.3.a
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = coneezean.4
+	title = coneezean.4.t
+	desc = coneezean.4.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = coneezean.4.a
+	}
+}

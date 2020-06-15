@@ -1,0 +1,55 @@
+TTR = "countries/Techno Republic.txt"
+
+HHE = "countries/Harmonain Empire.txt"
+BTF	= "countries/Blested Tiers Federation.txt"
+LPA = "countries/Lower Peninsula.txt"
+HPA	= "countries/Harmony Peninsula.txt"
+AWA = "countries/Archaiga Western Approach.txt"
+HFB = "countries/Central Harmony Food Belt.txt"
+GSP = "countries/Grand Sea Protectorate.txt"
+HCZ = "countries/Harmony Central Zone.txt"
+NWA = "countries/North Weastern Approach.txt"
+
+SES = "countries/Sesencian Union.txt"
+MUR = "countries/Sesencian Colony.txt"
+
+TCI = "countries/Coneezean Imperium.txt"
+TCM = "countries/Consortium"
+
+TKZ	= "countries/Kingdom of Zakariah.txt"
+NZK	= "countries/Nezuko.txt"	# Dont let Kocomi make countries
+DEK = "countries/Deku.txt"
+
+ZUK	= "countries/Zukiinian Empire.txt"
+
+STE = "countries/Steel Empire.txt"	# Talk with Graf Zeppelin
+
+LLA	= "countries/Lataria.txt"
+
+USA = "countries/US of Archaiga.txt"
+
+TGC = "countries/Golden Coast.txt"
+GPF = "countries/Golden People's Federation.txt"
+
+KOE = "countries/Kingdom of the East.txt"
+NCU = "countries/Northern Union.txt"
+
+ATL = "countries/Atlas.txt"
+
+MTA = "countries/Mostva.txt"
+LNA = "countries/Lenia.txt"
+GRA = "countries/Granda.txt"
+
+VIT = "countries/Ventington.txt"
+ATA = "countries/Antlantia.txt"
+NTK = "countries/New Tork.txt"
+
+BNA = "countries/Bernia.txt"
+HIN = "countries/Hine.txt"
+VKA = "countries/Vokenia.txt"
+
+CAJ = "countries/Caji.txt"
+
+MAY = "countries/Mayoji.txt"
+
+IZT = "countries/Izteir.txt"

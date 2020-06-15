@@ -1,0 +1,31 @@
+
+state={
+	id=413
+	name="STATE_413"
+	resources={
+		tungsten=46.000
+		chromium=28.000
+	}
+
+	history={
+		owner = TCM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TCM
+
+	}
+
+	provinces={
+		2075 2513 3743 6289 6300 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

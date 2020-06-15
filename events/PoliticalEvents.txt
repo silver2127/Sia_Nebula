@@ -1,0 +1,101 @@
+﻿add_namespace = political
+
+country_event = {
+	id = political.1
+	title = political.1.t
+	desc = political.1.d
+	picture = GFX_report_event_fascist_gathering
+	is_triggered_only = yes
+	option = {
+		name = political.0.a
+		ai_chance = {
+			#has_idea = generic_theocracy_advisor
+			factor = 20
+		}
+		set_politics = {
+			ruling_party = theocracy
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = political.2
+	title = political.2.t
+	desc = political.2.d
+	picture = GFX_report_event_fascist_gathering
+	is_triggered_only = yes
+	option = {
+		name = political.0.a
+		ai_chance = {
+			#has_idea = generic_technocracy_advisor
+			factor = 20
+		}
+		set_politics = {
+			ruling_party = technocracy
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = political.3
+	title = political.3.t
+	desc = political.3.d
+	picture = GFX_report_event_fascist_gathering
+	is_triggered_only = yes
+	option = {
+		name = political.0.a
+		ai_chance = {
+			#has_idea = generic_enlightenism_advisor
+			factor = 20
+		}
+		set_politics = {
+			ruling_party = enlightenism
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = political.4
+	title = political.4.t
+	desc = political.4.d
+	picture = GFX_report_event_fascist_gathering
+	is_triggered_only = yes
+	option = {
+		name = political.0.a
+		ai_chance = {
+			#has_idea = generic_authoritarianism_advisor
+			factor = 20
+		}
+		set_politics = {
+			ruling_party = authoritarianism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = political.5
+	title = political.5.t
+	desc = political.5.d
+	picture = GFX_report_event_fascist_gathering
+	is_triggered_only = yes
+	option = {
+		name = political.0.a
+		ai_chance = {
+			#has_idea = generic_unityism_advisor
+			factor = 20
+		}
+		set_politics = {
+			ruling_party = unityism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=400
+	name="STATE_400"
+
+	history={
+		owner = TCM
+		victory_points = {
+			1995 15 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TCM
+		add_claim_by = TCI
+
+	}
+
+	provinces={
+		1143 1180 1183 1782 1995 3221 6027 6052 6076 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

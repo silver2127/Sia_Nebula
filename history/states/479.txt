@@ -1,0 +1,25 @@
+state={
+	id=479
+	name="STATE_479"
+	state_category = city
+	history={
+		owner = LNA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 4
+			anti_air_building = 0
+		}
+		add_core_of = LNA
+		add_core_of = VIT
+		add_core_of = VKA
+	}
+	provinces={
+		973 980 6936 6968 7003 7021 
+	}
+	manpower=857500
+	buildings_max_level_factor=1.000
+}

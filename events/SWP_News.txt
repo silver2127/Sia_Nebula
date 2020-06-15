@@ -1,0 +1,156 @@
+﻿##News article event
+
+add_namespace =  dynamic_wp_news
+
+
+#########################################
+####    NEWS EVENT - INTRODUCTION    ####
+#########################################
+
+
+news_event = {
+	id = dynamic_wp_news.1
+	title = dynamic_wp_news.1.t  
+	desc = dynamic_wp_news.1.d
+	picture = GFX_SWP_SETUP_NEWS
+	immediate = { log = "[GetDateText]: [Root.GetName]: dynamic_wp_news.1" }
+	
+	#major = yes	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = swp_intro_read
+	}
+	
+	option = {		##I UNDERSTAND
+		name = dynamic_wp_news.1.a	
+		
+			country_event = { id = dynamic_wp_config.1 } 
+	}
+	
+	
+
+}
+
+
+
+####################################################
+####    NEWS EVENT - PEACE TREATY IS SIGNED!    ####
+####################################################
+
+
+news_event = {
+	id = dynamic_wp_news.2
+	title = dynamic_wp_news.2.t  
+	desc = dynamic_wp_news.2.d
+	picture = GFX_SWP
+	immediate = { log = "[GetDateText]: [Root.GetName]: dynamic_wp_news.2" }
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = swp_news_read
+	}
+	
+	option = {
+		name = dynamic_wp_news.2.a
+		
+		trigger {
+	
+			NOT = {	
+				has_country_flag = swp_winner
+				has_country_flag = swp_loser		
+			}
+		}
+		
+		clr_global_flag = swp_news_read
+		
+	}
+	
+	##Option B is for the winner
+	option = {
+		name = dynamic_wp_news.2.b
+
+		trigger {		
+			has_country_flag = swp_winner
+		}
+		
+		clr_global_flag = swp_news_read
+
+		
+	}
+	##Option C is for the loser
+	option = {
+		name = dynamic_wp_news.2.c
+			
+		trigger {		
+			has_country_flag = swp_loser
+		}
+		
+		clr_global_flag = swp_news_read
+
+	}
+	
+
+}
+
+
+
+#################################################
+####    NEWS EVENT - NEGOTIATIONS FAILED!    ####
+#################################################
+
+
+news_event = {
+	id = dynamic_wp_news.3
+	title = dynamic_wp_news.3.t  
+	desc = dynamic_wp_news.3.d
+	picture = GFX_SWP
+	immediate = { log = "[GetDateText]: [Root.GetName]: dynamic_wp_news.3" }
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = swp_news_read
+	}
+	
+	##This option is for all non-participants
+	option = {
+		name = dynamic_wp_news.3.a
+		
+		trigger {
+	
+			NOT = {	
+				has_country_flag = swp_winner
+				has_country_flag = swp_loser		
+			}
+		}
+		
+		clr_global_flag = swp_news_read
+		
+	}
+	
+	##Option B is for all belligerents
+	option = {
+		name = dynamic_wp_news.3.b
+
+		trigger {
+		
+			OR = {	
+				has_country_flag = swp_winner
+				has_country_flag = swp_loser		
+			}
+			
+		}
+		
+		clr_global_flag = swp_news_read
+
+		
+	}
+
+
+}

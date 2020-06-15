@@ -1,0 +1,184 @@
+﻿capital = 505
+OOB = "HHE_1824"
+
+set_fuel_ratio = 0.2
+set_research_slots = 4
+set_convoys = 200
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	early_bomber = 1
+	fuel_silos = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		pre_dreadnoughts = 1
+		mtg_transport = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		sonar = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+set_politics = {
+	ruling_party = theocracy
+	last_election = "1933.3.5"
+	election_frequency = 96
+	elections_allowed = no
+}
+set_popularities = {
+	enlightenism = 7
+	technocracy = 0
+	theocracy = 63
+	authoritarianism = 30
+}
+
+create_country_leader = {
+	name = "Luke Deed"
+	desc = "POLITICS_XXX_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = theocratic_leader
+	traits = {
+		#inexperienced_priest
+	}
+}
+
+set_stability = 0.45
+set_war_support = 0.25
+
+create_faction = harmony_crusade
+add_to_faction = HHE
+
+add_ideas = {
+	HHE_AI
+	extensive_conscription
+	low_economic_mobilisation
+	export_focus
+	four_children_per_family
+	the_theocratic_master
+	#blood_over_metal
+	#nobility_held_industry
+}
+
+#declare_war_on = {
+#	target = CPI
+#	type = annex_everything
+#}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = HPA
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = BTF
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = AWA
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = LPA
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = HFB
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = GSP
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = HCZ
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = NWA
+		autonomous_state = autonomy_dominion
+	}
+}
+if = {
+	limit = { 
+		not = {
+			has_dlc = "Together for Victory"
+		}
+	}
+	set_autonomy = {
+		target = HPA
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = BTF
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = AWA
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = LPA
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = HFB
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = GSP
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = HCZ
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = NWA
+		autonomous_state = autonomy_puppet
+	}
+}

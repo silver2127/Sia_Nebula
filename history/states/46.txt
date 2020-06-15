@@ -1,0 +1,30 @@
+state={
+	id=46
+	name="STATE_46"
+	state_category = advance_megalopolis
+	resources={
+		steel=24
+		oil=12
+	}
+	history={
+		owner = TTR
+		victory_points = { 228 18 }
+		buildings = {
+			infrastructure = 6
+			dockyard = 0
+			228 = {
+				naval_base = 5
+			}
+			industrial_complex = 7
+			arms_factory = 5
+			air_base = 0
+			anti_air_building = 1
+		}
+		add_core_of = TTR
+	}
+	provinces={
+		228 1634 3893 3913 5643 5659 5664 5677 5692 5702 5703 5735 
+	}
+	manpower=4709000
+	buildings_max_level_factor=1.000
+}

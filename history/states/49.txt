@@ -1,0 +1,36 @@
+state={
+	id=49
+	name="STATE_49"
+	state_category = large_city
+	resources={
+		steel=12
+		aluminium=24
+		chromium=36
+	}
+	history={
+		owner = TTR
+		victory_points = { 1091 14 }
+		victory_points = { 5328 7 }
+		buildings = {
+			infrastructure = 7
+			dockyard = 2
+			1091 = {
+				naval_base = 7
+			}
+			5328 = {
+				naval_base = 4
+			}
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_claim_by = HPA
+		add_core_of = TTR
+	}
+	provinces={
+		1091 3011 3924 5291 5327 5328 5344 5389 5429 
+	}
+	manpower=868800
+	buildings_max_level_factor=1.000
+}

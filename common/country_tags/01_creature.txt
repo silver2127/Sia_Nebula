@@ -1,0 +1,2 @@
+CPI = "countries/Creature.txt" # Carnivorous Plants Infestation
+FTH = "countries/Creature.txt" # Flesh that Hates

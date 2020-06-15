@@ -1,0 +1,259 @@
+spriteTypes = {	
+
+	### generic equipment archetypes ###
+
+	SpriteType = {
+		name = "GFX_ATT_AAShell1_medium"
+		texturefile = "gfx/interface/technologies/AAShell1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_AAShell2_medium"
+		texturefile = "gfx/interface/technologies/AAShell2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_AAShell3_medium"
+		texturefile = "gfx/interface/technologies/AAShell3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_HEShell1_medium"
+		texturefile = "gfx/interface/technologies/HEShell1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_HEShell2_medium"
+		texturefile = "gfx/interface/technologies/HEShell2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_HEShell3_medium"
+		texturefile = "gfx/interface/technologies/HEShell3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_APShell1_medium"
+		texturefile = "gfx/interface/technologies/APShell1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_APShell2_medium"
+		texturefile = "gfx/interface/technologies/APShell2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_APShell3_medium"
+		texturefile = "gfx/interface/technologies/APShell3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_APShell4_medium"
+		texturefile = "gfx/interface/technologies/APShell4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Armor1_medium"
+		texturefile = "gfx/interface/technologies/Armor1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_Armor2_medium"
+		texturefile = "gfx/interface/technologies/Armor2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_Armor3_medium"
+		texturefile = "gfx/interface/technologies/Armor3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_Armor4_medium"
+		texturefile = "gfx/interface/technologies/Armor4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_Armor5_medium"
+		texturefile = "gfx/interface/technologies/Armor5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_Armor6_medium"
+		texturefile = "gfx/interface/technologies/Armor6.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_Armor7_medium"
+		texturefile = "gfx/interface/technologies/Armor7.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_Armor8_medium"
+		texturefile = "gfx/interface/technologies/Armor8.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_Aim_medium"
+		texturefile = "gfx/interface/technologies/Aim.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_Camo_medium"
+		texturefile = "gfx/interface/technologies/Camo.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_CamoDesert_medium"
+		texturefile = "gfx/interface/technologies/CamoDesert.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_CamoWinter_medium"
+		texturefile = "gfx/interface/technologies/CamoWinter.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon1_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon1_1_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon1_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon1_2_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon1_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon1_3_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon1_3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon1_4_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon1_4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon2_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon2_1_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon2_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon2_2_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon2_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon2_3_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon2_3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon2_4_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon2_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon3_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon3_1_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon3_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon3_2_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon3_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon3_3_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon3_3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_ATT_EngineIcon3_4_medium"
+		texturefile = "gfx/interface/technologies/EngineIcon3_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Hull1_medium"
+		texturefile = "gfx/interface/technologies/Hull1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Hull2_medium"
+		texturefile = "gfx/interface/technologies/Hull2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Hull3_medium"
+		texturefile = "gfx/interface/technologies/Hull3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Reload_medium"
+		texturefile = "gfx/interface/technologies/Reload.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Repair1_medium"
+		texturefile = "gfx/interface/technologies/Repair1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Repair2_medium"
+		texturefile = "gfx/interface/technologies/Repair2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Repair3_medium"
+		texturefile = "gfx/interface/technologies/Repair3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Sight1_medium"
+		texturefile = "gfx/interface/technologies/Sight1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Sight2_medium"
+		texturefile = "gfx/interface/technologies/Sight2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Sight3_medium"
+		texturefile = "gfx/interface/technologies/Sight3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Suspensions1_medium"
+		texturefile = "gfx/interface/technologies/Suspensions1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Suspensions2_medium"
+		texturefile = "gfx/interface/technologies/Suspensions2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Suspensions3_medium"
+		texturefile = "gfx/interface/technologies/Suspensions3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ATT_Suspensions4_medium"
+		texturefile = "gfx/interface/technologies/Suspensions4.dds"
+	}
+}

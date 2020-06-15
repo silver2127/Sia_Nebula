@@ -1,0 +1,28 @@
+
+state={
+	id=105
+	name="STATE_105"
+	resources={
+		grain=18
+	}
+	history={
+		owner = HFB
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HFB
+
+	}
+
+	provinces={
+		191 3024 3735 3873 4798 4845 4879 4907 
+	}
+	manpower=105500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

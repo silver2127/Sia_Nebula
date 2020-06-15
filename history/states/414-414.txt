@@ -1,0 +1,27 @@
+
+state={
+	id=414
+	name="STATE_414"
+
+	history={
+		owner = TCM
+		buildings = {
+			infrastructure = 6
+			dockyard = 3
+			industrial_complex = 3
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TCM
+
+	}
+
+	provinces={
+		346 1474 2094 2842 6395 6396 6426 6464 6486 6497 
+	}
+	manpower=1250000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

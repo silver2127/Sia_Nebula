@@ -1,0 +1,26 @@
+
+state={
+	id=126
+	name="STATE_126"
+
+	history={
+		owner = HPA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HPA
+
+	}
+
+	provinces={
+		1994 3628 3665 3899 5369 
+	}
+	manpower=414500
+	buildings_max_level_factor=1.000
+	state_category=city
+}

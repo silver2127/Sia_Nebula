@@ -1,0 +1,35 @@
+state={
+	id=543
+	name="STATE_543"
+	resources={
+		oil=16
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+		grain=0
+	}
+	state_category = town
+	history={
+		owner = MUR
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 1
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = MUR
+	}
+	provinces={
+		34 453 846 2752 3734 3746 3815 4004 4503 4520 4521 4532 4555 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+}

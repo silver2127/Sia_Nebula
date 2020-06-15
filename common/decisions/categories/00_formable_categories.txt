@@ -1,0 +1,35 @@
+form_name_category = {
+	icon = generic_formable_nations
+	allowed = {
+	}
+}
+
+form_empire_of_homarny_category = {
+	icon = generic_formable_nations
+	allowed = {
+		#original_tag = HHE
+		#original_tag = BTF
+		#original_tag = LPA
+		#original_tag = HPA
+		#original_tag = HFB
+		#original_tag = NWA
+		#original_tag = GSP
+		#original_tag = HCZ
+		#original_tag = AWA
+	}
+}
+
+form_old_kingdom_category = {
+	icon = generic_formable_nations
+	allowed = {
+		#original_tag = GPF
+		#original_tag = KOE
+	}
+}
+
+form_new_union_category = {
+	icon = generic_formable_nations
+	allowed = {
+		#original_tag = NCU
+	}
+}

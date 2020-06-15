@@ -1,0 +1,18 @@
+﻿l_english:
+ MUR_SES_autonomy_dominion:0 "Foundland Dominion"
+ MUR_SES_autonomy_colony:0 "Sesencian Colonies of Foundland"
+ MUR_SES_autonomy_puppet:0 "Sesencian Province"
+ MUR_SES_autonomy_integrated_puppet:0 "Sesencian Eastern Country"
+
+
+
+
+
+ EOH_UNIFIED_authoritarianism:0 "Empire of Homarny"
+ EOH_UNIFIED_theocracy:0 "Empire Of Homarny"
+ EOH_UNIFIED_enlightenism:0 "Republic of Archagea"
+ EOH_UNIFIED_technocracy:0 "Union of Science"
+ EOH_UNIFIED_authoritarianism_DEF:0 "Empire of Homarny"
+ EOH_UNIFIED_theocracy_DEF:0 "the Empire Of Homarny"
+ EOH_UNIFIED_enlightenism_DEF:0 "the Republic of Archagea"
+ EOH_UNIFIED_technocracy_DEF:0 "the Union of Science"

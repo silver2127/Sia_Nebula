@@ -1,0 +1,34 @@
+
+state={
+	id=147
+	name="STATE_147"
+
+	history={
+		owner = BTF
+		victory_points = {
+			5570 10 
+		}
+		buildings = {
+			infrastructure = 6
+			dockyard = 2
+			5570 = {
+				naval_base = 3
+
+			}
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = BTF
+
+	}
+
+	provinces={
+		271 1601 5460 5492 5534 5570 
+	}
+	manpower=1841000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

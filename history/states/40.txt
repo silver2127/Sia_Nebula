@@ -1,0 +1,30 @@
+state={
+	id=40
+	name="STATE_40"
+	state_category = town
+	resources={
+		tungsten=18
+		oil=24
+	}
+	history={
+		owner = TTR
+		victory_points = { 6231 1 }
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			6231 = {
+				naval_base = 2
+			}
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 3
+			anti_air_building = 1
+		}
+		add_core_of = TTR
+	}
+	provinces={
+		6231 
+	}
+	manpower=8282
+	buildings_max_level_factor=1.000
+}

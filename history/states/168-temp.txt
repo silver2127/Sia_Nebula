@@ -1,0 +1,30 @@
+
+state={
+	id=168
+	name="STATE_168"
+
+	history={
+		owner = NWA
+		buildings = {
+			infrastructure = 0
+			4563 = {
+				naval_base = 5
+
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = NWA
+
+	}
+
+	provinces={
+		118 395 1269 2497 3583 4522 4563 4620 4637 4638 4660 11109 11110 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

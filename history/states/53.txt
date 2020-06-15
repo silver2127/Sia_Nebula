@@ -1,0 +1,34 @@
+state={
+	id=53
+	name="STATE_53"
+	state_category = large_city
+	history={
+		owner = TTR
+		victory_points = { 5132 9 }
+		victory_points = { 2217 8 }
+		buildings = {
+			infrastructure = 6
+			#dockyard = 0
+			5132 = {
+				naval_base = 3
+			}
+			5082 = {
+				bunker = 4
+			}
+			5132 = {
+				bunker = 4
+			}
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 5
+		}
+		add_core_of = HPA
+		add_core_of = TTR
+	}
+	provinces={
+		1017 2217 3097 5082 5132 5173 
+	}
+	manpower=1034000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,23 @@
+state={
+	id=67
+	name="STATE_67"
+	state_category = large_town
+	history={
+		owner = TCI
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 7
+			#dockyard = 0
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = TCI
+	}
+	provinces={
+		1522 2628 3368 3655 3850 6009 6036 6053 6054 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,460 @@
+﻿division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Infantry Reserve"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+	priority = 0
+}
+division_template = {
+	name = "Priest-Hood Defence Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		armored_car = { x = 2 y = 0 }
+		armored_car = { x = 2 y = 1 }
+		armored_car = { x = 2 y = 2 }
+		armored_car = { x = 2 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		armored_car_recon = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Armored Car Division"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+		armored_car = { x = 0 y = 2 }
+		armored_car = { x = 0 y = 3 }
+		armored_car = { x = 1 y = 0 }
+		armored_car = { x = 1 y = 1 }
+		armored_car = { x = 1 y = 2 }
+		armored_car = { x = 1 y = 3 }
+	}
+	support = {
+		armored_car_recon = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Armored Tank Unit"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+	### Infantry Reserve
+units = {
+	division = {
+		name = "Infantry Reserve Sub-1"
+		location = 5466
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-2"
+		location = 4002
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-3"
+		location = 5286
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-4"
+		location = 3470
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-5"
+		location = 3033
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-6"
+		location = 1192
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-7"
+		location = 5394
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-8"
+		location = 5343
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-9"
+		location = 5719
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-10"
+		location = 4891
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-11"
+		location = 267
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Infantry Reserve Sub-12"
+		location = 2176
+		division_template = "Infantry Reserve"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}
+	### Infantry Division
+units = {
+	division = {
+		name = "Infantry Division Unit-1"
+		location = 952
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-2"
+		location = 5055
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-3"
+		location = 2028
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-4"
+		location = 2099
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-5"
+		location = 1120
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-6"
+		location = 3020
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-7"
+		location = 2670
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-8"
+		location = 5444
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-9"
+		location = 5527
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-10"
+		location = 5518
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-11"
+		location = 2607
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-12"
+		location = 1089
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-13"
+		location = 5487
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-14"
+		location = 5570
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-15"
+		location = 5618
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-16"
+		location = 325
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-17"
+		location = 5288
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Infantry Division Unit-18"
+		location = 3843
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+}
+	### Priest-Hood
+units = {
+	division = {
+		name = "Priest-Hood Defence Division 1"
+		location = 3380
+		division_template = "Priest-Hood Defence Division"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Priest-Hood Defence Division 2"
+		location = 5100
+		division_template = "Priest-Hood Defence Division"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Priest-Hood Defence Division 3"
+		location = 2614
+		division_template = "Priest-Hood Defence Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Priest-Hood Defence Division 4"
+		location = 2099
+		division_template = "Priest-Hood Defence Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Priest-Hood Defence Division 5"
+		location = 5290
+		division_template = "Priest-Hood Defence Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Priest-Hood Defence Division 6"
+		location = 5227
+		division_template = "Priest-Hood Defence Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Priest-Hood Defence Division 7"
+		location = 5422
+		division_template = "Priest-Hood Defence Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Priest-Hood Defence Division 8"
+		location = 1120
+		division_template = "Priest-Hood Defence Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}
+	### Armoured Car
+units = {
+	division = {
+		name = "Armored Car Division 1"
+		location = 2099
+		division_template = "Armored Car Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Armored Car Division 2"
+		location = 952
+		division_template = "Armored Car Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Armored Car Division 3"
+		location = 5243
+		division_template = "Armored Car Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Armored Car Division 4"
+		location = 3380
+		division_template = "Armored Car Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Armored Car Division 5"
+		location = 5422
+		division_template = "Armored Car Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Armored Car Division 6"
+		location = 325
+		division_template = "Armored Car Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Armored Car Division 7"
+		location = 5227
+		division_template = "Armored Car Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+	division = {
+		name = "Armored Car Division 8"
+		location = 5288
+		division_template = "Armored Car Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.95
+	}
+}
+	### Air Wings
+air_wings = {
+	97 = {
+		fighter_equipment_0 = {
+			owner = "HHE"
+			amount = 58
+		}
+		tac_bomber_equipment_0 = {
+			owner = "HHE"
+			amount = 20
+		}
+	}
+	505 = {
+		fighter_equipment_0 = {
+			owner = "HHE"
+			amount = 80
+		}
+		tac_bomber_equipment_0 = {
+			owner = "HHE"
+			amount = 20
+		}
+		tac_bomber_equipment_0 = {
+			owner = "HHE"
+			amount = 20
+		}
+	}
+	101 = {
+		fighter_equipment_0 = {
+			owner = "HHE"
+			amount = 44
+		}
+	}
+	139 = {
+		fighter_equipment_0 = {
+			owner = "HHE"
+			amount = 80
+		}
+		tac_bomber_equipment_0 = {
+			owner = "HHE"
+			amount = 40
+		}
+	}
+}

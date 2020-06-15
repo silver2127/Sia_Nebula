@@ -1,0 +1,1021 @@
+focus_tree = {
+	id = harmonian_focus
+	
+	continuous_focus_position = { x = 500 y = 25 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XXX
+		}
+	}
+	default = no
+
+
+
+#	focus = {
+#		id = 
+#		icon = GFX_
+#		prerequisite = { focus =  }
+#		mutually_exclusive = { focus =  }
+#		x = 0
+#		y = 0
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 10
+#		}
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			
+#		}
+#	}
+
+	focus = {
+		id = HHE_third_deed_reform
+		icon = GFX_focus_generic_self_management
+		#prerequisite = { focus =  }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				country_event = { id = HHE.0 days = 0}
+				country_event = { id = HHE.1 days = 5 }
+				add_popularity = { ideology = enlightenism popularity = -0.0001 }
+			}
+			add_ideas = deed_reform
+		}
+	}
+
+	focus = {
+		id = HHE_halt_reforms
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = HHE_third_deed_reform }
+		mutually_exclusive = { focus = HHE_finish_reforms }
+		x = -1
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 11
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = { ideology = authoritarianism popularity = 0.1 }
+			add_political_power = 200
+			add_stability = -0.1
+			remove_ideas = deed_reform
+		}
+	}
+
+	focus = {
+		id = HHE_finish_reforms
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = HHE_third_deed_reform }
+		mutually_exclusive = { focus = HHE_halt_reforms }
+		x = 1
+		y = 1
+		cost = 5
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_timed_idea = { idea = deed_reform_finish days = 105 }
+			remove_ideas = deed_reform
+		}
+	}
+
+	focus = {
+		id = HHE_heavy_assassination_prevention
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = HHE_halt_reforms focus = HHE_finish_reforms }
+		mutually_exclusive = { focus = HHE_light_assassination_prevention }
+		x = -1
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 11
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = harmony_guard_h
+		}
+	}
+
+	focus = {
+		id = HHE_light_assassination_prevention
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = HHE_halt_reforms focus = HHE_finish_reforms }
+		mutually_exclusive = { focus = HHE_heavy_assassination_prevention }
+		x = 1
+		y = 2
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = harmony_guard_l
+		}
+	}
+
+	focus = {
+		id = HHE_blame_technocracy
+		icon = GFX_
+		prerequisite = { focus = HHE_light_assassination_prevention focus = HHE_heavy_assassination_prevention }
+		mutually_exclusive = { focus = HHE_blame_imperium }
+		x = -1
+		y = 3
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+			hidden_effect = {
+				TTR = {
+					add_popularity = { ideology = theocracy popularity = 0.05 }
+					#country_event = { id = TTR.0 days = 0}
+					add_war_support = 0.1
+				}
+			}
+			HPA = {
+				add_war_support = 0.05
+			}
+			LPA = {
+				add_war_support = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = HHE_blame_imperium
+		icon = GFX_
+		prerequisite = { focus = HHE_light_assassination_prevention focus = HHE_heavy_assassination_prevention }
+		mutually_exclusive = { focus = HHE_blame_technocracy }
+		x = 1
+		y = 3
+		cost = 5
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_popularity = { ideology = authoritarianism popularity = -0.05 }
+			hidden_effect = {
+				TCI = {
+					#country_event = { id = TCI.0 days = 0}
+					add_war_support = 0.1
+				}
+				USA = {
+					add_war_support = 0.01
+				}
+			}
+			BTF = {
+				add_war_support = 0.05
+			}
+			LPA = {
+				add_war_support = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = HHE_the_election
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = HHE_blame_technocracy focus = HHE_blame_imperium }
+		#mutually_exclusive = { focus =  }
+		x = 0
+		y = 4
+		cost = 9
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { id = HHE.2 }
+		}
+	}
+
+
+
+			### Tradition ###
+	focus = {
+		id = HHE_elected_tradition
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = HHE_the_election }
+		mutually_exclusive = { focus = HHE_elected_authority }
+		mutually_exclusive = { focus = HHE_elected_influencer }
+		mutually_exclusive = { focus = HHE_elected_warmonger }
+		mutually_exclusive = { focus = HHE_elected_reform_senate }
+		x = -31
+		y = 5
+		cost = 1
+		available = {
+			has_country_leader = {
+				id = 202
+			}
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_high_states
+		icon = GFX_
+		prerequisite = { focus = HHE_elected_tradition focus = HHE_elected_influencer }
+		#mutually_exclusive = { focus = XXX }
+		x = -23
+		y = 6
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_NWA
+		icon = GFX_
+		prerequisite = { focus = HHE_visit_high_states }
+		#mutually_exclusive = { focus = XXX }
+		x = -26
+		y = 7
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_BTF
+		icon = GFX_
+		prerequisite = { focus = HHE_visit_high_states }
+		#mutually_exclusive = { focus = XXX }
+		x = -23
+		y = 7
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_LPA
+		icon = GFX_
+		prerequisite = { focus = HHE_visit_high_states  }
+		#mutually_exclusive = { focus = XXX }
+		x = -20
+		y = 7
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_common_states
+		icon = GFX_
+		prerequisite = { focus = HHE_elected_tradition focus = HHE_elected_influencer }
+		#mutually_exclusive = { focus = XXX }
+		x = -31
+		y = 8
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_GSP
+		icon = GFX_
+		prerequisite = { focus = HHE_visit_common_states }
+		#mutually_exclusive = { focus = XXX }
+		x = -33
+		y = 9
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_NRF
+		icon = GFX_
+		prerequisite = { focus = HHE_visit_common_states }
+		#mutually_exclusive = { focus = XXX }
+		x = -31
+		y = 9
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_HPA
+		icon = GFX_
+		prerequisite = { focus = HHE_visit_common_states }
+		#mutually_exclusive = { focus = XXX }
+		x = -29
+		y = 9
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_low_states
+		icon = GFX_
+		prerequisite = { focus = HHE_elected_tradition focus = HHE_elected_influencer }
+		#mutually_exclusive = { focus = XXX }
+		x = -15
+		y = 8
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_AWA
+		icon = GFX_
+		prerequisite = { focus = HHE_visit_low_states }
+		#mutually_exclusive = { focus = XXX }
+		x = -17
+		y = 9
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_HCZ
+		icon = GFX_
+		prerequisite = { focus = HHE_visit_low_states }
+		#mutually_exclusive = { focus = XXX }
+		x = -15
+		y = 9
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HHE_visit_HFB
+		icon = GFX_
+		prerequisite = { focus = HHE_visit_low_states }
+		#mutually_exclusive = { focus = XXX }
+		x = -13
+		y = 9
+		cost = 5
+		available = {
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 202
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+			### Influencer ###
+	focus = {
+		id = HHE_elected_influencer
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = HHE_the_election }
+		mutually_exclusive = { focus = HHE_elected_tradition }
+		mutually_exclusive = { focus = HHE_elected_authority }
+		mutually_exclusive = { focus = HHE_elected_warmonger }
+		mutually_exclusive = { focus = HHE_elected_reform_senate }
+		x = -15
+		y = 5
+		cost = 1
+		available = {
+			has_country_leader = {
+				id = 203
+			}
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 203
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+			### Senate ###
+	focus = {
+		id = HHE_elected_reform_senate
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = HHE_the_election }
+		mutually_exclusive = { focus = HHE_elected_tradition }
+		mutually_exclusive = { focus = HHE_elected_authority }
+		mutually_exclusive = { focus = HHE_elected_influencer }
+		mutually_exclusive = { focus = HHE_elected_warmonger }
+		x = 0
+		y = 5
+		cost = 1
+		available = {
+			has_country_leader = {
+				id = 206
+			}
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 206
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+			### Authority ###
+	focus = {
+		id = HHE_elected_authority
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = HHE_the_election }
+		mutually_exclusive = { focus = HHE_elected_tradition }
+		mutually_exclusive = { focus = HHE_elected_influencer }
+		mutually_exclusive = { focus = HHE_elected_warmonger }
+		mutually_exclusive = { focus = HHE_elected_reform_senate }
+		x = 15
+		y = 5
+		cost = 1
+		available = {
+			has_country_leader = {
+				id = 204
+			}
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 204
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = { ideology = authoritarianism popularity = 0.15 }
+			add_ideas = harmonian_population
+		}
+	}
+
+
+
+			### Achard Vlad ###
+	focus = {
+		id = HHE_elected_warmonger
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = HHE_the_election }
+		mutually_exclusive = { focus = HHE_elected_tradition }
+		mutually_exclusive = { focus = HHE_elected_authority }
+		mutually_exclusive = { focus = HHE_elected_influencer }
+		mutually_exclusive = { focus = HHE_elected_reform_senate }
+		x = 30
+		y = 5
+		cost = 1
+		available = {
+			has_country_leader = {
+				id = 205
+			}
+		}
+		#bypass = {
+		#	has_country_leader = {
+		#		id = 205
+		#	}
+		#}
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = { ideology = authoritarianism popularity = 0.15 }
+			add_ideas = harmonian_population
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = HHE_temp
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = HHE_the_election }
+		x = 2
+		y = 6
+		cost = 0
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = nobility_held_industry
+		}
+	}
+
+	focus = {
+		id = HHE_two_rivers_fortification_1
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = HHE_the_election }
+		#mutually_exclusive = { focus =  }
+		x = 5
+		y = 6
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			107 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4891
+					instant_build = yes
+				}
+			}
+			103 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 267
+					instant_build = yes
+				}
+			}
+			108 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1188
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 5161
+					instant_build = yes
+				}
+			}
+			98 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 2614
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 2506
+					instant_build = yes
+				}
+			}
+			100 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 5100
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 5182
+					instant_build = yes
+				}
+			}
+			97 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 2099
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 1120
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 5145
+					instant_build = yes
+				}
+			}
+			101 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 5343
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HHE_two_rivers_fortification_2
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = HHE_two_rivers_fortification_1 }
+		#mutually_exclusive = { focus =  }
+		x = 5
+		y = 7
+		cost = 20
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			143 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 5227
+					instant_build = yes
+				}
+			}
+			131 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 5290
+					instant_build = yes
+				}
+			}
+			130 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 5422
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 1192
+					instant_build = yes
+				}
+			}
+			129 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 129
+					instant_build = yes
+				}
+			}
+			134 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 325
+					instant_build = yes
+				}
+			}
+			132 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 5394
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 5428
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

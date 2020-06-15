@@ -1,0 +1,15 @@
+HHE_influence_game = {
+	icon = generic_political_actions
+	visible = {
+		or = {
+			is_subject_of = HHE
+			tag = HHE
+		}
+	}
+}
+request_development = {
+	icon = generic_propaganda
+	visible = {
+		is_subject_of = HHE
+	}
+}

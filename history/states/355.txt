@@ -1,0 +1,35 @@
+
+state={
+	id=355
+	name="STATE_355"
+	resources={
+		oil=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		steel=0
+		chromium=0
+	}
+	state_category = town
+	history={
+		owner = MAY
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			#PROV = {
+			#	naval_base = 1
+			#}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = MAY
+	}
+	provinces={
+		255 284 691 727 1470 1965 3272 3279 4110 4527 4564 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+}

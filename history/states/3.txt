@@ -1,0 +1,23 @@
+state={
+	id=3
+	name="STATE_3"
+	state_category = city
+	history={
+		owner = SES
+		victory_points = { 5657 10 }
+		buildings = {
+			infrastructure = 6
+			dockyard = 3
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 6
+			anti_air_building = 2
+		}
+		add_core_of = SES
+	}
+	provinces={
+		1367 3619 5616 5649 5657 5710 5727 
+	}
+	manpower=650400
+	buildings_max_level_factor=1.000
+}

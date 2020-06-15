@@ -1,0 +1,149 @@
+﻿division_template = {
+	name = "Carnivorous Plants"
+	regiments = {
+		plantoids = { x = 0 y = 0 }
+		plantoids = { x = 0 y = 1 }
+		plantoids = { x = 0 y = 2 }
+		plantoids = { x = 0 y = 3 }
+		plantoids = { x = 0 y = 4 }
+	}
+	
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "Carnivorous Plants"
+		location = 44
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 44
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 44
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 4908
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 4908
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 4908
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 4946
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 4946
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 4946
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 1240
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 1240
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 1240
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 1816
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 1816
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 1816
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 3617
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 3617
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 6279
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Carnivorous Plants"
+		location = 6279
+		division_template = "Carnivorous Plants"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+}

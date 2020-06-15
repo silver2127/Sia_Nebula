@@ -1,0 +1,28 @@
+state={
+	id=482
+	name="STATE_482"
+	state_category = large_town
+	history={
+		owner = VIT
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			7553 = {
+				naval_base = 2
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = VIT
+		add_core_of = MTA
+		add_core_of = HIN
+	}
+	provinces={
+		953 2345 4031 7520 7553 
+	}
+	manpower=187500
+	buildings_max_level_factor=1.000
+}

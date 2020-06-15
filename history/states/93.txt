@@ -1,0 +1,29 @@
+
+state={
+	id=93
+	name="STATE_93"
+
+	history={
+		owner = AWA
+		buildings = {
+			infrastructure = 0
+			5260 = {
+				naval_base = 1
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = AWA
+
+	}
+
+	provinces={
+		372 5170 5178 5223 5260 5294 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

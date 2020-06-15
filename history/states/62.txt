@@ -1,0 +1,41 @@
+state={
+	id=62
+	name="STATE_62"
+	state_category = advance_megalopolis
+	resources={
+		aluminium=64
+		tungsten=64
+		steel=64
+		chromium=64
+	}
+	history={
+		owner = TCI
+		victory_points = { 3880 18 }
+		victory_points = { 1651 15 }
+		victory_points = { 5971 16 }
+		victory_points = { 1261 8 }
+		buildings = {
+			infrastructure = 10
+			dockyard = 3
+			5983 = {
+				naval_base = 10
+			}
+			3880 = {
+				naval_base = 6
+			}
+			1261 = {
+				naval_base = 3
+			}
+			industrial_complex = 6
+			arms_factory = 2
+			air_base = 7
+			anti_air_building = 5
+		}
+		add_core_of = TCI
+	}
+	provinces={
+		1261 1651 3880 5971 5983 
+	}
+	manpower=19420069
+	buildings_max_level_factor=2.000
+}

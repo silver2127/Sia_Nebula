@@ -1,0 +1,25 @@
+state={
+	id=458
+	name="STATE_458"
+	state_category = town
+	history={
+		owner = GRA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 2
+			#dockyard = 0
+			industrial_complex = 0
+			arms_factory = 2
+			air_base = 0
+			anti_air_building = 0
+		}
+		add_core_of = GRA
+		add_core_of = NTK
+		add_core_of = HIN
+	}
+	provinces={
+		1476 1806 2379 7561 7571 7575 7587 
+	}
+	manpower=157500
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,26 @@
+state={
+	id=25
+	name="STATE_25"
+	state_category = large_town
+	history={
+		owner = USA
+		#victory_points = { PROV 5 }
+		buildings = {
+			infrastructure = 0
+			#dockyard = 0
+			409 = {
+				naval_base = 1
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = USA
+	}
+	provinces={
+		409 5408 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+}

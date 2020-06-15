@@ -1,0 +1,31 @@
+
+state={
+	id=290
+	name="STATE_290"
+	resources={
+		tungsten=32.000
+		chromium=18.000
+	}
+
+	history={
+		owner = TCM
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = TCM
+
+	}
+
+	provinces={
+		506 949 1360 1554 2754 2916 2920 3145 3299 3714 4024 6114 6136 6165 6177 6178 6210 6246 6255 6288 
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}

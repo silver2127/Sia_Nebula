@@ -1,0 +1,89 @@
+the_tests = {
+	oh_no_its_out = {
+		available = {
+			tag = TTR
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			FTH = {
+				transfer_state = 51
+				load_oob = FTH_Creature
+				set_politics = {
+					ruling_party = authoritarianism
+				}
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = -5
+		}
+	}
+}
+FTH_kill_people = {
+	kill_people = {
+		available = {
+			tag = FTH
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+
+		complete_effect = {
+			FTH = {
+			load_oob = FTH_Creature2
+			every_country = {
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 500
+		}
+	}
+	no_xp_for_us = {
+		available = {
+			tag = FTH
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+
+		cost = 0
+
+		complete_effect = {
+			army_experience = -500
+			add_manpower = 10000
+			every_controlled_state = {
+				add_manpower = -1000
+			}
+		}
+
+		ai_will_do = {
+			base = 500
+		}
+	}
+}

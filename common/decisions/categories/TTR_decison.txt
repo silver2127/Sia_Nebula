@@ -1,0 +1,10 @@
+the_tests = {
+	visible = {
+		original_tag = TTR
+	}
+}
+FTH_kill_people = {
+	visible = {
+		original_tag = FTH
+	}
+}

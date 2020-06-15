@@ -1,0 +1,268 @@
+﻿##In case the player is a simple faction member
+##He asks his faction leader to capitulate/ end the war by winning
+##Usually the AI says yes (would be shitty for the player otherwise)
+
+add_namespace = swp_losing_fl
+add_namespace = swp_winning_fl
+
+
+##LOSING
+#################ASKING OWN FACTION LEADER####################################
+
+##Asking the FL
+country_event = {
+
+    id = swp_losing_fl.1                         
+    title = swp_fl.1.t                  
+    desc = swp_fl.1.d                 
+	picture = GFX_report_event_soviet_tanks_snow 
+    immediate = { log = "[GetDateText]: [Root.GetName]: swp_losing_fl.1" }			
+
+	
+	is_triggered_only = yes		##triggered through decision
+	
+	#Ask your own FL
+	option = { 								
+		name = swp_fl.1.a
+		ai_chance = {factor = 100}
+	
+			every_country = {
+			
+				limit = {
+					is_faction_leader = yes
+					is_in_faction_with = ROOT
+				}
+			
+			country_event = { id = swp_losing_fl.2 }
+
+			}
+	}
+	
+	#We had no intention to do this
+	option = { 	
+		name = swp_fl.1.b
+		ai_chance = {factor = 0}
+	
+			set_country_flag = peace_declined
+		
+			hidden_effect = {
+				country_event = { days = 200 id = dw_flags.7 }	
+			}
+	
+	}
+	
+}
+
+##FL is asked!
+country_event = {
+
+    id = swp_losing_fl.2                         
+    title = swp_fl.2.t                  
+    desc = swp_fl.2.d                 
+	picture = GFX_report_event_soviet_tanks_snow 						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_losing_fl.2" }	
+	
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = { 								
+		name = swp_fl.2.a
+		ai_chance = {factor = 100}
+	
+			FROM = { country_event = { id = swp_losing_fl.3 } }
+
+	}
+	
+	#NO!
+	option = { 	
+		name = swp_fl.2.b
+		ai_chance = {factor = 0}
+	
+			set_country_flag = peace_declined
+		
+			hidden_effect = {
+				country_event = { days = 200 id = dw_flags.7 }	
+			}
+			
+			FROM = { country_event = { id = swp_losing_fl.4 } }
+	
+	}
+	
+}
+
+##FL has agreed
+country_event = {
+
+    id = swp_losing_fl.3                         
+    title = swp_fl.3.t                  
+    desc = swp_fl.3.d                 
+	picture = GFX_report_event_soviet_tanks_snow 						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_losing_fl.3" }	
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = { 								
+		name = swp_fl.3.a
+		ai_chance = {factor = 100}
+	
+		country_event = { id = swp_losing.0 } 
+
+	}
+
+}
+
+##FL has refused!
+country_event = {
+
+    id = swp_losing_fl.4                         
+    title = swp_fl.4.t                  
+    desc = swp_fl.4.d                 
+	picture = GFX_report_event_soviet_tanks_snow 						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_losing_fl.4" }	
+	
+	
+	is_triggered_only = yes
+	
+	#SHIT
+	option = { 								
+		name = swp_fl.4.a
+		ai_chance = {factor = 100}
+	
+			set_country_flag = peace_declined
+		
+			hidden_effect = {
+				country_event = { days = 200 id = dw_flags.7 }	
+			}
+
+	}
+}
+
+#########################ASKING OWN FACTION (LOSING )ENDS HERE#############################################################################
+
+#################################ASKING OWN FACTION (WINNING= starts here!#################################################################
+
+##Asking the FL
+country_event = {
+
+    id = swp_winning_fl.1                         
+    title = swp_fl.1.t                  
+    desc = swp_fl.1.d                 
+	picture = GFX_report_event_soviet_tanks_snow 						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning_fl.1" }	
+	
+	is_triggered_only = yes
+	
+	
+	#Ask your own FL
+	option = { 								
+		name = swp_fl.1.a
+		ai_chance = {factor = 100}
+	
+		every_country = {
+		
+			limit = {
+				is_faction_leader = yes
+				is_in_faction_with = ROOT
+
+			}
+		
+		country_event = { id = swp_winning_fl.2 }
+
+		}
+	}
+	
+	#We had no intention to do this
+	option = {
+		name = swp_fl.1.b
+		ai_chance = {factor = 0}
+	
+			set_country_flag = peace_declined
+		
+			hidden_effect = {
+				country_event = { days = 200 id = dw_flags.7 }	
+			}
+	
+	}	
+}
+
+##FL is asked!
+country_event = {
+
+    id = swp_winning_fl.2                         
+    title = swp_fl.2.t                  
+    desc = swp_fl.2.d                 
+	picture = GFX_report_event_soviet_tanks_snow 						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning_fl.2" }
+	
+	is_triggered_only = yes
+	
+	#YES
+	option = { 								
+	name = swp_fl.2.a
+	ai_chance = {factor = 100}
+	
+		FROM = { country_event = { id = swp_winning_fl.3 } }
+	}
+	
+	#NO!
+	option = { 	
+	name = swp_fl.2.b
+	ai_chance = {factor = 0}
+	
+		set_country_flag = peace_declined
+		
+		hidden_effect = {
+			country_event = { days = 200 id = dw_flags.7 }	
+		}
+	
+	FROM = { country_event = { id = swp_winning_fl.4 } }
+	
+	}	
+}
+
+##FL has agreed
+country_event = {
+
+    id = swp_winning_fl.3                         
+    title = swp_fl.3.t                  
+    desc = swp_fl.3.d                 
+	picture = GFX_report_event_soviet_tanks_snow 						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning_fl.3" }
+	
+	is_triggered_only = yes
+		
+	option = { 										#YES						
+		name = swp_fl.3.a
+		ai_chance = {factor = 100}
+	
+		country_event = { id = swp_winning.0 } 
+
+	}
+}
+
+
+country_event = {									##FL has refused!
+
+    id = swp_winning_fl.4                         
+    title = swp_fl.4.t                  
+    desc = swp_fl.4.d                 
+	picture = GFX_report_event_soviet_tanks_snow 						
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_winning_fl.4" }
+	
+	is_triggered_only = yes
+	
+	option = {		##Shit, FL has refused												
+		name = swp_fl.4.a
+		ai_chance = {factor = 100}
+	
+		set_country_flag = peace_declined
+		
+		hidden_effect = {
+			country_event = { days = 200 id = dw_flags.7 }	
+		}
+	}
+}
+
+

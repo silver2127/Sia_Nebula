@@ -1,0 +1,29 @@
+
+state={
+	id=101
+	name="STATE_101"
+
+	history={
+		owner = HHE
+		victory_points = {
+			5343 3 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 6
+			arms_factory = 0
+			air_base = 3
+			anti_air_building = 0
+
+		}
+		add_core_of = HHE
+
+	}
+
+	provinces={
+		432 4141 5213 5251 5266 5276 5308 5343 
+	}
+	manpower=3548000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

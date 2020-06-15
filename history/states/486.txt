@@ -1,0 +1,29 @@
+state={
+	id=486
+	name="STATE_486"
+	state_category = town
+	resources={
+		oil=28
+		rubber=18
+	}
+	history={
+		owner = VIT
+		victory_points = { 1835 4 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = VIT
+		add_core_of = MTA
+		add_core_of = HIN
+	}
+	provinces={
+		1014 1835 7476 7504 7519 7522 
+	}
+	manpower=201000
+	buildings_max_level_factor=1.000
+}

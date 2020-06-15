@@ -1,0 +1,35 @@
+
+state={
+	id=156
+	name="STATE_156"
+	state_category = advance_megalopolis
+	resources={
+		oil=500
+		rubber=500
+		aluminium=250
+		tungsten=100
+		steel=250
+		chromium=100
+	}
+
+	history={
+		owner = DEK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = DEK
+
+	}
+
+	provinces={
+		127 1926 2734 5307 5357 5401 5406 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=375
+	name="STATE_375"
+	state_category = city
+	history={
+		owner = ATA
+		victory_points = { 23 12 }
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			23 = {
+				naval_base = 6
+			}
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 2
+			anti_air_building = 0
+		}
+		add_core_of = ATA
+		add_core_of = MTA
+		add_core_of = HIN
+	}
+	provinces={
+		23 2625 3405 3988 4105 7591 7597 7598 7605 7624 
+	}
+	manpower=888200
+	buildings_max_level_factor=1.000
+}

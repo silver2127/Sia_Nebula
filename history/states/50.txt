@@ -1,0 +1,29 @@
+state={
+	id=50
+	name="STATE_50"
+	state_category = city
+	resources={
+		steel=18
+		chromium=24
+		grain=16
+	}
+	history={
+		owner = TTR
+		victory_points = { 3526 5 }
+		buildings = {
+			infrastructure = 5
+			#dockyard = 0
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 3
+			anti_air_building = 0
+		}
+		add_core_of = HPA
+		add_core_of = TTR
+	}
+	provinces={
+		1107 1743 2279 2526 3526 3837 5231 5297 5313 5332 5354 
+	}
+	manpower=511000
+	buildings_max_level_factor=1.000
+}

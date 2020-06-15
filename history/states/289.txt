@@ -1,0 +1,25 @@
+
+state={
+	id=289
+	name="STATE_289"
+	state_category = large_town
+	history={
+		owner = TCM
+		victory_points = { 1434 6 }
+		victory_points = { 2738 17 }
+		buildings = {
+			infrastructure = 7
+			#dockyard = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+		}
+		add_core_of = TCM
+	}
+	provinces={
+		770 1241 1434 1702 2738 2739 2884 3241 3549 6459 6504 6553 
+	}
+	manpower=16000000
+	buildings_max_level_factor=1.000
+}

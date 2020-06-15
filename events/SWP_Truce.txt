@@ -1,0 +1,159 @@
+﻿##Renews the truce
+
+##IDEA: Maybe add random decision about how long the truce should be?
+
+add_namespace = swp_truce
+
+##EVENT CHAIN: ROOT (Player) can ask former enemies to extend/renew the truce. 
+country_event = {
+	id = swp_truce.1
+	title = swp_truce.1.t
+	desc =  swp_truce.1.d
+	picture = GFX_report_event_second_vienna_award_pact
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_truce.1" }
+
+	is_triggered_only = yes
+
+	
+	option = {	# Let's do this
+		name = swp_truce.1.a
+		ai_chance = { factor = 75 }
+
+		##Effects
+		add_political_power = 50
+		
+		#Send event to former enemy. Ask for extension of Truce!		
+		every_country = {
+			limit = {
+				NOT = { has_war_with = ROOT }
+				has_opinion_modifier = swp_signed_peace_treaty				
+			}
+			
+			country_event = { days = 1 id = swp_truce.2  }		
+		}
+		
+	}
+	
+	
+	option = {	# we have better plans
+		name = swp_truce.1.b
+		ai_chance = { factor = 25 }
+		
+		##Effects
+		add_stability = -0.05
+		add_war_support = -0.05		
+	
+	}
+	
+	
+}
+
+
+
+##Country B: gets event from A, can decide
+country_event = {
+	id = swp_truce.2
+	title = swp_truce.2.t
+	desc =  swp_truce.2.d
+	picture = GFX_report_event_second_vienna_award_pact
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_truce.2" }
+
+	is_triggered_only = yes
+
+	
+	option = {	# We agree
+		name = swp_truce.2.a
+		ai_chance = { factor = 65 }
+
+		##Effects		
+		add_stability = 0.02
+		add_war_support = -0.06
+		set_truce = { target = FROM days = 365 } 
+		
+		hidden_effect = { remove_opinion_modifier = { target = FROM modifier = swp_signed_peace_treaty } }
+		
+		##Reply
+		FROM = { country_event = { days = 1 id = swp_truce.3 } }
+		
+			
+	}
+	
+	
+	option = {	# We don't agree
+		name = swp_truce.2.b
+		ai_chance = { factor = 35 }
+		
+		##Effects
+		add_war_support = 0.10
+		add_stability = -0.05	
+
+		hidden_effect = { remove_opinion_modifier = { target = FROM modifier = swp_signed_peace_treaty } }
+		
+		##Reply
+		FROM = { country_event = { days = 1 id = swp_truce.4  } }
+		
+
+		hidden_effect = {	
+			#				
+		}	
+	
+	}
+	
+	
+}
+
+
+
+##Country A: Country B has accepted
+country_event = {
+	id = swp_truce.3
+	title = swp_truce.3.t
+	desc =  swp_truce.3.d
+	picture = GFX_report_event_second_vienna_award_pact
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_truce.3" }
+	
+	is_triggered_only = yes
+
+	
+	option = {	
+		name = swp_truce.3.a
+		
+		##Effects
+		add_stability = 0.05
+		add_war_support = -0.10
+		add_political_power = 5
+		
+		##remove_ideas = anti_german_military		
+			
+	}
+	
+	
+}
+
+
+
+##Root: FROM has refused to sign a truce!
+country_event = {
+	id = swp_truce.4
+	title = swp_truce.4.t
+	desc =  swp_truce.4.d
+	picture = GFX_report_event_second_vienna_award_pact
+	immediate = { log = "[GetDateText]: [Root.GetName]: swp_truce.4" }
+	
+	is_triggered_only = yes
+
+	
+	option = {	
+		name = swp_truce.4.a
+		
+		##Effects
+		add_stability = -0.05
+		add_war_support = 0.05
+		add_political_power = 5
+		
+		#remove_ideas = anti_german_military
+			
+	}
+	
+	
+}

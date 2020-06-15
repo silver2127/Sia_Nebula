@@ -1,0 +1,26 @@
+
+state={
+	id=152
+	name="STATE_152"
+
+	history={
+		owner = HFB
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			anti_air_building = 0
+
+		}
+		add_core_of = HFB
+
+	}
+
+	provinces={
+		1142 1417 1854 2214 3324 3629 4749 4782 4785 4839 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

@@ -1,0 +1,70 @@
+﻿l_english:
+ form_empire_of_homarny_category:0 "Found the Empire of Homany"
+ form_empire_of_homarny:0 "From Empire of Homany"
+ TCI_demand_TCM_coast:0 "Damand Consortium northern Territoy"
+ TCI_demand_USA_nearby_territories:0 "Damand US of Archagea nearby Territoy"
+ request_development:0 "Request Devlopment"
+ request_development_help:0 "Request Devlopment from the High Priest Console"
+ HHE_imperal_improvement:0 "Imperal Improvement of [From.GetNameDef]"
+
+ theocracy_on_the_rise:0 "Theocracy on the Rise"
+ technocracy_on_the_rise:0 "Technocracy on the Rise"
+ enlightenism_on_the_rise:0 "Enlightenism on the Rise"
+ authoritarianism_on_the_rise:0 "Authoritarianism on the Rise"
+ unityism_on_the_rise:0 "Unityism on the Rise"
+
+
+
+
+
+ coneezean.1.t:0 "Letter for the Imperium"
+ coneezean.1.d:0 "The Imperium is damanding the territory of the Grand Canal and the Enclave near the Lower Peninsula, if we do not hand over this land they will declare war on us!"
+ coneezean.1.a:0 "We have no chose but to give it up."
+ coneezean.1.b:0 "Come take it!"
+
+ coneezean.2.t:0 "Letter for the Imperium"
+ coneezean.2.d:0 "The Imperium is damanding our northern coastal territory, if we do not hand the land over they will declare and conquar it by force and subject us!"
+ coneezean.2.a:0 "Sign the treaty to hand it over."
+ coneezean.2.b:0 "You think you scare us?"
+
+ coneezean.3.t:0 "They gave the territory up"
+ coneezean.3.d:0 ""
+ coneezean.3.a:0 "Great!"
+
+ coneezean.4.t:0 "They refused our ofter."
+ coneezean.4.d:0 ""
+ coneezean.4.a:0 "War it is!"
+
+ HHE_subject.0.t:0 "[From.GetNameDef] Request Devlopment"
+ HHE_subject.0.d:0 "[From.GetNameDef] want devlopment to help build up their economy."
+ HHE_subject.0.a:0 "Sure, of corse."
+ HHE_subject.0.b:0 "No, not now."
+
+ HHE_subject.1.t:0 "Repones from the Console"
+ HHE_subject.1.d:0 ""
+ HHE_subject.1.a:0 "Great."
+
+ HHE_subject.2.t:0 "Repones from the Console"
+ HHE_subject.2.d:0 ""
+ HHE_subject.2.a:0 "Thats a shame."
+
+ HHE.0.t:0 "Assassination Attempt of Luke Deed"
+ HHE.0.d:0 "Luke Deed was a hopeful leader to reform the nation into something better, but earlier today there was a attempt on his life."
+ HHE.0.a:0 "Send him into medical care now!"
+
+ HHE.1.t:0 "Death of Luke Deed"
+ HHE.1.d:0 "Luke Deed has passed away earlier this morning from his wounds for the assassination, "
+ HHE.1.a:0 "May High Priest Daed rest, up with the Senate for now."
+
+ HHE.2.t:0 "High Priest Election"
+ HHE.2.d:0 ""
+ HHE.2.a:0 "Gabriel Strongheart"
+ HHE.2.b:0 "§RInfluencer"
+ HHE.2.c:0 "§RAuthority"
+ HHE.2.d:0 "§RArchard Vlad"
+ HHE.2.e:0 "§RKeep the Senate"
+
+    ### Special Thanks too... ###
+ startup_fuction.0.t:0 "Special Thanks"
+ startup_fuction.0.d:0 "-Edouard_Saladier   -RyansPlace and Licarious Fenrir   -Skelsa   -"
+ startup_fuction.0.a:0 "Ok, Let's start!"

@@ -1,0 +1,26 @@
+
+state={
+	id=426
+	name="STATE_426"
+
+	history={
+		owner = TCM
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = TCM
+
+	}
+
+	provinces={
+		1562 2964 3009 3090 3385 5970 6014 6019 6066 6097 6113 
+	}
+	manpower=2
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

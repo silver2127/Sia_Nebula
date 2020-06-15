@@ -1,0 +1,31 @@
+
+state={
+	id=92
+	name="STATE_92"
+
+	history={
+		owner = HCZ
+		victory_points = { 2581 8 }
+		buildings = {
+			infrastructure = 4
+			#dockyard = 0
+			2581 = {
+				naval_base = 3
+			}
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+			anti_air_building = 0
+
+		}
+		add_core_of = HCZ
+
+	}
+
+	provinces={
+		2581 2758 3381 4896 4897 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}
